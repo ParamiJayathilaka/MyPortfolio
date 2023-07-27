@@ -14,12 +14,14 @@
 <header>
     <nav>
         <menu>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#Activities">Activities</a></li>
-            <li><a href="#Gallery">Gallery</a></li>
-            <li><a href="#Contact me">Contact</a></li>
+            <pre>
+                <a href="#About">About</a>
+           <a href="#Skills">Skills</a>
+            <a href="#Education">Education</a>
+            <a href="#Activities">Activities</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Contact me">Contact</a>
+            </pre>
         </menu>
     </nav>
     <div>
@@ -196,6 +198,25 @@
         </ol>
         <div>
             <h2>Enter your details :</h2>
+            <form id="Enter Your Details: " >
+
+                <fieldset>
+                    <legend>Enter your details :</legend>
+
+                    <label for="name">Name :</label>
+                    <input id="name" type="text" placeholder="enter your name"  required><br><br>
+
+                    <label for="email">Email :</label>
+                    <input id="email" type="email" placeholder="enter your valied email address"  required><br><br>
+
+                    <label for="massage">Massage :</label>
+                    <textarea rows="4" id="massage" placeholder="Enter your massage"></textarea><br><br>
+
+
+                    <button type="submit">Submit Data</button>
+
+                </fieldset>
+            </form>
         </div>
     </section>
 
