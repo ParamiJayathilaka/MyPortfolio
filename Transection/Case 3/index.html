@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>transition case 3</title>
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+
+    body {
+      background-color: #546478;
+    }
+
+    body>section {
+      width: max-content;
+      height: max-content;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      box-shadow: 2px 2px 10px 2px black;
+      overflow-y: hidden;
+    }
+
+    body>section>div:first-child{
+      width: max-content;
+      height: max-content;
+      box-sizing: border-box;
+      z-index: 2;
+    }
+
+    body>section>div:first-child>img {
+      width: 440px;
+      height: 350px;
+      border: 2px solid white;
+    }
+
+    body>section>div:first-child:hover div {
+      height: 350px;
+      transition-duration: 1s;
+      transition-property: height;
+    }
+
+    body>section>div:hover a>img {
+      top: 45%;
+      transition-duration: 1s;
+      transition-property: top;
+    }
+
+    body>section>div:first-child>div {
+      width: 440px;
+      height: 0px;
+      background-color: black;
+      opacity: 60%;
+      position: absolute;
+      margin: auto;
+      bottom: 6px;
+      left: 0;
+      right: 0;
+      transition-duration: 1s;
+      transition-property: height;
+    }
+
+    body>section>div>a>img {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: -50px;
+      height: 50px;
+      transition-duration: 1s;
+      transition-property: top;
+    }
+
+  </style>
+</head>
+
+<body>
+<section>
+  <div>
+    <img src="car.jpg" alt="">
+    <div></div>
+    <a href="">
+      <img src="delete.png" alt="">
+    </a>
+  </div>
+</section>
+</body>
+
+</html>
