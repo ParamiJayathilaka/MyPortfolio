@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions</title>
+  <link rel="stylesheet" href="8.0.1_normalize.css">
+  <style>
+    body {
+      position: relative;
+
+    }
+
+    section {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgb(199, 124, 12);
+      color: blue;
+    }
+
+    div {
+      height: 40px;
+      width: 100px;
+      display: flex;
+      margin: 50px;
+      margin-left: -70px;
+      background-color: rgb(12, 193, 199);
+      color: blue;
+
+      transition-duration: 2s;
+      transition-property: background-color, margin-left;
+
+
+    }
+
+    body>section>div:hover {
+      transition-duration: 1s;
+      transition-property: background-color, margin-left;
+      background-color: rgb(208, 245, 0);
+      margin-left: 0;
+
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+<section>
+  <div>
+    <p> Home</p>
+  </div>
+  <div>
+    <p> Menu</p>
+  </div>
+  <div>
+    <p> Abouth</p>
+  </div>
+  <div>
+    <p> Contact</p>
+  </div>
+
+  <div>
+    <p> Email</p>
+  </div>
+
+</section>
+
+
+
+</body>
+
+</html>

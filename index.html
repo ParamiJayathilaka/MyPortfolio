@@ -8,11 +8,566 @@
     <meta name="owner" content="Parami" >
     <meta name="author" content="Parami Jayathilaka" >
     <meta name="theme-color" content="blue" >
+    <link rel="stylesheet" href="8.0.1_normalize.css">
 
     <style>
-        h1{
-            color: red;
+        main{
+            margin-top: 4%;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: rgb(100, 76, 10);
+            overflow: hidden;
         }
+       body>header{
+        background-color: #272626e5;
+            position: fixed;
+            width: 100%;
+            height: 8vh;
+            text-align:end;
+            top: 0;
+            display: block;
+            z-index: 10;
+            border-top: 1px solid rgb(14, 165, 224);
+            border-bottom: 1px solid rgb(18, 156, 211);
+       }
+
+       body>header>div{
+        width: 5%;
+        height: 5%;
+        position: absolute;
+        top: 0;
+        left: 0;
+       }
+
+       body>main>section{
+        height: 100vh;
+        width: 100vw;
+            position: relative;
+            background-color: rgb(100, 76, 10);
+       }
+
+       
+       body>header>div>h4{
+      
+        position: absolute;
+        top: -700%;
+        left: 110%;
+        font-size: 25px;
+       }
+
+       main>section:first-child>aside{
+        width: 50%;
+        height: 60%;
+        position:absolute;
+        top: 5%;
+        right: -15%;
+       }
+
+       #icon{
+        width: 50%;
+        height: 60%;
+        position:absolute;
+        bottom: -25%;
+        right: -15%;
+        
+       }
+
+       #icon>h4{
+        font-size: 20px;
+       }
+
+       #icon>nav>img{
+        padding-left: 10px;
+
+       }
+
+       #sectionfirst>hgroup>h2{
+        position: absolute;
+        top: 5%;
+        left: 1%;
+        font-size: 25px;
+
+       }
+
+       #sectionfirst>hgroup>h1{
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        font-size: 50px;
+
+       }
+      
+       #sectionfirst>article>pre{
+        position: absolute;
+        top: 35%;
+        left: 1%;
+        font-size: 30px;
+
+       }
+
+       #section2>h1>strong{
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        font-size: 30px;
+       }
+
+       #section2>article>pre{
+        position: absolute;
+        top: 3%;
+        left: 20%;
+        font-size: 20px;
+       }
+
+       #section2>address{
+        position: absolute;
+        top: 40%;
+        left: 43%;
+        font-size: 10px;
+       }
+
+
+       #section2about{
+        width: 10%;
+        height: 60%;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        font-size: 10px;
+       }
+
+       #section2about>div{
+        width: 100%;
+        height: 8%;
+        background-color: blueviolet;
+        border-radius: 10px;
+        text-align: center;
+       }
+
+       #section2>aside>img{
+        position: absolute;
+        left: 3%;
+       }
+
+       #uiux{
+        width: 25%;
+        height: 60%;
+        position: absolute;
+        background-color: aliceblue; 
+        top: 10%;
+        left:5%;
+        border-radius: 10px;
+       }
+
+       #uiux>img{
+        position: absolute;
+        left:30%;
+       }
+
+       #uiux>h1{
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 20%;
+        left:30%;
+       }
+
+       #uiux>pre{
+        position: absolute;
+        font-size: 15px;
+        top: 40%;
+        left:-30%;
+       }
+
+
+       #www{
+        width: 25%;
+        height: 60%;
+        position: absolute;
+        background-color: aliceblue; 
+        top: 10%;
+        left:35%;
+        border-radius: 10px;
+       }
+
+       #www>img{
+        position: absolute;
+        left:30%;
+       }
+
+       #www>h1{
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 25%;
+        left:30%;
+       }
+
+       #www>pre{
+        position: absolute;
+        font-size: 15px;
+        top: 40%;
+        left:-40%;
+       }
+
+       #bugfix{
+        width: 25%;
+        height: 60%;
+        position: absolute;
+        background-color: aliceblue; 
+        top: 10%;
+        left:70%;
+        border-radius: 10px;
+       }
+
+       #bugfix>img{
+        position: absolute;
+        left:30%;
+       }
+
+       #bugfix>h1{
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 25%;
+        left:30%;
+       }
+
+       #bugfix>pre{
+        position: absolute;
+        font-size: 15px;
+        top: 40%;
+        left:-40%;
+       }
+
+       #section3>h4{
+        position: absolute;
+        font-size: 15px;
+        top: 70%;
+        left:2%;
+       }
+
+       #languagetools{
+        width: 100%;
+        height: 60%;
+        position:absolute;
+        top: 80%;
+        left: 0%;
+       }
+       
+       #languagetools>img{
+        padding-left: 40px;
+       }
+
+       #calculator{
+        width: 35%;
+        height: 30%;
+        position: absolute;
+        background-color: aliceblue; 
+        top: 15%;
+        left:5%;
+        border-radius: 10px;
+       }
+
+       #calculator>pre{
+        position: absolute;
+        top: 15%;
+        left:4%;
+       }
+
+       #connet4games{
+        width: 35%;
+        height: 30%;
+        position: absolute;
+        background-color: aliceblue; 
+        top: 15%;
+        left:50%;
+        border-radius: 10px;
+       }
+
+       #connet4games>pre{
+        position: absolute;
+        top: 40%;
+        left:8%;
+       }
+
+       #furniture{
+        width: 35%;
+        height: 30%;
+        position: absolute;
+        background-color: aliceblue; 
+        top: 50%;
+        left:5%;
+        border-radius: 10px;
+       }
+
+       #furniture>pre{
+        position: absolute;
+        top: 40%;
+        left:8%;
+       }
+
+       #hostal{
+        width: 35%;
+        height: 30%;
+        position: absolute;
+        background-color: aliceblue; 
+        top: 50%;
+        left:50%;
+        border-radius: 10px;
+       }
+
+       #hostal>pre{
+        position: absolute;
+        top: 40%;
+        left:8%;
+       }
+
+       #viewmore1{
+        width: 20%;
+        height: 5%;
+        position: absolute;
+        background-color: rgb(51, 142, 223); 
+        top: 85%;
+        left:70%;
+        border-radius: 10px;
+       }
+
+       #viewmore1>h2{
+        position: absolute;
+        top: -40%;
+        left:10%;
+       }
+
+       
+       #div1{
+        width: 70%;
+        height: 55%;
+        position: absolute;
+        background-color: rgb(51, 142, 223); 
+        top: 5%;
+        left:2%;
+        border-radius: 10px;
+       }
+       #div2{
+        width: 20%;
+        height: 40%;
+        position: absolute;
+        background-color: rgb(51, 223, 80); 
+        top: 20%;
+        left:70%;
+        border-radius: 10px;
+       }
+
+       #div3{
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        background-color: rgb(131, 51, 223); 
+        top: 20%;
+        left:20%;
+        border-radius: 10px;
+       }
+
+       /* section6 */
+
+       #certificate1{
+        width: 30%;
+        height: 70%;
+        position: absolute;
+        background-color: rgb(223, 51, 180); 
+        top: 10%;
+        left:10%;
+        border-radius: 10px;
+       }
+
+       #certificate1>img{
+        position: absolute;
+        top: 10%;
+        left:8%;
+       }
+
+       #certificate2{
+        width: 30%;
+        height: 70%;
+        position: absolute;
+        background-color: rgb(51, 54, 223); 
+        top: 10%;
+        left:50%;
+        border-radius: 10px;
+       }
+
+       #certificate2>img{
+        position: absolute;
+        top: 10%;
+        left:8%;
+       }
+
+       #viewmore2{
+        width: 20%;
+        height: 5%;
+        position: absolute;
+        background-color: rgb(51, 142, 223); 
+        top: 85%;
+        left:70%;
+        border-radius: 10px;
+       }
+
+       #viewmore2>h2{
+        position: absolute;
+        top: -40%;
+        left:10%;
+       }
+
+       /* section7 */
+
+       #achive1{
+        width: 40%;
+        height: 10%;
+        position: absolute;
+        background-color: rgb(51, 142, 223); 
+        top: 10%;
+        left:10%;
+        border-radius: 10px;
+       }
+
+       #achive1>pre{
+        position: absolute;
+        top: -15%;
+        left:-20%;
+       }
+
+       #achive1>img{
+        position: absolute;
+        top: -10%;
+        left:-15%;
+       }
+
+       #achive2{
+        width: 40%;
+        height: 10%;
+        position: absolute;
+        background-color: rgb(51, 142, 223); 
+        top: 25%;
+        left:20%;
+        border-radius: 10px;
+       }
+
+       #achive2>pre{
+        position: absolute;
+        top: -15%;
+        left:-20%;
+       }
+
+       #achive2>img{
+        position: absolute;
+        top: -10%;
+        left:-15%;
+       }
+
+
+       #achive3{
+        width: 40%;
+        height: 10%;
+        position: absolute;
+        background-color: rgb(51, 142, 223); 
+        top: 40%;
+        left:30%;
+        border-radius: 10px;
+       }
+
+       #achive3>pre{
+        position: absolute;
+        top: -15%;
+        left:-20%;
+       }
+
+       #achive3>img{
+        position: absolute;
+        top: -10%;
+        left:-15%;
+       }
+
+
+       #achive4{
+        width: 40%;
+        height: 10%;
+        position: absolute;
+        background-color: rgb(51, 142, 223); 
+        top: 55%;
+        left:40%;
+        border-radius: 10px;
+       }
+
+       #achive4>pre{
+        position: absolute;
+        top: -15%;
+        left:-20%;
+       }
+
+       #achive4>img{
+        position: absolute;
+        top: -10%;
+        left:-15%;
+       }
+
+
+       #achive5{
+        width: 40%;
+        height: 10%;
+        position: absolute;
+        background-color: rgb(51, 142, 223); 
+        top: 70%;
+        left:50%;
+        border-radius: 10px;
+       }
+
+       #achive5>pre{
+        position: absolute;
+        top: -15%;
+        left:-20%;
+       }
+
+       #achive5>img{
+        position: absolute;
+        top: -10%;
+        left:-15%;
+       }
+
+       #img1{
+        position: absolute;
+        top: 14%;
+        left: 55%;
+       }
+
+       #img2{
+        position: absolute;
+        top: 30%;
+        left:65%;
+       }
+
+       #img3{
+        position: absolute;
+        top: 60%;
+        left:0%;
+       }
+
+       #img4{
+        position: absolute;
+        top: 80%;
+        left:0%;
+       }
+
+
+
+     
+
+
+
+
+       
+
     </style>
     
 </head>
@@ -36,7 +591,7 @@
 <main>
 
     <section>
-        <section>
+        <section id="sectionfirst">
             <hgroup>
                 <h2>Full Stack Developer</h2>
                 <h1><sup>Hello</sup> <sub>I'm Parami Jayathilaka</sub></h1>
@@ -53,17 +608,17 @@
             </article>
         </section>
         <aside>
-            <img src="assets/image/home%20profile.png" alt="png">
+            <img src="assets/image/home%20profile.png" alt="png" height="375" width="375">
         </aside>
 
-        <section>
+        <section id="icon">
             <h4>I can do whatever You want today</h4>
             <nav>
-                <img  usemap="#fbMap" src="assets/image/fb.png" alt="png" height="100" width="100">
-                <img  usemap="#githubMap" src="assets/image/github.png" alt="png" height="100" width="100">
-                <img  usemap="#twitterMap" src="assets/image/twitter.png" alt="png" height="100" width="100">
-                <img  usemap="#youtubeMap" src="assets/image/youtube%203.png" alt="png" height="100" width="100">
-                <img  usemap="#insterMap" src="assets/image/inster.png" alt="png" height="100" width="100">
+                <img  usemap="#fbMap" src="assets/image/fb.png" alt="png" height="60" width="60">
+                <img  usemap="#githubMap" src="assets/image/github.png" alt="png" height="60" width="60">
+                <img  usemap="#twitterMap" src="assets/image/twitter.png" alt="png" height="60" width="60">
+                <img  usemap="#youtubeMap" src="assets/image/youtube%203.png" alt="png" height="60" width="60">
+                <img  usemap="#insterMap" src="assets/image/inster.png" alt="png" height="60" width="60">
 
                 <map name="fbMap">
                     <area shape="rect" coords="0,0,100,100" href="https://www.facebook.com/profile.php?id=100079070987907&mibextid=ZbWKwL" alt="GO TO FACEBOOK">
@@ -89,87 +644,205 @@
         </section>
     </section>
 
-    <section>
+    <section id="section2">
         <h1>
             <dfn id="About me"><strong>About me</strong></dfn>
             </h1>
         <aside>
-            <img src="assets/image/about%20pic.png" alt="png">
+            <img src="assets/image/about%20pic.png" alt="png" height="450" width="330">
         </aside>
         <article>
             <pre>
                 I’m Parami Jayathilaka ,
-                I am curruntly studying  a software engineer diploma at IJSE and I am also studying in other subjects.
-                I’ve spend most of my working hourse for the last years for Oparating web sites, programming and designing.
+                I am curruntly studying  a software engineer diploma at IJSE and
+                I am also studying in other subjects.
+                I’ve spend most of my working hourse for the last years for Oparating web sites, 
+                programming and designing.
                 I have improve the knowledge and skills neccessary to make your project success.
 
                 I enjoy every step of the design process, from disscussion and collaboration.
             </pre>
         </article>
-        <address><ul>
-            <li>Name: I.G.T.Parami Jayathilaka</li>
-            <li>Age: 21</li>
-            <li>Address: Gallery,Sri Lanka</li>
-            <li>Education: Undergraduated</li>
-            <li>Contact: 0778606375</li>
-            <li>E-mail: thinithiparami53@gmail.com</li>
-            <li>Linked In: ParamiJayathilaka</li>
-        </ul></address>
+        <section id="section2about">
+            <div><h1>Name </h1></div>
+            <div><h1>Age </h1></div>
+            <div><h1>Address </h1></div>
+            <div><h1>Education </h1></div>
+            <div><h1>Contact </h1></div>
+            <div><h1>E-mail </h1></div>
+            <div><h1>Linekd In </h1></div>
+        </section>
+        <address>
+            <h1>:   I.G.T.Parami Jayathilaka</h1>
+            <h1>21</h1>
+            <h1>Gallery,Sri Lanka</h1>
+            <h1>Undergraduated</h1>
+            <h1>0778606375</h1>
+            <h1>thinithiparami53@gmail.com</h1>
+            <h1>ParamiJayathilaka</h1>
+        </address>
     </section>
 
-    <section>
+    <section id="section3">
         <h1><dfn id="Skills"><strong>Skills</strong></dfn></h1>
-
+            <div id="uiux"><img src="assets/image/ui%20ux.png" alt="png" height="100" width="100">
+                <h1>UI/UX Design</h1>
+                <pre>
+                    User interface (UI) 
+                    design refers to the aesthetic 
+                    elements by which people 
+                    interact with a product, 
+                    such as buttons, icons, menu 
+                    bars, typography, colors, 
+                    and more. User experience (UX) 
+                    design refers to the experience 
+                    a user has when interacting 
+                    with a product</pre>
+            </div>
+            <div id="www"><img src="assets/image/www.png" alt="png" height="100" width="100">
+                <h1>WWW Design</h1>
+                <pre>
+                    Web design is the process 
+                    of planning, conceptualizing, 
+                    and arranging content online. 
+                    Web design also includes web apps, 
+                    mobile apps, and user interface 
+                    design.</pre>
+            </div>
+            <div id="bugfix"><img src="assets/image/bug.png" alt="png" height="100" width="100">
+                <h1>Bug Fixing</h1>
+                <pre>
+                    The elimination of software 
+                    errors is called bug fixing. 
+                    A bug fix is the result 
+                    of a bug removal, and bug 
+                    fixing is the activity 
+                    of fixing bugs. Before a bug 
+                    fix can be implemented, 
+                    a bug must be identified 
+                    and located.
+                </pre>
+            </div>
         <h4>Languages  & tools</h4>
-        <figure><figcaption>
-            <div><img src="assets/image/ui%20ux.png" alt="png"><h1>UI/UX Design</h1></div>
-            <div><img src="assets/image/www.png" alt="png"><h1>WWW Design</h1></div>
-            <div><img src="assets/image/bug.png" alt="png"><h1>Bug Fixing</h1></div>
-        </figcaption></figure>
-        <nav></nav>
-    </section>
+        <div id="languagetools">
+            <img src="assets/image/html.png" alt="png" height="100" width="100">
+            <img src="assets/image/java.png" alt="png" height="100" width="100">
+            <img src="assets/image/node.png" alt="png" height="100" width="100">
+            <img src="assets/image/php.png" alt="png" height="100" width="100">
+            <img src="assets/image/sceanBuilder.png" alt="png" height="100" width="100">
+            <img src="assets/image/ij.png" alt="png" height="100" width="100">
+            <img src="assets/image/css.png" alt="png" height="100" width="100">
+            <img src="assets/image/figma.png" alt="png" height="100" width="100">
 
-    <section>
-
-        <h1><dfn id="Education"><strong>Education</strong></dfn></h1>
-        <h3>Project</h3>
-        <figure><figcaption>
-            <img src="assets/image/calc.png" alt="png">
-            <img src="assets/image/connect%204%20games.png" alt="png">
-            <img src="assets/image/furniture.png" alt="png">
-        </figcaption></figure>
-    </section>
-
-    <section>
-        <h3><strong>Assigment</strong></h3>
-        <div></div>
-    </section>
-
-    <section>
-        <h3><strong>Certificate</strong></h3>
-        <div>
-            <img src="assets/image/cetificate%201.png" alt="png">
-            <img src="assets/image/cetificate%202.png" alt="png">
         </div>
     </section>
 
-    <section>
+    <section id="section4">
+        <h1><dfn id="Education"><strong>Education</strong></dfn></h1>
+        <h3>01. Project</h3>
+       <div id="calculator">
+        <img src="assets/image/calc.png" alt="png" height="100" width="100">
+        <pre>                      
+             I have just created a calculator. 
+            It enables you to perform operations 
+            such as addition, subtraction, division, 
+            multiplication, etc.
+        </pre>
+       </div>
+
+       <div id="connet4games">
+        <img src="assets/image/connect%204%20games.png" alt="png" height="100" width="100">
+        <pre>Here i have created a software 
+            for connecting four games.
+        </pre>
+    </div>
+
+        <div id="furniture">
+            <img src="assets/image/furniture.png" alt="png" height="100" width="100">
+            <pre>Here i have created a software for 
+                managing Furniture shop .
+            </pre>
+        </div>
+
+        <div id="hostal">
+            <img src="assets/image/furniture.png" alt="png" height="100" width="100">
+            <pre>Here i have created a software for 
+                managing Furniture shop .
+            </pre>
+        </div>
+
+        <div id="viewmore1">
+            <h2>View More</h2>
+        </div>
+    </section>
+
+    <section id="section5">
+        <h3><strong>Assigment</strong></h3>
+        <div id="div1">
+            <div id="div2">
+                <div id="div3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section6">
+        <h3><strong>Certificate</strong></h3>
+        <div id="certificate1">
+            <img src="assets/image/cetificate%201.png" alt="png" height="300" width="300">
+        </div>
+
+        <div id="certificate2"> 
+            <img src="assets/image/cetificate%202.png" alt="png" height="300" width="300">
+        </div>
+
+        <div id="viewmore2">
+            <h2>View More</h2>
+        </div>
+    </section>
+
+    <section id="section7">
         <h3><strong>Achievements</strong></h3>
-        <div>
-            <img src="assets/image/arrow.png" alt="png">
-            <img src="assets/image/arrow.png" alt="png">
-            <img src="assets/image/arrow.png" alt="png">
-            <img src="assets/image/arrow.png" alt="png">
+
+        <div id="achive1">
+            <img src="assets/image/exam.png" alt="png">
+            <pre>
+                In 2010 faced the Scholarship Examination & get a 
+                good pass & passed the exam.</pre>
+        </div>
+
+        <div id="achive2">
+            <img src="assets/image/exam.png" alt="png">
+            <pre>
+                In 2017 faced the 0/L Examination & get a 
+                good pass & passed the exam.</pre>
+        </div>
+
+        <div id="achive3">
+            <img src="assets/image/exam.png" alt="png">
+            <pre>
+                In 2020 faced the A/L Examination & get a 
+                good pass & passed the exam.</pre>
+        </div>
+
+        <div id="achive4">
             <img src="assets/image/graduate.png" alt="png">
+            <pre>
+                In 2021 I had done English & ICT diploma in AIBT 
+                Campas and finally, I get the best results for that exams</pre>
+        </div>
+
+        <div id="achive5">
             <img src="assets/image/graduate.png" alt="png">
-            <img src="assets/image/exam.png" alt="png">
-            <img src="assets/image/exam.png" alt="png">
-            <img src="assets/image/exam.png" alt="png">
-            <pre>In 2010 faced the Scholarship Examination & get a good pass & passed the exam.
-In 2017 faced the 0/L Examination & get a good pass & passed the exam.
-In 2020 faced the A/L Examination & get a good pass & passed the exam.
-In 2021 I had done English & ICT diploma in AIBT Campas and finally, I get the best results for that exams
-In 2022 I joined the IJSE Campas & currently studying for a software engineer diploma & other subjects.  </pre>
+            <pre>
+                In 2022 I joined the IJSE Campas & currently 
+                studying for a software engineer diploma & other subjects.  </pre>
+        </div>
+        
+        <div id="achiveArrows">
+            <img id="img1" src="assets/image/arrow.png" alt="png">
+            <img id="img2" src="assets/image/arrow.png" alt="png">
+            <img id="img3" src="assets/image/arrow.png" alt="png">
+            <img id="img4" src="assets/image/arrow.png" alt="png">
         </div>
     </section>
 
