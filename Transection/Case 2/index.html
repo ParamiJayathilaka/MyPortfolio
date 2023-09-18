@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions</title>
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+    body {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+
+    }
+
+
+
+
+
+    body>div{
+
+      height:200px;
+      width:200px;
+      border-radius: 120px;
+
+      border: 10px solid  red ;
+      border-top:10px solid  rgb(0, 0, 0)  ;
+
+      background-color:green;
+
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+
+
+
+    body>div:hover {
+      transition-duration: 2s;
+      transition-property: rotate;
+      rotate: 360deg;
+
+    }
+
+    body>div>p{
+      height: max-content;
+      width: max-content;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      color: beige;
+
+    }
+
+    body>div:hover p{
+
+      transition-duration: 2s;
+      transition-property: rotate;
+      rotate: -360deg;
+
+    }
+
+
+
+
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+<div>
+  <p> RWMS</p>
+</div>
+
+
+
+
+
+</body>
+
+</html>
