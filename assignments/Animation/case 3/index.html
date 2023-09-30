@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>animation case 1</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+        body>div{
+            /* position: relative; */
+            height: 100vh;
+            width: max-content;
+            display: flex;
+            animation-name: anima;
+            animation-duration: 9s;
+            animation-iteration-count: 2;
+            display: inline-block;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+        }
 
+        body>div>img{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        @keyframes anima{
+            0%{
+                margin-left: 0;
+            }
+            25%{
+                margin-left: -100vw;
+            }
+            50%{
+                margin-left: -200vw;
+            }
+            75%{
+                margin-left: -300vw;
+            }
+            100%{
+                margin-left: -400vw;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <img src="images/ol.jpg" alt="">
+    <img src="images/web.jpg" alt="">
+    <img src="images/olevel.jpg" alt="">
+    <img src="images/ui.jpg" alt="">
+    <img src="images/web.jpg" alt="">
+</div>
 </body>
+
 </html>
