@@ -1,10 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>animation case 4</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            background: url(assets/images/sky.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
 
+        body>section {
+            display: flex;
+            height: 100vh;
+            width: max-content;
+            animation-name: anima_back,anima_back_later;
+            animation-duration: 5s,4s;
+            /* animation-iteration-count: infinite; */
+            animation-timing-function: linear,linear;
+            animation-delay: 0s,5s;
+            animation-fill-mode: none,forwards;
+            margin-left: 0;
+        }
+
+        @keyframes anima_back {
+            0% {
+                margin-left: 0px;
+            }
+
+            100% {
+                margin-left: -200vw;
+            }
+        }
+        @keyframes anima_back_later {
+            0% {
+                margin-left: -200vw;
+            }
+
+            100% {
+                margin-left: -230vw;
+            }
+        }
+
+        body>section>section {
+            width: 100vw;
+            height: 100%;
+            position: relative;
+        }
+
+        body>section>section>div:first-child {
+            position: relative;
+            height: 60vh;
+            /* background-color: antiquewhite; */
+            width: 100vw;
+        }
+
+        body>section>section>div:first-child>img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        body>section>section>div:nth-child(2) {
+            position: relative;
+            margin: auto;
+            background-color: aliceblue;
+            width: 100%;
+            height: 40vh;
+        }
+
+        body>section>section>div:nth-child(2)>img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        body>img:nth-child(2) {
+            position: fixed;
+            left: 550px;
+            top: 350px;
+            width: 500px;
+        }
+
+        body>img:nth-child(3) {
+            position: fixed;
+            left: 590px;
+            top: 456px;
+            width: 100px;
+            animation-name: anima_wheels,anima_wheels_later;
+            animation-duration: 5s,4s;
+            animation-delay: 0s,5s;
+            animation-timing-function: linear,linear;
+            animation-fill-mode: forwards,forwards;
+        }
+
+        body>img:nth-child(4) {
+            position: fixed;
+            left: 896px;
+            top: 456px;
+            width: 100px;
+            animation-name: anima_wheels,anima_wheels_later;
+            animation-duration: 5s,4s;
+            animation-delay: 0s,5s;
+            animation-timing-function: linear,linear;
+            animation-fill-mode: forwards,forwards;
+        }
+
+        @keyframes anima_wheels{
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: -720deg;
+            }
+        }
+        @keyframes anima_wheels_later{
+            0% {
+                rotate: -720deg;
+            }
+            10% {
+                rotate: -720deg;
+            }
+            60% {
+                rotate: -520deg;
+            }
+            80% {
+                rotate: -480deg;
+            }
+            90% {
+                rotate: -470deg;
+            }
+            100% {
+                rotate: -465deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<section>
+    <section>
+        <div>
+            <img src="image/city.jpg" alt="">
+        </div>
+        <div>
+            <img src="image/road.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="image/city.jpg" alt="">
+        </div>
+        <div>
+            <img src="image/road.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="image/city.jpg" alt="">
+        </div>
+        <div>
+            <img src="image/road.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="image/city.jpg" alt="">
+        </div>
+        <div>
+            <img src="image/road.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="image/city.jpg" alt="">
+        </div>
+        <div>
+            <img src="image/road.jpg" alt="">
+        </div>
+    </section>
+</section>
+<img src="image/car (1).png" alt="">
+<img src="image/wheel.png" alt="">
+<img src="image/wheel.png" alt="">
 </body>
+
 </html>
