@@ -27,12 +27,8 @@
 
         /* ----------main----------- */
         main{
-            margin-top: 4%;
-            width: 100%;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-            
+         
+            background-color: black;
             
         }
 
@@ -68,21 +64,23 @@
         
        }
 
-       body>main>section{
+       /* section1 */
+
+       #one{
+        background-color: black;
+       }
+
+       #section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9{
         height: 100vh;
         right: 0;
         left: 0;
         position: relative;
        }
 
-       
-/* 
-       body{
-        background-image: url('Desktop-1.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%; 
-       } */
+
+       #section1{
+           background: linear-gradient(135deg, rgba(235, 235, 235, 0.05) 53.95%, #322A25 53.95%, #000 58.97%, rgba(0, 0, 0, 0.21) 62.94%);
+       }
 
        
        body>header>div>h4{
@@ -101,7 +99,7 @@
         height: 60%;
         position:absolute;
         top: 5%;
-        right: -15%;
+        right: -0%;
        }
 
        #icon{
@@ -116,6 +114,7 @@
        #icon>h4{
         font-size: 20px;
         font-family: 'Abhaya Libre', serif;
+        color: #AC8A33;
        }
 
        #icon>nav>img{
@@ -123,7 +122,7 @@
 
        }
 
-       #sectionfirst>hgroup>h2{
+       #welcome>hgroup>h2{
         position: absolute;
         top: 5%;
         left: 1%;
@@ -133,34 +132,51 @@
 
        }
 
-       #sectionfirst>hgroup>h1{
+       #welcome>hgroup>h1{
         position: absolute;
         top: 20%;
         left: 3%;
         font-size: 50px;
         font-family: 'Kumar One', cursive;
+        color: #FFBB55;
 
        }
       
-       #sectionfirst>article>pre{
+       #welcome>article>pre{
         position: absolute;
         top: 35%;
         left: 1%;
         font-size: 30px;
         font-family: 'Judson', serif;
+        color: #DF8A0B;
 
        }
 
        /* section2 */
 
-       #section2>h1>strong{
+       #two{
+       color: #FBB955;
+
+       }
+
+       #section2{
+       
+        /* background: linear-gradient(134deg, rgba(167, 100, 0, 0.79) 36.94%, rgba(23, 17, 11, 0.49) 71.89%); */
+        background: linear-gradient(134deg, rgba(135, 91, 24, 0.79) 31.73%, rgba(23, 17, 11, 0.49) 71.89%);
+
+
+       }
+
+       #section2>h1{
         position: absolute;
         top: 2%;
         left: 1%;
         font-size: 30px;
+        color: #FFC684;
        }
 
        #section2>article>pre{
+        color: #FFFFFF;
         position: absolute;
         top: 3%;
         left: 20%;
@@ -172,6 +188,8 @@
         top: 40%;
         left: 43%;
         font-size: 10px;
+        color: #FBB955;
+        padding-bottom: 20px;
        }
 
 
@@ -182,6 +200,7 @@
         top: 40%;
         left: 30%;
         font-size: 10px;
+        color: black;
        }
 
        #section2about>div{
@@ -193,11 +212,23 @@
        }
 
        #section2>aside>img{
+        top: 13%;
         position: absolute;
-        left: 3%;
+        left: 2%;
        }
 
        /* section3 */
+
+       #three{
+   
+       }
+
+       #section3{
+        background: linear-gradient(180deg, #76460C 2.54%, #896D4D 12.73%, #4C2705 68.58%, #46311E 97.66%);
+
+
+
+       }
 
        #uiux{
         width: 25%;
@@ -207,6 +238,7 @@
         top: 10%;
         left:5%;
         border-radius: 10px;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
        }
 
        #uiux>img{
@@ -220,6 +252,7 @@
         font-size: 25px;
         top: 20%;
         left:30%;
+        color: white;
        }
 
        #uiux>pre{
@@ -227,6 +260,7 @@
         font-size: 15px;
         top: 40%;
         left:-30%;
+        color: white;
        }
 
 
@@ -238,6 +272,7 @@
         top: 10%;
         left:35%;
         border-radius: 10px;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
        }
 
        #www>img{
@@ -251,6 +286,7 @@
         font-size: 25px;
         top: 25%;
         left:30%;
+        color: white;
        }
 
        #www>pre{
@@ -258,6 +294,7 @@
         font-size: 15px;
         top: 40%;
         left:-40%;
+        color: white;
        }
 
        #bugfix{
@@ -268,6 +305,7 @@
         top: 10%;
         left:70%;
         border-radius: 10px;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
        }
 
        #bugfix>img{
@@ -281,6 +319,7 @@
         font-size: 25px;
         top: 25%;
         left:30%;
+        color: white;
        }
 
        #bugfix>pre{
@@ -288,6 +327,7 @@
         font-size: 15px;
         top: 40%;
         left:-40%;
+        color: white;
        }
 
        #section3>h4{
@@ -813,99 +853,113 @@
 
 <main>
 
-    <section>
-        <section id="sectionfirst">
-            <hgroup>
-                <h2>Full Stack Developer</h2>
-                <h1><sup>Hello</sup> <sub>I'm Parami Jayathilaka</sub></h1>
+    <!-- section 1 -->
 
-            </hgroup>
+    <section id="one">
+        <section id="section1">
+            <section id="welcome" >
+                <hgroup>
+                    <h2>Full Stack Developer</h2>
+                    <h1><sup>Hello</sup> <sub>I'm Parami Jayathilaka</sub></h1>
+    
+                </hgroup>
+                <article>
+                    <pre>
+                    Welcome to my personal website.
+            Active and enthusiastic to explore the
+            fascinating digital world which is
+            updated every day.
+            Join me on the journey .
+                </pre>
+                </article>
+            </section>
+            <aside>
+                <img src="assets/image/home%20profile.png" alt="png" height="375" width="375">
+            </aside>
+    
+            <section id="icon">
+                <h4>I can do whatever You want today</h4>
+                <nav>
+                    <img  usemap="#fbMap" src="assets/image/fb.png" alt="png" height="60" width="60">
+                    <img  usemap="#githubMap" src="assets/image/github.png" alt="png" height="60" width="60">
+                    <img  usemap="#twitterMap" src="assets/image/twitter.png" alt="png" height="60" width="60">
+                    <img  usemap="#youtubeMap" src="assets/image/youtube%203.png" alt="png" height="60" width="60">
+                    <img  usemap="#insterMap" src="assets/image/inster.png" alt="png" height="60" width="60">
+    
+                    <map name="fbMap">
+                        <area shape="rect" coords="0,0,100,100" href="https://www.facebook.com/profile.php?id=100079070987907&mibextid=ZbWKwL" alt="GO TO FACEBOOK">
+                    </map>
+    
+                    <map name="githubMap">
+                        <area shape="rect" coords="0,0,100,100" href="https://github.com/ParamiJayathilaka" alt="GO TO GITHUB">
+                    </map>
+    
+                    <map name="twitterMap">
+                        <area shape="rect" coords="0,0,100,100" href="https://twitter.com" alt="GO TO GITHUB">
+                    </map>
+    
+                    <map name="youtubeMap">
+                        <area shape="rect" coords="0,0,100,100" href="https://youtube.com" alt="GO TO GITHUB">
+                    </map>
+    
+                    <map name="insterMap">
+                        <area shape="rect" coords="0,0,100,100" href="https://instergam.com" alt="GO TO GITHUB">
+                    </map>
+    
+                </nav>
+            </section>
+        </section>
+
+    </section>
+        
+  
+<!-- section 2 -->
+
+    <section id="two">
+        <section id="section2">
+            <h1>
+                <dfn id="About me"><strong>About me</strong></dfn>
+            </h1>
+            <aside>
+                <img src="assets/image/about%20pic.png" alt="png" height="450" width="330">
+            </aside>
             <article>
                 <pre>
-                Welcome to my personal website.
-        Active and enthusiastic to explore the
-        fascinating digital world which is
-        updated every day.
-        Join me on the journey .
-            </pre>
+                    I’m Parami Jayathilaka ,
+                    I am curruntly studying  a software engineer diploma at IJSE and
+                    I am also studying in other subjects.
+                    I’ve spend most of my working hourse for the last years for Oparating web sites, 
+                    programming and designing.
+                    I have improve the knowledge and skills neccessary to make your project success.
+    
+                    I enjoy every step of the design process, from disscussion and collaboration.
+                </pre>
             </article>
+            <section id="section2about">
+                <div><h1>Name </h1></div>
+                <div><h1>Age </h1></div>
+                <div><h1>Address </h1></div>
+                <div><h1>Education </h1></div>
+                <div><h1>Contact </h1></div>
+                <div><h1>E-mail </h1></div>
+                <div><h1>Linekd In </h1></div>
+            </section>
+            <address>
+                <h1>:   I.G.T.Parami Jayathilaka</h1>
+                <h1>21</h1>
+                <h1>Gallery,Sri Lanka</h1>
+                <h1>Undergraduated</h1>
+                <h1>0778606375</h1>
+                <h1>thinithiparami53@gmail.com</h1>
+                <h1>ParamiJayathilaka</h1>
+            </address>
         </section>
-        <aside>
-            <img src="assets/image/home%20profile.png" alt="png" height="375" width="375">
-        </aside>
 
-        <section id="icon">
-            <h4>I can do whatever You want today</h4>
-            <nav>
-                <img  usemap="#fbMap" src="assets/image/fb.png" alt="png" height="60" width="60">
-                <img  usemap="#githubMap" src="assets/image/github.png" alt="png" height="60" width="60">
-                <img  usemap="#twitterMap" src="assets/image/twitter.png" alt="png" height="60" width="60">
-                <img  usemap="#youtubeMap" src="assets/image/youtube%203.png" alt="png" height="60" width="60">
-                <img  usemap="#insterMap" src="assets/image/inster.png" alt="png" height="60" width="60">
-
-                <map name="fbMap">
-                    <area shape="rect" coords="0,0,100,100" href="https://www.facebook.com/profile.php?id=100079070987907&mibextid=ZbWKwL" alt="GO TO FACEBOOK">
-                </map>
-
-                <map name="githubMap">
-                    <area shape="rect" coords="0,0,100,100" href="https://github.com/ParamiJayathilaka" alt="GO TO GITHUB">
-                </map>
-
-                <map name="twitterMap">
-                    <area shape="rect" coords="0,0,100,100" href="https://twitter.com" alt="GO TO GITHUB">
-                </map>
-
-                <map name="youtubeMap">
-                    <area shape="rect" coords="0,0,100,100" href="https://youtube.com" alt="GO TO GITHUB">
-                </map>
-
-                <map name="insterMap">
-                    <area shape="rect" coords="0,0,100,100" href="https://instergam.com" alt="GO TO GITHUB">
-                </map>
-
-            </nav>
-        </section>
     </section>
+    
+<!-- section 3 -->
 
-    <section id="section2">
-        <h1>
-            <dfn id="About me"><strong>About me</strong></dfn>
-            </h1>
-        <aside>
-            <img src="assets/image/about%20pic.png" alt="png" height="450" width="330">
-        </aside>
-        <article>
-            <pre>
-                I’m Parami Jayathilaka ,
-                I am curruntly studying  a software engineer diploma at IJSE and
-                I am also studying in other subjects.
-                I’ve spend most of my working hourse for the last years for Oparating web sites, 
-                programming and designing.
-                I have improve the knowledge and skills neccessary to make your project success.
-
-                I enjoy every step of the design process, from disscussion and collaboration.
-            </pre>
-        </article>
-        <section id="section2about">
-            <div><h1>Name </h1></div>
-            <div><h1>Age </h1></div>
-            <div><h1>Address </h1></div>
-            <div><h1>Education </h1></div>
-            <div><h1>Contact </h1></div>
-            <div><h1>E-mail </h1></div>
-            <div><h1>Linekd In </h1></div>
-        </section>
-        <address>
-            <h1>:   I.G.T.Parami Jayathilaka</h1>
-            <h1>21</h1>
-            <h1>Gallery,Sri Lanka</h1>
-            <h1>Undergraduated</h1>
-            <h1>0778606375</h1>
-            <h1>thinithiparami53@gmail.com</h1>
-            <h1>ParamiJayathilaka</h1>
-        </address>
-    </section>
-
+<section id="three">
     <section id="section3">
         <h1><dfn id="Skills"><strong>Skills</strong></dfn></h1>
             <div id="uiux"><img src="assets/image/ui%20ux.png" alt="png" height="100" width="100">
@@ -959,7 +1013,10 @@
 
         </div>
     </section>
-
+</section>
+    
+<!-- section 4 -->
+<section id="four">
     <section id="section4">
         <h1><dfn id="Education"><strong>Education</strong></dfn></h1>
         <h3>01. Project</h3>
@@ -998,120 +1055,141 @@
             <h2>View More</h2>
         </div>
     </section>
+</section>
+    
 
-    <section id="section5">
-        <h3><strong>Assigment</strong></h3>
-        <div id="div1">
-            <div id="div2">
-                <div id="div3"></div>
+    <!-- section 5 -->
+    <section id="five">
+        <section id="section5">
+            <h3><strong>Assigment</strong></h3>
+            <div id="div1">
+                <div id="div2">
+                    <div id="div3"></div>
+                </div>
             </div>
-        </div>
+        </section>
     </section>
-
-    <section id="section6">
-        <h3><strong>02. Certificate</strong></h3>
-        <div id="certificate1">
-            <img src="assets/image/cetificate%201.png" alt="png" height="300" width="300">
-        </div>
-
-        <div id="certificate2"> 
-            <img src="assets/image/cetificate%202.png" alt="png" height="300" width="300">
-        </div>
-
-        <div id="viewmore2">
-            <h2>View More</h2>
-        </div>
+   
+    <!-- section 6 -->
+    <section id="six">
+        <section id="section6">
+            <h3><strong>02. Certificate</strong></h3>
+            <div id="certificate1">
+                <img src="assets/image/cetificate%201.png" alt="png" height="300" width="300">
+            </div>
+    
+            <div id="certificate2"> 
+                <img src="assets/image/cetificate%202.png" alt="png" height="300" width="300">
+            </div>
+    
+            <div id="viewmore2">
+                <h2>View More</h2>
+            </div>
+        </section>
     </section>
+    
 
-    <section id="section7">
-        <h3><strong>03. Achievements</strong></h3>
-
-        <div id="achive1">
-            <img src="assets/image/exam.png" alt="png">
-            <pre>
-                In 2010 faced the Scholarship Examination & get a 
-                good pass & passed the exam.</pre>
-        </div>
-
-        <div id="achive2">
-            <img src="assets/image/exam.png" alt="png">
-            <pre>
-                In 2017 faced the 0/L Examination & get a 
-                good pass & passed the exam.</pre>
-        </div>
-
-        <div id="achive3">
-            <img src="assets/image/exam.png" alt="png">
-            <pre>
-                In 2020 faced the A/L Examination & get a 
-                good pass & passed the exam.</pre>
-        </div>
-
-        <div id="achive4">
-            <img src="assets/image/graduate.png" alt="png">
-            <pre>
-                In 2021 I had done English & ICT diploma in AIBT 
-                Campas and finally, I get the best results for that exams</pre>
-        </div>
-
-        <div id="achive5">
-            <img src="assets/image/graduate.png" alt="png">
-            <pre>
-                In 2022 I joined the IJSE Campas & currently 
-                studying for a software engineer diploma & other subjects.  </pre>
-        </div>
-        
-        <div id="achiveArrows">
-            <img id="img1" src="assets/image/arrow.png" alt="png">
-            <img id="img2" src="assets/image/arrow.png" alt="png">
-            <img id="img3" src="assets/image/arrow.png" alt="png">
-            <img id="img4" src="assets/image/arrow.png" alt="png">
-        </div>
+    <!-- section 7 -->
+    <section id="seven">
+        <section id="section7">
+            <h3><strong>03. Achievements</strong></h3>
+    
+            <div id="achive1">
+                <img src="assets/image/exam.png" alt="png">
+                <pre>
+                    In 2010 faced the Scholarship Examination & get a 
+                    good pass & passed the exam.</pre>
+            </div>
+    
+            <div id="achive2">
+                <img src="assets/image/exam.png" alt="png">
+                <pre>
+                    In 2017 faced the 0/L Examination & get a 
+                    good pass & passed the exam.</pre>
+            </div>
+    
+            <div id="achive3">
+                <img src="assets/image/exam.png" alt="png">
+                <pre>
+                    In 2020 faced the A/L Examination & get a 
+                    good pass & passed the exam.</pre>
+            </div>
+    
+            <div id="achive4">
+                <img src="assets/image/graduate.png" alt="png">
+                <pre>
+                    In 2021 I had done English & ICT diploma in AIBT 
+                    Campas and finally, I get the best results for that exams</pre>
+            </div>
+    
+            <div id="achive5">
+                <img src="assets/image/graduate.png" alt="png">
+                <pre>
+                    In 2022 I joined the IJSE Campas & currently 
+                    studying for a software engineer diploma & other subjects.  </pre>
+            </div>
+            
+            <div id="achiveArrows">
+                <img id="img1" src="assets/image/arrow.png" alt="png">
+                <img id="img2" src="assets/image/arrow.png" alt="png">
+                <img id="img3" src="assets/image/arrow.png" alt="png">
+                <img id="img4" src="assets/image/arrow.png" alt="png">
+            </div>
+        </section>
     </section>
+    
 
-    <section id="section8">
-        <h1><dfn id="Activities"><strong>Activities</strong></dfn></h1>
-        <div id="innovesta">
-            <h2>Innovesta 23</h2>
-            <img src="assets/image/inno%201.png" alt="png" height="130" width="200">
-            <img src="assets/image/inno%202.png" alt="png" height="200" width="200">
-            <img src="assets/image/inno%203.png" alt="png" height="100" width="100">
-            <video src="assets/vedio/VID-20230216-WA0093.mp4" controls height="200" width="200">
-                <track default
-                       kind="captions"
-                       srclang="en">
-            </video>
-        </div>
-        <div id="wasantha">
-            <h2>IJSE Wasantha Arunalu</h2>
-            <img src="assets/image/wasantha%201.png" alt="png">
-            <img src="assets/image/wasantha%202.png" alt="png">
-            <img src="assets/image/wasantha%203.png" alt="png">
-        </div>
+    <!-- section 8 -->
+    <section id="eight">
+        <section id="section8">
+            <h1><dfn id="Activities"><strong>Activities</strong></dfn></h1>
+            <div id="innovesta">
+                <h2>Innovesta 23</h2>
+                <img src="assets/image/inno%201.png" alt="png" height="130" width="200">
+                <img src="assets/image/inno%202.png" alt="png" height="200" width="200">
+                <img src="assets/image/inno%203.png" alt="png" height="100" width="100">
+                <video src="assets/vedio/VID-20230216-WA0093.mp4" controls height="200" width="200">
+                    <track default
+                           kind="captions"
+                           srclang="en">
+                </video>
+            </div>
+            <div id="wasantha">
+                <h2>IJSE Wasantha Arunalu</h2>
+                <img src="assets/image/wasantha%201.png" alt="png">
+                <img src="assets/image/wasantha%202.png" alt="png">
+                <img src="assets/image/wasantha%203.png" alt="png">
+            </div>
+        </section>
     </section>
+    
 
-    <section id="section9">
+    <!-- section 9 -->
+    <section id="nine">
+        <section id="section9">
 
-        <h1><dfn id="Gallery"><strong>Gallery</strong></dfn></h1>
-
-        <div id="ijsecampas">
-            <h2>IJSE Campas</h2>
-            <img src="assets/image/gallery%201.png" alt="png" height="200" width="300">
-            <img src="assets/image/gallery%202.png" alt="png" height="150" width="100">
-            <img src="assets/image/gallery%203.png" alt="png" height="100" width="100">
-            <img src="assets/image/gallery%204.png" alt="png" height="100" width="100">
-            <img src="assets/image/gallery%205.png" alt="png" height="100" width="100">
-        </div>
-
-        <div id="personal">
-            <h2>Personal</h2>
-            <img src="assets/image/gallery%206.png" alt="png" height="100" width="100">
-            <img src="assets/image/gallery%207.png" alt="png" height="100" width="100">
-            <img src="assets/image/gallery%208.png" alt="png" height="100" width="100">
-            <img src="assets/image/gallery%209.png" alt="png" height="100" width="100">
-            <img src="assets/image/gallery%2010.png" alt="png" height="100" width="100">
-        </div>
+            <h1><dfn id="Gallery"><strong>Gallery</strong></dfn></h1>
+    
+            <div id="ijsecampas">
+                <h2>IJSE Campas</h2>
+                <img src="assets/image/gallery%201.png" alt="png" height="200" width="300">
+                <img src="assets/image/gallery%202.png" alt="png" height="150" width="100">
+                <img src="assets/image/gallery%203.png" alt="png" height="100" width="100">
+                <img src="assets/image/gallery%204.png" alt="png" height="100" width="100">
+                <img src="assets/image/gallery%205.png" alt="png" height="100" width="100">
+            </div>
+    
+            <div id="personal">
+                <h2>Personal</h2>
+                <img src="assets/image/gallery%206.png" alt="png" height="100" width="100">
+                <img src="assets/image/gallery%207.png" alt="png" height="100" width="100">
+                <img src="assets/image/gallery%208.png" alt="png" height="100" width="100">
+                <img src="assets/image/gallery%209.png" alt="png" height="100" width="100">
+                <img src="assets/image/gallery%2010.png" alt="png" height="100" width="100">
+            </div>
+        </section>
     </section>
+    
 
 </main>
 
