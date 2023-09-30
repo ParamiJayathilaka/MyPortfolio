@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Animation Case 2</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body{
+            background-color: #77021b;
+        }
+        body>div:first-child{
+            position: absolute;
+            margin: auto;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            width: 200px;
+            height: 200px;
+            background-color: #fff5f5;
+            border-radius: 100px;
+            animation-name: anima;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            /* animation-direction: alternate; */
+            animation-iteration-count: infinite;
+        }
+        body>div:nth-child(2){
+            position: absolute;
+            margin: auto;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            width: 200px;
+            height: 200px;
+            background-color: #77021b;
+            border-radius: 100px;
+        }
+        @keyframes anima{
+            0%{
+                transform: translate(0,0);
+                box-shadow: 0 0 10px #fff5f5, 0 0 20px #fff5f5, 0 0 100px #fff5f5;
+            }
+            25%{
+                transform: translate(-20px,20px);
+                box-shadow: 0 0 0px #fff5f5, 0 0 0px #fff5f5, 0 0 0px #fff5f5;
+            }
+            50%{
+                transform: translate(0,0);
+                box-shadow: 0 0 10px #fff5f5, 0 0 20px #fff5f5, 0 0 100px #fff5f5;
+            }
+            75%{
+                transform: translate(20px,-20px);
+                box-shadow: 0 0 0px #fff5f5, 0 0 0px #fff5f5, 0 0 0px #fff5f5;
+            }
+            100%{
+                transform: translate(0,0);
+                box-shadow: 0 0 10px #fff5f5, 0 0 20px #fff5f5, 0 0 100px #fff5f5;
+            }
+        }
 
+    </style>
+</head>
+
+<body>
+<div></div>
+<div></div>
 </body>
+
 </html>
