@@ -1,10 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Item Manage</title>
+    <link rel="stylesheet" href="assests/boostrap/css/bootstrap.css">
+
 </head>
-<body>
+
+<body style=" background-color: #381d05">
+<script src="assests/boostrap/js/bootstrap.bundle.js"></script>
+
+<div class="container-fluid  " >
+    <div class="row">
+
+        <div class="col ">
+            <nav class="navbar navbar-expand-lg  " style=" background-color:black">
+                <div class="container-fluid ">
+                    <a class="navbar-brand text-white fw-bold" href="index.html">POS System</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link  text-white" aria-current="page" href="Customer.html">Customer Manage</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" href="Item.html">Item Manage</a>
+                            </li>
+
+                            <li class="nav-item   " >
+                                <a class="nav-link text-white " href="placeOrder.html">Order Manage</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="Order.html">Order Details</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-success  " href="#">Sign Up</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link text-success  " href="#">Login</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 bg-dark text-white" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn  text-white " type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+
+<!--contact bar-->
+<div class="container-fluid  mt-5 ">
+    <div class="row">
+        <div class="col">
+
+            <div class="container d-flex align-items-center justify-content-center ">
+                <div class="row">
+                    <div class="col-12  col bg-dark">
+
+                        <form class="w-100 ">
+                            <div class="form-group mt-4 ">
+                                <input type="text" class="form-control" id="id" aria-describedby="emailHelp" placeholder="Item Id">
+                            </div>
+
+                            <div class="form-group mt-4 ">
+                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Item Name">
+                            </div>
+
+                            <div class="form-group mt-4">
+                                <input type="text" class="form-control" id="address" placeholder="Item type">
+                            </div>
+
+                            <div class="form-group mt-4">
+                                <input type="number" class="form-control" id="contact" placeholder="Item Unit Price">
+                            </div>
+
+                            <div class="form-group mt-4">
+                                <input type="number" class="form-control" id="email" placeholder="ItemQuantity">
+                            </div>
+
+                            <button type="submit" class="btn btn-success  mt-5 me-1 mt-sm-5 me-sm-4  ">save</button>
+                            <button type="submit" class="btn btn-danger   mt-5 me-1 mt-sm-5 me-sm-4 ">update</button>
+                            <button type="submit" class="btn btn-primary  mt-5 me-1 mt-sm-5 me-sm-4 ">Delete</button>
+                            <a href="index.html" class="btn btn-warning mt-5 me-1 mt-sm-5 me-sm-4 ">Back</a>
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--table-->
+
+<div class="table-responsive mt-5 " style="height: 430px">
+    <table class="table table-bordered table-hover table-striped ">
+        <thead>
+        <tr>
+            <th class="bg-dark text-white">Item Id</th>
+            <th class="bg-dark text-white">Item Name</th>
+            <th class="bg-dark text-white">Item Type </th>
+            <th class="bg-dark text-white">Item Unite Price</th>
+            <th class="bg-dark text-white">Item QTY </th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>ORD:001</td>
+            <td>I001</td>
+            <td>Table</td>
+            <td>25</td>
+            <td>Rs.10,000</td>
+
+
+        </tr>
+        <tr>
+            <td>ORD:002</td>
+            <td>I002</td>
+            <td>Sofa</td>
+            <td>35</td>
+            <td>Rs.100,000</td>
+
+
+        </tr>
+        <tr>
+            <td>ORD:003</td>
+            <td>I003</td>
+            <td>Chair</td>
+            <td>10</td>
+            <td>Rs.5,000</td>
+
+
+        </tr>
+        <tr>
+            <td>ORD:004</td>
+            <td>I004</td>
+            <td>Table</td>
+            <td>25</td>
+            <td>Rs.10,000</td>
+
+
+        </tr>
+        <tr>
+            <td>ORD:005</td>
+            <td>I005</td>
+            <td>Sofa</td>
+            <td>35</td>
+            <td>Rs.100,000</td>
+
+
+        </tr>
+        <tr>
+            <td>ORD:006</td>
+            <td>I006</td>
+            <td>Chair</td>
+            <td>10</td>
+            <td>Rs.5,000</td>
+
+
+        </tr>
+
+        <tr>
+            <td>ORD:007</td>
+            <td>I007</td>
+            <td>Table</td>
+            <td>25</td>
+            <td>Rs.10,000</td>
+
+
+        </tr>
+        <tr>
+            <td>ORD:008</td>
+            <td>I008</td>
+            <td>Sofa</td>
+            <td>35</td>
+            <td>Rs.100,000</td>
+
+
+        </tr>
+        <tr>
+            <td>ORD:009</td>
+            <td>I009</td>
+            <td>Chair</td>
+            <td>10</td>
+            <td>Rs.5,000</td>
+
+
+        </tr>
+
+
+        </tbody>
+
+
+    </table>
+</div>
+
+
 
 </body>
+
 </html>
