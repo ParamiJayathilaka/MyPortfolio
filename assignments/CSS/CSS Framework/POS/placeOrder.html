@@ -1,10 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Place Order Manage</title>
+    <link rel="stylesheet" href="assests/boostrap/css/bootstrap.css">
+    <script src="assests/boostrap/js/bootstrap.bundle.js"></script>
+
+
 </head>
-<body>
+
+<body style=" background-color: #381d05">
+<div class="container-fluid  ">
+    <div class="row">
+
+        <div class="col ">
+            <nav class="navbar navbar-expand-lg  " style=" background-color: black ">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white fw-bold " href="../WorkZone/MyPortfolio/assignments/CSS/CSS%20Framework/POS/index.html">POS System</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item ">
+                                <a class="nav-link active text-white" aria-current="page" href="../WorkZone/MyPortfolio/assignments/CSS/CSS%20Framework/POS/Customer.html">Customer Manage</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="../WorkZone/MyPortfolio/assignments/CSS/CSS%20Framework/POS/Item.html">Item Manage</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="../WorkZone/MyPortfolio/assignments/CSS/CSS%20Framework/POS/Order.html">Order Details</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link text-white " href="placeOrder.html">Order Manage</a>
+                            </li>
+
+
+                            <li class="nav-item ">
+                                <a class="nav-link text-success  " href="#">Login</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-success  " href="#">Sign Up</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 bg-dark text-white" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn  text-white " type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+
+<main>
+    <div class="container  ">
+        <div class="row ">
+            <div class="align-content-lg-start col-sm-8 col-md-6 col-lg-2 col-xl-4  shadow-lg bg-dark  my-2 my-sm-3 my-md-3 my-lg-4 pb-5  "
+                 style="height: fit-content">
+
+                <div class="container-fluid  text-center    ">
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <h1 class="h1 bg-black mt-2 text-white rounded-4 fw-semibold fs-2 text-center ">Customer Details</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-5 ">
+                    <form class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <label for="orderId" class="form-label text-white">Order Id :</label>
+                            <input type="email" class="form-control" id="orderId">
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <label for="inputState" class="form-label text-white">Customer Id :</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>C001</option>
+                                <option selected>C002</option>
+                                <option selected>C003</option>
+                            </select>
+                        </div>
+
+
+
+                    </form>
+                </div>
+
+                <div class="container-fluid mt-4  ">
+                    <form class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <label for="inputPassword4" class="form-label text-white">Customer Name :</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="date" class="form-label text-white">Date :</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="container-fluid mt-4 ">
+                    <form class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <label for="contact" class="form-label text-white">Customer Contact :</label>
+                            <input type="text" class="form-control" id="contact">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="email" class="form-label text-white">Customer Email :</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-sm-8 col-md-6 col-lg-2 col-xl-4  shadow-lg bg-dark  my-2 my-sm-3 my-md-3 my-lg-4 pb-5  "
+                 style="height: fit-content">
+
+                <div class="container-fluid  text-center ">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="h1 mt-2  bg-black  text-white rounded-4 fw-semibold fs-2 text-center ">Item Details</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-5 ">
+                    <form class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <label for="inputState" class="form-label text-white">Item Id :</label>
+                            <select id="inputState" class="form-select" >
+                                <option selected>I001</option>
+                                <option selected>I002</option>
+                                <option selected>I003</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6" >
+                            <label for="qty" class="form-label text-white">Item quantity :</label>
+                            <input type="number" class="form-control" id="qty">
+                        </div>
+
+
+                    </form>
+                </div>
+
+                <div class="container-fluid mt-4  ">
+                    <form class="row g-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="name" class="form-label text-white">Item Name :</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+
+
+                    </form>
+                </div>
+
+                <div class="container-fluid mt-4 ">
+                    <form class="row g-3">
+
+                        <div  class="col-12 col-sm-12 ">
+                            <label for="price" class="form-label text-white">Item Unit Price :</label>
+                            <input type="number" class="form-control" id="price">
+                        </div>
+
+
+
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-sm-8 col-md-6 col-lg-2 col-xl-4  shadow-lg bg-dark  my-2 my-sm-3 my-md-3 my-lg-4 pb-5  "
+                 style="height: fit-content">
+
+                <div class="container-fluid   ">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="col-12 col-sm-6">
+                                <label for="payment" class="form-label text-white">Payment :</label>
+                                <input type="number" class="form-control" id="payment">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="discount" class="form-label text-white">Discount :</label>
+                                <input type="number" class="form-control" id="discount">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-4  ">
+                    <form class="row g-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="balance" class="form-label text-white">Balance :</label>
+                            <input type="number" class="form-control" id="balance">
+                        </div>
+
+
+                    </form>
+                </div>
+
+                <div class="container-fluid mt-4  ">
+                    <form class="row g-3">
+
+                        <div class="col-12 col-sm-12 ">
+                            <h1 class="text-white mt-1 ">Total Price: <span class="text-black ">500.00</span> </h1>
+
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <br>
+
+                <div class="container-fluid mt-4  ">
+                    <form class="row g-3">
+                        <div class="col-12 col-sm-12">
+                            <a href="" class="btn btn-outline-light "> Place Order</a>
+                            <a href="" class="btn btn-outline-light "> Add to cart</a>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="table-responsive mt-5 " style="height: 400px">
+        <table class="table table-bordered table-hover table-striped ">
+            <thead>
+            <tr>
+                <th class="bg-black text-white">Item Id</th>
+                <th class="bg-black text-white">Item Name</th>
+                <th class="bg-black text-white">Item Unite Price</th>
+                <th class="bg-black text-white">Item QTY </th>
+                <th class="bg-black text-white">Total </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+
+                <td>I001</td>
+                <td>Table</td>
+                <td>Rs.10,000</td>
+                <td>25</td>
+                <td>RS.250,000</td>
+            </tr>
+            <tr>
+
+                <td>I002</td>
+                <td>Sofa</td>
+                <td>Rs.100,000</td>
+                <td>35</td>
+                <td>Rs.3,500,000</td>
+
+
+            </tr>
+            <tr>
+                <td>I003</td>
+                <td>Chair</td>
+                <td>Rs.5,000</td>
+                <td>10</td>
+                <td>Rs.50,000</td>
+
+
+            </tr>
+            <tr>
+
+                <td>I004</td>
+                <td>Table</td>
+                <td>Rs.10,000</td>
+                <td>25</td>
+                <td>RS.250,000</td>
+
+
+            </tr>
+            <tr>
+
+                <td>I005</td>
+                <td>Sofa</td>
+                <td>Rs.100,000</td>
+                <td>35</td>
+                <td>Rs.3,500,000</td>
+
+
+            </tr>
+            <tr>
+
+                <td>I006</td>
+                <td>Chair</td>
+                <td>Rs.5,000</td>
+                <td>10</td>
+                <td>Rs.50,000</td>
+
+
+            </tr>
+
+            <tr>
+
+                <td>I007</td>
+                <td>Table</td>
+                <td>Rs.10,000</td>
+                <td>25</td>
+                <td>RS.250,000</td>
+
+
+            </tr>
+            <tr>
+
+                <td>I008</td>
+                <td>Sofa</td>
+                <td>Rs.100,000</td>
+                <td>35</td>
+                <td>Rs.3,500,000</td>
+
+
+            </tr>
+            <tr>
+
+                <td>I009</td>
+                <td>Chair</td>
+                <td>Rs.5,000</td>
+                <td>10</td>
+                <td>Rs.50,000</td>
+
+
+            </tr>
+
+
+            </tbody>
+
+
+        </table>
+    </div>
+
+
+
+</main>
+
+
+
 
 </body>
+
 </html>
