@@ -29,6 +29,10 @@
         main{
             background-color: black;
             overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin-top: 4%;
         }
 
         footer{
@@ -40,7 +44,7 @@
             overflow: hidden;
         }
        body>header{
-        background-color: #272626e5;
+            background-color: #272626e5;
             position: fixed;
             width: 100%;
             height: 8vh;
@@ -50,7 +54,7 @@
             z-index: 10;
             border-top: 1px solid rgb(14, 165, 224);
             border-bottom: 1px solid rgb(18, 156, 211);
-            color:#E08A0A;
+            color:#000000;
        }
 
        body>header>div{
@@ -65,13 +69,16 @@
        /* section1 */
 
        #one{
-           background: linear-gradient(126deg, #061213 56.65%, #183232 72.79%, #091818 103.57%);
+   
+
+        background-color: #040C13;
+
+
        }
 
        #section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9{
         height: 100vh;
-        right: 0;
-        left: 0;
+       
         position: relative;
        }
 
@@ -79,11 +86,11 @@
        body>header>div>h4{
       
         position: absolute;
-        top: -800%;
-        left: 110%;
+        top: 0%;
+        left: 88%;
         font-size: 20px;
         font-family: 'Give You Glory', cursive;
-        color: rgba(246, 133, 0, 1);
+        color: #00F6F6;
         
        }
 
@@ -97,72 +104,100 @@
 
        #section1>aside>img{
         position: absolute;
-    top: 10%;
-    right: 3%;
+        top: 10%;
+        right: 20%;
+
+       }
+
+       #section1>aside>h4{
+        font-size: 30px;
+        font-family: 'Abhaya Libre', serif;
+        color: white;
+        position:absolute;
+        top:70%;
+        right: 18%;
        }
       
-
-       
-
        #icon{
         width: 50%;
         height: 60%;
-        position:absolute;
-        bottom: -25%;
-        right: -15%;
-        
+       
        }
 
-       #icon>h4{
-        font-size: 20px;
-        font-family: 'Abhaya Libre', serif;
-        color: #AC8A33;
-       }
-
+    
        #icon>nav>img{
         padding-left: 10px;
+       }
 
+       #icon>nav>img:first-child{
+        position:absolute;
+        top: 30%;
+        right: 5%;
+       }
+
+       #icon>nav>img:nth-child(2){
+        position:absolute;
+        top: 40%;
+        right: 5%;
+       }
+
+       #icon>nav>img:nth-child(3){
+        position:absolute;
+        top: 50%;
+        right: 5%;
+       }
+
+       #icon>nav>img:nth-child(4){
+        position:absolute;
+        top: 60%;
+        right: 5%;
+       }
+
+       #icon>nav>img:nth-child(5){
+        position:absolute;
+        top: 70%;
+        right: 5%;
        }
 
        #welcome>hgroup>h2{
         position: absolute;
-        top: 5%;
-        left: 1%;
-        font-size: 25px;
-        color: #A8895B;
+        top: 12%;
+        left: 3%;
+        font-size: 30px;
+        color: #11E2FF;
         font-family: 'Kaushan Script', cursive;
 
        }
 
        #welcome>hgroup>h1{
         position: absolute;
-        top: 20%;
+        top: 35%;
         left: 3%;
         font-size: 50px;
         font-family: 'Kumar One', cursive;
-        color: #FFBB55;
+        color: #FFFFFF;
 
        }
       
        #welcome>article>pre{
         position: absolute;
-        top: 35%;
-        left: 1%;
+        top: 50%;
+        left: 3%;
         font-size: 30px;
         font-family: 'Judson', serif;
-        color: #DF8A0B;
+        color: #DBE4E4;
 
        }
 
        /* section2 */
 
        #two{
-       color: #FBB955;
+        background-color: #07131C;
 
        }
 
        #section2{   
-       background: linear-gradient(134deg, rgba(135, 91, 24, 0.79) 31.73%, rgba(23, 17, 11, 0.49) 71.89%);
+      background-color: #07131C;
        }
 
        #section2>h1{
@@ -170,24 +205,30 @@
         top: 2%;
         left: 1%;
         font-size: 30px;
-        color: #FFC684;
+        color: #ffffff;
+        font-family: 'Lemon', cursive;
        }
 
        #section2>article>pre{
-        color: #FFFFFF;
+        color: #04CFFC;
         position: absolute;
         top: 3%;
-        left: 20%;
+        left: 15%;
         font-size: 20px;
        }
 
        #section2>address{
         position: absolute;
         top: 40%;
-        left: 43%;
+        left: 58%;
         font-size: 10px;
-        color: #FBB955;
-        padding-bottom: 20px;
+        color: white;
+        padding-bottom: 30px;
+        
+       }
+
+       #section2>address>h1{
+        padding-top: 5px;
        }
 
 
@@ -196,7 +237,7 @@
         height: 60%;
         position: absolute;
         top: 40%;
-        left: 30%;
+        left: 45%;
         font-size: 10px;
         color: black;
        }
@@ -204,7 +245,7 @@
        #section2about>div{
         width: 100%;
         height: 8%;
-        background-color: #7C5E24;
+        background-color: #00748D;
         border-radius: 10px;
         text-align: center;
        }
@@ -217,12 +258,13 @@
 
        /* section3 */
 
-       #three{
-   
+       #section3{
+        background-color: #1B222C;
        }
 
-       #section3{
-        background: linear-gradient(180deg, #76460C 2.54%, #896D4D 12.73%, #4C2705 68.58%, #46311E 97.66%);
+       #section3>h1>dfn>strong{
+        color: #ffffff;
+        font-family: 'Lemon', cursive;
        }
 
        #uiux{
@@ -232,19 +274,19 @@
         top: 10%;
         left:5%;
         border-radius: 10px;
-        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
+        background-color: #000E1E;
        }
 
        #uiux>img{
         position: absolute;
-        left:30%;
+        left:25%;
        }
 
        #uiux>h1{
         position: absolute;
         text-align: center;
         font-size: 25px;
-        top: 20%;
+        top: 28%;
         left:30%;
         color: white;
        }
@@ -263,9 +305,9 @@
         height: 60%;
         position: absolute; 
         top: 10%;
-        left:35%;
+        left:38%;
         border-radius: 10px;
-        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
+        background-color: #000E1E;
        }
 
        #www>img{
@@ -277,7 +319,7 @@
         position: absolute;
         text-align: center;
         font-size: 25px;
-        top: 25%;
+        top: 28%;
         left:30%;
         color: white;
        }
@@ -298,7 +340,7 @@
         top: 10%;
         left:70%;
         border-radius: 10px;
-        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
+        background-color: #000E1E;
        }
 
        #bugfix>img{
@@ -310,7 +352,7 @@
         position: absolute;
         text-align: center;
         font-size: 25px;
-        top: 25%;
+        top: 28%;
         left:30%;
         color: white;
        }
@@ -328,6 +370,7 @@
         font-size: 15px;
         top: 70%;
         left:2%;
+           color: white;
        }
 
        #languagetools{
@@ -345,92 +388,178 @@
        /* section4 */
 
        #section4{
-        background: linear-gradient(180deg, #925C0B 5.62%, #695D45 13.05%, rgba(0, 0, 0, 0.90) 70.33%);
-
+        background-color: #040C13;
 
        }
 
+       #section4>h1>dfn>strong{
+        color: #ffffff;
+        font-family: 'Lemon', cursive;
+       }
+
        #calculator{
-        width: 35%;
-        height: 30%;
+        width: 28%;
+        height: 35%;
         position: absolute;
-        background-color: aliceblue; 
+        background-color: #051324; 
         top: 15%;
-        left:5%;
-        border-radius: 10px;
-        background: linear-gradient(90deg, rgba(245, 242, 235, 0.00) -2.44%, #A36D05 58.69%);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        border: 5px solid black;
+        left:3%;
+        border-radius: 30px;
+     
         
-        
+       }
+
+       #calculator>img{
+        position: relative;
+        top: 5%;
+        left: 30%;
        }
 
        #calculator>pre{
         position: absolute;
-        top: 15%;
-        left:4%;
+        top: 62%;
+        left:27%;
+        color: white;
+        font-family: 'Kaisei Opti', serif;
+        font-size: 25px ;
        }
 
        #connet4games{
-        width: 35%;
-        height: 30%;
+        width: 28%;
+        height: 35%;
         position: absolute;
-        
+        background-color: #051324; 
         top: 15%;
-        left:50%;
-        border-radius: 10px;
-        background: linear-gradient(90deg, rgba(245, 242, 235, 0.00) -2.44%, #A36D05 58.69%);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        left:36%;
+        border-radius: 30px;
+        
+       }
+
+       #connet4games>img{
+        position: relative;
+        top: 5%;
+        left: 30%;
        }
 
        #connet4games>pre{
         position: absolute;
-        top: 40%;
-        left:8%;
+        top: 62%;
+        left:10%;
+        color: white;
+        font-family: 'Kaisei Opti', serif;
+        font-size: 25px ;
        }
 
        #furniture{
-        width: 35%;
-        height: 30%;
+        width: 28%;
+        height: 35%;
         position: absolute;
+        background-color: #051324; 
+        top: 15%;
+        left:68%;
+        border-radius: 30px;
         
-        top: 50%;
-        left:5%;
-        border-radius: 10px;
-        background: linear-gradient(90deg, rgba(245, 242, 235, 0.00) -2.44%, #A36D05 58.69%);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       }
+
+       #furniture>img{
+        position: relative;
+        top: 5%;
+        left: 30%;
        }
 
        #furniture>pre{
         position: absolute;
-        top: 40%;
-        left:8%;
+        top: 62%;
+        left:5%;
+        color: white;
+        font-family: 'Kaisei Opti', serif;
+        font-size: 25px ;
        }
 
        #hostal{
-        width: 35%;
-        height: 30%;
+        width: 28%;
+        height: 35%;
         position: absolute;
-         
-        top: 50%;
-        left:50%;
-        border-radius: 10px;
-        background: linear-gradient(90deg, rgba(245, 242, 235, 0.00) -2.44%, #A36D05 58.69%);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        background-color: #051324; 
+        top: 55%;
+        left:3%;
+        border-radius: 30px;
+       
+       }
+
+       #hostal>img{
+        position: relative;
+        top: 5%;
+        left: 30%;
        }
 
        #hostal>pre{
         position: absolute;
-        top: 40%;
-        left:8%;
+        top: 62%;
+        left:10%;
+        color: white;
+        font-family: 'Kaisei Opti', serif;
+        font-size: 25px ;
        }
 
-       #viewmore1{
+       #student{
+        width: 28%;
+        height: 35%;
+        position: absolute;
+        background-color: #051324; 
+        top: 55%;
+        left:35%;
+        border-radius: 30px;
+       
+       }
+
+       #student>img{
+        position: relative;
+        top: 5%;
+        left: 30%;
+       }
+
+       #student>pre{
+        position: absolute;
+        top: 62%;
+        left:10%;
+        color: white;
+        font-family: 'Kaisei Opti', serif;
+        font-size: 25px ;
+       }
+
+       #chatApplication{
+        width: 28%;
+        height: 35%;
+        position: absolute;
+        background-color: #051324; 
+        top: 55%;
+        left:68%;
+        border-radius: 30px;
+        
+       }
+
+       #chatApplication>img{
+        position: relative;
+        top: 5%;
+        left: 30%;
+       }
+
+       #chatApplication>pre{
+        position: absolute;
+        top: 62%;
+        left:10%;
+        color: white;
+        font-family: 'Kaisei Opti', serif;
+        font-size: 25px ;
+       }
+
+       /* #viewmore1{
         width: 20%;
         height: 5%;
         position: absolute;
         
-        top: 85%;
+        top: 90%;
         left:70%;
         border-radius: 10px;
         background: linear-gradient(180deg, #926014 99.99%, rgba(56, 34, 1, 0.00) 100%);
@@ -441,43 +570,65 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         position: absolute;
         top: -40%;
         left:10%;
-       }
+       } */
 
        /* section5 */
 
        #section5{
-        background: linear-gradient(117deg, #72490B 1.66%, #FF9C06 30.96%, #0C0A08 38.66%, #825104 47.6%, #8E7951 51.06%, #000 98.23%);
+        background-color: #07131C;
+       }
 
-
+       #section5>h3>strong{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        left: 3%;
+        top: 3%;
        }
        
        #div1{
         width: 30%;
         height: 50%;
         position: absolute;
-        background: #3E2D13;
-        top: 10%;
+        background: #233034;
+        top: 15%;
         left:2%;
-        border-radius: 10px;
+        border-radius: 50px;
+       }
+
+       #div1>h1{
+        color: #11E2FF;
+        position: absolute;
+        left: 20%;
+        
        }
 
        #div1>img{
         position: absolute;
-        left:30%;
+        left:25%;
+        top: 30%;
        }
 
        #div2{
         width: 30%;
         height: 50%;
         position: absolute;
-        background: #3E2D13;
-        top: 10%;
+        background: #233034;
+        top: 15%;
         left:35%;
-        border-radius: 10px;
+        border-radius: 50px;
        }
+       #div2>h1{
+        color: #11E2FF;
+        position: absolute;
+        left: 15%;
+        
+       }
+
        #div2>img{
         position: absolute;
-        left:30%;
+        left:25%;
+        top: 30%;
        }
        
 
@@ -485,22 +636,29 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         width: 30%;
         height: 50%;
         position: absolute;
-        background: #3E2D13;
-        top: 10%;
+        background: #233034;
+        top: 15%;
         left:67%;
-        border-radius: 10px;
+        border-radius: 50px;
+       }
+       #div3>h1{
+        color: #11E2FF;
+        position: absolute;
+        left: 15%;
+        
        }
 
        #div3>img{
         position: absolute;
-        left:30%;
+        left:25%;
+        top: 30%;
        }
        
        #viewmore3{
-        width: 20%;
-        height: 5%;
+        width: 15%;
+        height: 8%;
         position: absolute;
-        background-color: rgb(230, 215, 12); 
+        background-color: #6BB1F1;
         top: 75%;
         left:70%;
         border-radius: 10px;
@@ -508,14 +666,14 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
        #viewmore3>a>h2{
         position: absolute;
-        top: -38%;
+        top: -10%;
         left:20%;
         color: black;
        }
 
        /* section6 */
 
-       #section6{
+       /* #section6{
         background: linear-gradient(180deg, rgba(91, 61, 16, 0.43) 2.2%, rgba(225, 138, 7, 0.73) 10.41%, #2E1E08 21.92%, rgba(125, 84, 22, 0.79) 44.36%, rgba(163, 106, 20, 0.60) 64.49%, rgba(38, 25, 5, 0.24) 90.02%, rgba(192, 116, 2, 0.16) 94.98%, rgba(7, 6, 4, 0.49) 137.81%);
 
 
@@ -567,20 +725,19 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         position: absolute;
         top: -40%;
         left:10%;
-       }
+       } */
 
        /* section7 */
 
        #section7{
-        background: linear-gradient(243deg, #0F0E0C 0.98%, rgba(65, 44, 3, 0.91) 50.72%, rgba(217, 143, 0, 0.72) 54.41%, rgba(153, 86, 6, 0.77) 57.92%, rgba(204, 135, 0, 0.46) 99%, rgba(167, 123, 37, 0.00) 100%, rgba(244, 149, 36, 0.00) 100%);
-
-       }
+        background-color: #1B222C;
+         }
 
        #achive1{
         width: 40%;
         height: 10%;
         position: absolute;
-        background-color: #D28E09; 
+        background-color: #0C111F; 
         top: 10%;
         left:10%;
         border-radius: 30px;
@@ -588,9 +745,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
        }
 
        #achive1>pre{
-        position: absolute;
-        top: -15%;
-        left:-20%;
+        position: relative;
+        top: -4%;
+        left:-10%;
+        font-family: 'Kalam', cursive;
+        color: white;
        }
 
        #achive1>img{
@@ -603,7 +762,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         width: 40%;
         height: 10%;
         position: absolute;
-        background-color:  #D28E09; 
+        background-color:  #0C111F; 
         top: 25%;
         left:20%;
         border-radius: 30px;
@@ -611,9 +770,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
        }
 
        #achive2>pre{
-        position: absolute;
-        top: -15%;
-        left:-20%;
+        position: relative;
+        top: -4%;
+        left:-10%;
+        font-family: 'Kalam', cursive;
+        color: white;
        }
 
        #achive2>img{
@@ -627,7 +788,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         width: 40%;
         height: 10%;
         position: absolute;
-        background-color:  #da950c; 
+        background-color:  #0C111F; 
         top: 40%;
         left:30%;
         border-radius: 30px;
@@ -635,9 +796,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
        }
 
        #achive3>pre{
-        position: absolute;
-        top: -15%;
-        left:-20%;
+        position: relative;
+        top: -4%;
+        left:-10%;
+        font-family: 'Kalam', cursive;
+        color: white;
        }
 
        #achive3>img{
@@ -651,7 +814,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         width: 40%;
         height: 10%;
         position: absolute;
-        background-color:  #D28E09; 
+        background-color:  #0C111F; 
         top: 55%;
         left:40%;
         border-radius: 30px;
@@ -659,9 +822,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
        }
 
        #achive4>pre{
-        position: absolute;
-        top: -15%;
-        left:-20%;
+        position: relative;
+        top: -4%;
+        left:-10%;
+        font-family: 'Kalam', cursive;
+        color: white;
        }
 
        #achive4>img{
@@ -675,7 +840,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         width: 40%;
         height: 10%;
         position: absolute;
-        background-color:  #D28E09; 
+        background-color:  #0C111F; 
         top: 70%;
         left:50%;
         border-radius: 30px;
@@ -683,9 +848,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
        }
 
        #achive5>pre{
-        position: absolute;
-        top: -15%;
-        left:-20%;
+        position: relative;
+        top: -4%;
+        left:-10%;
+        font-family: 'Kalam', cursive;
+        color: white;
        }
 
        #achive5>img{
@@ -906,7 +1073,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     </nav>
     <div>
         <aside>
-            <img src="assets/image/LOGO.jpg" alt="png" width="50" height="50">
+            <img src="assets/image/LOGO.png" alt="png" width="50" height="50">
         </aside>
         <h4>Jayathilaka</h4>
     </div>
@@ -937,16 +1104,17 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             </section>
             <aside>
                 <img src="assets/image/home%20profile%20(2).png" alt="png" height="375" width="375">
+                <h4>I can do whatever You want today</h4>
             </aside>
     
             <section id="icon">
-                <h4>I can do whatever You want today</h4>
+                
                 <nav>
-                    <img  usemap="#fbMap" src="assets/image/fb.png" alt="png" height="60" width="60">
-                    <img  usemap="#githubMap" src="assets/image/github.png" alt="png" height="60" width="60">
-                    <img  usemap="#twitterMap" src="assets/image/twitter.png" alt="png" height="60" width="60">
-                    <img  usemap="#youtubeMap" src="assets/image/youtube%203.png" alt="png" height="60" width="60">
-                    <img  usemap="#insterMap" src="assets/image/inster.png" alt="png" height="60" width="60">
+                    <img usemap="#fbMap" src="assets/image/faceBook.png" alt="png" height="50" width="50">
+                    <img usemap="#githubMap" src="assets/image/github1.png" alt="png" height="50" width="50">
+                    <img usemap="#twitterMap" src="assets/image/twitter1.png" alt="png" height="50" width="50">
+                    <img  usemap="#youtubeMap" src="assets/image/youtube.png" alt="png" height="50" width="50">
+                    <img  usemap="#insterMap" src="assets/image/linkedIn.png" alt="png" height="50" width="50">
     
                     <map name="fbMap">
                         <area shape="rect" coords="0,0,100,100" href="https://www.facebook.com/profile.php?id=100079070987907&mibextid=ZbWKwL" alt="GO TO FACEBOOK">
@@ -957,15 +1125,15 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
                     </map>
     
                     <map name="twitterMap">
-                        <area shape="rect" coords="0,0,100,100" href="https://twitter.com" alt="GO TO GITHUB">
+                        <area shape="rect" coords="0,0,100,100" href="https://twitter.com" alt="GO TO TWITTER">
                     </map>
     
                     <map name="youtubeMap">
-                        <area shape="rect" coords="0,0,100,100" href="https://youtube.com" alt="GO TO GITHUB">
+                        <area shape="rect" coords="0,0,100,100" href="https://youtube.com" alt="GO TO YOUTUBE">
                     </map>
     
                     <map name="insterMap">
-                        <area shape="rect" coords="0,0,100,100" href="https://instergam.com" alt="GO TO GITHUB">
+                        <area shape="rect" coords="0,0,100,100" href="https://www.linkedin.com/in/thinithi-parami-7b35b927b/?originalSubdomain=lk" alt="GO TO LINKEDIN">
                     </map>
     
                 </nav>
@@ -987,10 +1155,10 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             </aside>
             <article>
                 <pre>
-                    I’m Parami Jayathilaka ,
-                    I am curruntly studying  a software engineer diploma at IJSE and
-                    I am also studying in other subjects.
-                    I’ve spend most of my working hourse for the last years for Oparating web sites, 
+                    I am Parami Jayathilaka, I am curruntly studying  a software engineer diploma 
+                    at IJSE and I am also studying in other subjects.
+
+                    I am spend most of my working hourse for the last years for Oparating web sites, 
                     programming and designing.
                     I have improve the knowledge and skills neccessary to make your project success.
     
@@ -1024,7 +1192,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 <section id="three">
     <section id="section3">
         <h1><dfn id="Skills"><strong>Skills</strong></dfn></h1>
-            <div id="uiux"><img src="assets/image/ui%20ux.png" alt="png" height="100" width="100">
+            <div id="uiux"><img src="assets/image/uiux.png" alt="png" height="100" width="200">
                 <h1>UI/UX Design</h1>
                 <pre>
                     User interface (UI) 
@@ -1066,7 +1234,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         <div id="languagetools">
             <img src="assets/image/html.png" alt="png" height="100" width="100">
             <img src="assets/image/java.png" alt="png" height="100" width="100">
-            <img src="assets/image/node.png" alt="png" height="100" width="100">
+            <img src="assets/image/node.png" alt="png" height="100" width="150">
             <img src="assets/image/php.png" alt="png" height="100" width="100">
             <img src="assets/image/sceanBuilder.png" alt="png" height="100" width="100">
             <img src="assets/image/ij.png" alt="png" height="100" width="100">
@@ -1083,39 +1251,39 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         <h1><dfn id="Education"><strong>Education</strong></dfn></h1>
         <h3>01. Project</h3>
        <div id="calculator">
-        <img src="assets/image/calc.png" alt="png" height="100" width="100">
-        <pre>                      
-             I have just created a calculator. 
-            It enables you to perform operations 
-            such as addition, subtraction, division, 
-            multiplication, etc.
-        </pre>
+        <img src="assets/image/calc.png" alt="png" height="130" width="170">
+        <pre>calculator Project</pre>
        </div>
 
        <div id="connet4games">
-        <img src="assets/image/connect%204%20games.png" alt="png" height="100" width="100">
-        <pre>Here i have created a software 
-            for connecting four games.
-        </pre>
+        <img src="assets/image/connect 4 games.png" alt="png" height="130" width="130">
+        <pre>Connected Four Games Project</pre>
     </div>
 
         <div id="furniture">
-            <img src="assets/image/furniture.png" alt="png" height="100" width="100">
-            <pre>Here i have created a software for 
-                managing Furniture shop .
-            </pre>
+            <img src="assets/image/furniture.png" alt="png" height="130" width="150">
+            <pre>Furniture Shop Managment Project</pre>
         </div>
 
         <div id="hostal">
-            <img src="assets/image/furniture.png" alt="png" height="100" width="100">
-            <pre>Here i have created a software for 
-                managing Furniture shop .
-            </pre>
+            <img src="assets/image/hostal.png" alt="png" height="130" width="130">
+            <pre>Hostal Managment Project</pre>
         </div>
 
+        <div id="student">
+            <img src="assets/image/student.png" alt="png" height="130" width="170">
+            <pre>Student Managment Project</pre>
+        </div>
+
+        <div id="chatApplication">
+            <img src="assets/image/chataApplication.png" alt="png" height="130" width="150">
+            <pre>Chat Application Project</pre>
+        </div>
+
+<!-- 
         <div id="viewmore1">
             <h2>View More</h2>
-        </div>
+        </div> -->
     </section>
 </section>
     
@@ -1127,17 +1295,17 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
             <div id="div1">
                 <h1>CSS Assinment</h1>
-                <img src="assets/image/assign1.png" alt="png" height="200" width="200">
+                <img src="assets/image/assigment1.png" alt="png" height="200" width="250">
             </div>
 
             <div id="div2">
                 <h1>Animation Assinment</h1>
-                <img src="assets/image/assign1.png" alt="png" height="200" width="200">
+                <img src="assets/image/assignment2.png" alt="png" height="200" width="200">
             </div>
 
             <div id="div3">
-                <h1>Transition Assignment</h1>
-                <img src="assets/image/assign1.png" alt="png" height="200" width="200">
+                <h1 >Transition Assignment</h1>
+                <img src="assets/image/assignment3.png" alt="png" height="200" width="200">
             </div>
              
             <div id="viewmore3">
@@ -1147,7 +1315,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     </section>
    
     <!-- section 6 -->
-    <section id="six">
+    <!-- <section id="six">
         <section id="section6">
             <h3><strong>02. Certificate</strong></h3>
             <div id="certificate1">
@@ -1162,7 +1330,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
                 <h2>View More</h2>
             </div>
         </section>
-    </section>
+    </section> -->
     
 
     <!-- section 7 -->
@@ -1323,9 +1491,9 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     <div id="followme">
         <nav>
             <h2>Follow me :</h2>
-            <img  usemap="#fbMap" src="assets/image/fb.png" alt="png" height="100" width="100">
-            <img  usemap="#githubMap" src="assets/image/github.png" alt="png" height="100" width="100">
-            <img  usemap="#twitterMap" src="assets/image/twitter.png" alt="png" height="100" width="100">
+            <img usemap="#fbMap" src="assets/image/faceBook.png" alt="png" height="100" width="100">
+            <img usemap="#githubMap" src="assets/image/github1.png" alt="png" height="100" width="100">
+            <img usemap="#twitterMap" src="assets/image/twitter1.png" alt="png" height="100" width="100">
             <img  usemap="#youtubeMap" src="assets/image/youtube%203.png" alt="png" height="100" width="100">
             <img  usemap="#insterMap" src="assets/image/inster.png" alt="png" height="100" width="100">
     
