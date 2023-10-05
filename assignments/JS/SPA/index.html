@@ -160,70 +160,70 @@
                 </tr>
                 </thead>
                 <tbody id="tblCustomer">
-<!--                <tr>-->
-<!--                    <td>C001</td>-->
-<!--                    <td>Parami</td>-->
-<!--                    <td>0777106375</td>-->
-<!--                    <td>Galle</td>-->
-<!--                    <td>para@gmail.com</td>-->
+                <tr>
+                    <td>C001</td>
+                    <td>Parami</td>
+                    <td>0777106375</td>
+                    <td>Galle</td>
+                    <td>para@gmail.com</td>
 
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>C002</td>-->
-<!--                    <td>Nadeeka</td>-->
-<!--                    <td>0777206375</td>-->
-<!--                    <td>Hikkaduwa</td>-->
-<!--                    <td>nadee@gmail.com</td>-->
+                </tr>
+                <tr>
+                    <td>C002</td>
+                    <td>Nadeeka</td>
+                    <td>0777206375</td>
+                    <td>Hikkaduwa</td>
+                    <td>nadee@gmail.com</td>
 
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>C003</td>-->
-<!--                    <td>Dulanji</td>-->
-<!--                    <td>0777306375</td>-->
-<!--                    <td>Matara</td>-->
-<!--                    <td>dula@gmail.com</td>-->
+                </tr>
+                <tr>
+                    <td>C003</td>
+                    <td>Dulanji</td>
+                    <td>0777306375</td>
+                    <td>Matara</td>
+                    <td>dula@gmail.com</td>
 
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>C004</td>-->
-<!--                    <td>Thinithi</td>-->
-<!--                    <td>0777406375</td>-->
-<!--                    <td>Wakwalla</td>-->
-<!--                    <td>thini@gmail.com</td>-->
+                </tr>
+                <tr>
+                    <td>C004</td>
+                    <td>Thinithi</td>
+                    <td>0777406375</td>
+                    <td>Wakwalla</td>
+                    <td>thini@gmail.com</td>
 
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>C005</td>-->
-<!--                    <td>Jayathilaka</td>-->
-<!--                    <td>0777606375</td>-->
-<!--                    <td>Galle</td>-->
-<!--                    <td>jayath@gmail.com</td>-->
+                </tr>
+                <tr>
+                    <td>C005</td>
+                    <td>Jayathilaka</td>
+                    <td>0777606375</td>
+                    <td>Galle</td>
+                    <td>jayath@gmail.com</td>
 
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>C006</td>-->
-<!--                    <td>Inosha</td>-->
-<!--                    <td>0777636375</td>-->
-<!--                    <td>Gintota</td>-->
-<!--                    <td>inoo@gmail.com</td>-->
+                </tr>
+                <tr>
+                    <td>C006</td>
+                    <td>Inosha</td>
+                    <td>0777636375</td>
+                    <td>Gintota</td>
+                    <td>inoo@gmail.com</td>
 
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>C007</td>-->
-<!--                    <td>Nikitha</td>-->
-<!--                    <td>0777606375</td>-->
-<!--                    <td>Colombo</td>-->
-<!--                    <td>niki@gmail.com</td>-->
+                </tr>
+                <tr>
+                    <td>C007</td>
+                    <td>Nikitha</td>
+                    <td>0777606375</td>
+                    <td>Colombo</td>
+                    <td>niki@gmail.com</td>
 
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>C008</td>-->
-<!--                    <td>Muthsanda</td>-->
-<!--                    <td>0778606375</td>-->
-<!--                    <td>Dangedra</td>-->
-<!--                    <td>sada@gmail.com</td>-->
+                </tr>
+                <tr>
+                    <td>C008</td>
+                    <td>Muthsanda</td>
+                    <td>0778606375</td>
+                    <td>Dangedra</td>
+                    <td>sada@gmail.com</td>
 
-<!--                </tr>-->
+                </tr>
 
                 </tbody>
             </table>
@@ -876,67 +876,112 @@
     })
 
 
-    let btnSave= document.querySelector("#btnCustomer");
-    let btnGetAll = document.querySelector("#btnGetAll");
-    let tBody = document.querySelector("#tblCustomer");
-
-
-    let txtID=document.querySelector("#txtCustomerID");
-    let txtName=document.querySelector("#txtCustomerName");
-    let txtContact=document.querySelector("#txtCustomerContact");
-    let txtAddress=document.querySelector("#txtCustomerAddress");
-    let txtEmail=document.querySelector("#txtCustomerEmail");
-
-    var customers=[];
-
+    // let btnSave= document.querySelector("#btnCustomer");
+    // let btnGetAll = document.querySelector("#btnGetAll");
+    // let tBody = document.querySelector("#tblCustomer");
+    //
+    //
+    // let txtID=document.querySelector("#txtCustomerID");
+    // let txtName=document.querySelector("#txtCustomerName");
+    // let txtContact=document.querySelector("#txtCustomerContact");
+    // let txtAddress=document.querySelector("#txtCustomerAddress");
+    // let txtEmail=document.querySelector("#txtCustomerEmail");
+    //
+    // var customers=[];
+    //
     var customers = [
         {id: "C001", name: "Dasun",contact:"0778606375" ,  address: "Galle", email: "dasun@gmail.com"},
         {id: "C002", name: "Kamal",contact:"0778606375" ,  address: "Matara", email: "kamal@gmail.com"}
     ];
+    //
+    // //save a customer
+    // btnSave.addEventListener("click",function (){
+    //
+    //     var customer={
+    //         id: txtID.value,
+    //         name:txtName.value,
+    //         contact:txtContact.value,
+    //         address:txtAddress.value,
+    //         email:txtEmail.value
+    //
+    //     }
+    //     //add customer to object to the array
+    //     customers.push(customer);
+    //     console.log(customers);
+    //     event.preventDefault();
+    // });
+    //
+    // btnGetAll.addEventListener("click", function () {
+    //     for (let i = 0; i < customers.length; i++) {
+    //         let tr = document.createElement("tr");
+    //
+    //         let td1 = document.createElement("td");
+    //         td1.textContent=customers[i].id;
+    //
+    //         let td2 = document.createElement("td");
+    //         td2.textContent=customers[i].name;
+    //
+    //         let td3 = document.createElement("td");
+    //         td3.textContent=customers[i].contact;
+    //
+    //         let td4 = document.createElement("td");
+    //         td3.textContent=customers[i].address;
+    //
+    //         let td5 = document.createElement("td");
+    //         td3.textContent=customers[i].email;
+    //
+    //
+    //         tr.append(td1,td2,td3,td4,td5);
+    //         tBody.append(tr);
+    //         event.preventDefault();
+    //     }
+    //
+    // });
 
-    //save a customer
-    btnSave.addEventListener("click",function (){
+    $("#btnCustomer").click(function () {
 
-        var customer={
-            id: txtID.value,
-            name:txtName.value,
-            contact:txtContact.value,
-            address:txtAddress.value,
-            email:txtEmail.value
+        let cus_ID = $("#txtCustomerID").val();
+        let cus_Name = $("#txtCustomerName").val();
+        let cus_contact = $("#txtCustomerContact").val();
+        let cus_Address = $("#txtCustomerAddress").val();
+        let cus_email = $("#txtCustomerEmail").val();
 
+        var customer = {
+            id: cus_ID,
+            name: cus_Name,
+            contact:cus_contact,
+            address: cus_Address,
+            email: cus_email
         }
+
         //add customer to object to the array
         customers.push(customer);
         console.log(customers);
-        event.preventDefault();
     });
 
-    btnGetAll.addEventListener("click", function () {
+
+    //refactor get_all with jQuery
+    $("#btnsave").click(function () {
         for (let i = 0; i < customers.length; i++) {
-            let tr = document.createElement("tr");
-
-            let td1 = document.createElement("td");
-            td1.textContent=customers[i].id;
-
-            let td2 = document.createElement("td");
-            td2.textContent=customers[i].name;
-
-            let td3 = document.createElement("td");
-            td3.textContent=customers[i].contact;
-
-            let td4 = document.createElement("td");
-            td3.textContent=customers[i].address;
-
-            let td5 = document.createElement("td");
-            td3.textContent=customers[i].email;
-
-
-            tr.append(td1,td2,td3,td4,td5);
-            tBody.append(tr);
-            event.preventDefault();
+            let row = `<tr>
+                            <td>${customers[i].id}</td>
+                            <td>${customers[i].name}</td>
+                            <td>${customers[i].contact}</td>
+                            <td>${customers[i].address}</td>
+                            <td>${customers[i].email}</td>
+                        </tr>`;
+            $("#tblCustomer").append(row);
         }
 
+
     });
+
+
+
+
+
+
+
 
 </script>
 </body>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="assests/boostrap/css/bootstrap.css">
+
+
+</head>
+<body style="background-color: black; height: 100vh;  " >
+<main>
+  <img src="assests/img/knight-rider-logo-removebg-preview.png" width="200vw" style="position: absolute; left: 0; right: 0; margin: auto;">
+  <div class="container  position-absolute p-0 " style="width: 80vw; height: 8vw; top: 13vw; left: 0; right: 0; margin: auto;">
+
+    <div class="row w-100 h-100 border" >
+
+      <div id="firstDiv" class="col-2 border"></div>
+      <div class="col-2"></div>
+      <div class="col-2 border"></div>
+      <div class="col-2"></div>
+      <div class="col-2 border"></div>
+      <div id="lastDiv" class="col-2"></div>
+    </div>
+  </div>
+
+  <input id="customRange" type="range" class="form-range w-25 h-25 ms-5" min="0" max="300"  value="255"  style=" position: absolute; top: 25vw; left: 50vw;">
+
+  <div ><button id="start" class="btn  btn-outline-primary me-5 " style="width: 8vw; position: absolute; top: 30vw; left: 20vw;">Start </button></div>
+  <div ><button id="stop" class="btn  btn-outline-danger me-5 "  style="width: 8vw; position: absolute; top: 30vw; left: 30vw">Stop </button></div>
+
+  <audio id="audio" src="assests/audio/knightrider.mpeg"  ></audio>
+</main>
+
+
+<script>
+  let opacity = [0.1,0.2,0.4,0.6,0.8,1,0,0,0,0,0,0];
+  let riverceOpacity = [0,0,0,0,0,0,1,0.8,0.6,0.4,0.2,0.1];
+  let lastDiv = document.querySelector("#lastDiv");
+  let firstDiv = document.querySelector("#firstDiv");
+  let element = document.querySelectorAll(".col-2");
+  let interval;
+  let riverce;
+  let value = 200;
+  let start = document.querySelector("#start");
+  let stop = document.querySelector("#stop");
+  let audio = document.querySelector("#audio");
+  let range = document.querySelector("#customRange");
+
+
+
+  function setOrder() {
+    interval = setInterval(function () {
+      for (let i = 0; i < 6; i++) {
+        element[i].style.backgroundColor = "red";
+        element[i].style.opacity = opacity[i + 6];
+      }
+
+      let lastColor = opacity.pop();
+      opacity.unshift(lastColor);
+
+      if (lastDiv.style.opacity == '0.1') {
+        clearInterval(interval);
+        clearInterval(riverce);
+        SetRiverce();
+      }
+
+    }, value);
+  }
+
+  setOrder();
+
+  function SetRiverce() {
+    riverce = setInterval(function () {
+      for (let i = 0; i < 6; i++) {
+        element[i].style.backgroundColor = "red";
+        element[i].style.opacity = riverceOpacity[i];
+      }
+
+      let lastColor = riverceOpacity.shift();
+      riverceOpacity.push(lastColor);
+
+      if (firstDiv.style.opacity == '0.1') {
+        clearInterval(interval);
+        clearInterval(riverce);
+        setOrder();
+      }
+
+    }, value);
+  }
+
+  SetRiverce();
+
+  range.addEventListener("input",function (){
+    value = 300 - parseInt(range.value) ;
+    clearInterval(interval);
+    setOrder();
+  })
+
+  start.addEventListener("click",function () {
+    clearInterval(interval);
+    setOrder();
+    audio.play();
+  })
+
+  stop.addEventListener("click",function () {
+    clearInterval(interval);
+    audio.pause();
+  })
+
+
+
+
+</script>
+<script src="assests/boostrap/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
