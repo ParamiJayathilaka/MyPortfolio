@@ -19,7 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Borel&family=Give+You+Glory&family=Joti+One&family=Judson&family=Kadwa&family=Kanit:wght@100&family=Kaushan+Script&family=Kumar+One&family=Ledger&family=Lemon&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Borel&family=Give+You+Glory&family=Joti+One&family=Judson&family=Junge&family=Kadwa&family=Kanit:wght@100&family=Kaushan+Script&family=Kumar+One&family=Ledger&family=Lemon&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Borel&family=Give+You+Glory&family=Joti+One&family=Judson&family=Junge&family=Kadwa&family=Kanit:wght@100&family=Kantumruy+Pro:ital,wght@0,500;1,500&family=Kaushan+Script&family=Kumar+One&family=Ledger&family=Lemon&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width initial-scale=1">
 
 
 
@@ -27,10 +28,12 @@
 
     /* ----------main----------- */
     main{
-
       background-color: black;
       overflow: hidden;
-
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin-top: 4%;
     }
 
     footer{
@@ -38,9 +41,20 @@
       width: 100%;
       height: 100%;
       position: relative;
-      background: linear-gradient(1deg, rgba(83, 53, 9, 0.83) 15.09%, rgba(100, 65, 6, 0.90) 68.7%, #7F5401 89.27%);
+      background-color:#111D28;
       overflow: hidden;
     }
+
+    main>section>header{
+      background-color: #272626e5;
+      width: 100%;
+      height: 7vh;
+      text-align: center;
+      top: 0;
+      position: sticky;
+      z-index: 2;
+    }
+
     body>header{
       background-color: #272626e5;
       position: fixed;
@@ -52,7 +66,7 @@
       z-index: 10;
       border-top: 1px solid rgb(14, 165, 224);
       border-bottom: 1px solid rgb(18, 156, 211);
-      color:#E08A0A;
+      color:#000000;
     }
 
     body>header>div{
@@ -62,36 +76,33 @@
       top: 0;
       left: 0;
 
-
     }
 
     /* section1 */
 
     #one{
-      background: linear-gradient(126deg, #061213 56.65%, #183232 72.79%, #091818 103.57%);
+
+
+      background-color: #040C13;
+
+
     }
 
     #section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9{
       height: 100vh;
-      right: 0;
-      left: 0;
+
       position: relative;
-    }
-
-
-    #section1{
-      /*background: linear-gradient(135deg, rgba(235, 235, 235, 0.05) 53.95%, #322A25 53.95%, #000 58.97%, rgba(0, 0, 0, 0.21) 62.94%);*/
     }
 
 
     body>header>div>h4{
 
       position: absolute;
-      top: -800%;
-      left: 110%;
+      top: 0%;
+      left: 88%;
       font-size: 20px;
       font-family: 'Give You Glory', cursive;
-      color: rgba(246, 133, 0, 1);
+      color: #00F6F6;
 
     }
 
@@ -106,71 +117,149 @@
     #section1>aside>img{
       position: absolute;
       top: 10%;
-      right: 3%;
+      right: 20%;
+
     }
 
-
-
+    #section1>aside>h4{
+      font-size: 30px;
+      font-family: 'Abhaya Libre', serif;
+      color: white;
+      position:absolute;
+      top:70%;
+      right: 18%;
+      /* text-shadow: 1px 2px -3px 0 #00F6F6; */
+    }
 
     #icon{
       width: 50%;
       height: 60%;
+
+    }
+
+
+    /* .icon{
+     padding-left: 10px;
+     display:flex ;
+ justify-content: center;
+ align-items: center;
+ width: 50px;
+ height: 50px;
+
+
+ border-radius: 50%;
+ font-size: 2rem;
+ color: #D31A38;
+ transition: .5s ease;
+
+    }
+
+    #icon>nav> img:hover{
+
+     background: #00F6F6;
+     color: #040C13;
+     box-shadow: 0 0 1rem #00F6F6;
+    } */
+
+    .icon{
+      position: absolute;
+      padding-left: 90%;
+      top: 30%;
+
+    }
+
+    .icon a{
+      display:flex ;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background:transparent;
+      border: 2px solid #00F6F6;
+      border-radius: 50%;
+      font-size: 2rem;
+      color: #00F6F6;
+      transition: .5s ease;
+      text-decoration: none;
+
+    }
+
+    .icon a:hover{
+      background: #00F6F6;
+      color: #040C13;
+      box-shadow: 0 0 1rem #00F6F6;
+
+    }
+
+    #icon>nav>img:first-child{
       position:absolute;
-      bottom: -25%;
-      right: -15%;
-
+      top: 30%;
+      right: 5%;
     }
 
-    #icon>h4{
-      font-size: 20px;
-      font-family: 'Abhaya Libre', serif;
-      color: #AC8A33;
+    #icon>nav>img:nth-child(2){
+      position:absolute;
+      top: 40%;
+      right: 5%;
     }
 
-    #icon>nav>img{
-      padding-left: 10px;
+    #icon>nav>img:nth-child(3){
+      position:absolute;
+      top: 50%;
+      right: 5%;
+    }
 
+    #icon>nav>img:nth-child(4){
+      position:absolute;
+      top: 60%;
+      right: 5%;
+    }
+
+    #icon>nav>img:nth-child(5){
+      position:absolute;
+      top: 70%;
+      right: 5%;
     }
 
     #welcome>hgroup>h2{
       position: absolute;
-      top: 5%;
-      left: 1%;
-      font-size: 25px;
-      color: #A8895B;
+      top: 12%;
+      left: 3%;
+      font-size: 30px;
+      color: #11E2FF;
       font-family: 'Kaushan Script', cursive;
 
     }
 
     #welcome>hgroup>h1{
       position: absolute;
-      top: 20%;
+      top: 35%;
       left: 3%;
       font-size: 50px;
       font-family: 'Kumar One', cursive;
-      color: #FFBB55;
+      color: #FFFFFF;
 
     }
 
     #welcome>article>pre{
       position: absolute;
-      top: 35%;
-      left: 1%;
+      top: 50%;
+      left: 3%;
       font-size: 30px;
       font-family: 'Judson', serif;
-      color: #DF8A0B;
+      color: #DBE4E4;
 
     }
 
     /* section2 */
 
     #two{
-      color: #FBB955;
+      background-color: #07131C;
 
     }
 
     #section2{
-      background: linear-gradient(134deg, rgba(135, 91, 24, 0.79) 31.73%, rgba(23, 17, 11, 0.49) 71.89%);
+      background-color: #07131C;
     }
 
     #section2>h1{
@@ -178,24 +267,30 @@
       top: 2%;
       left: 1%;
       font-size: 30px;
-      color: #FFC684;
+      color: #ffffff;
+      font-family: 'Lemon', cursive;
     }
 
     #section2>article>pre{
-      color: #FFFFFF;
+      color: #04CFFC;
       position: absolute;
       top: 3%;
-      left: 20%;
+      left: 15%;
       font-size: 20px;
     }
 
     #section2>address{
       position: absolute;
       top: 40%;
-      left: 43%;
+      left: 58%;
       font-size: 10px;
-      color: #FBB955;
-      padding-bottom: 20px;
+      color: white;
+      padding-bottom: 30px;
+
+    }
+
+    #section2>address>h1{
+      padding-top: 5px;
     }
 
 
@@ -204,7 +299,7 @@
       height: 60%;
       position: absolute;
       top: 40%;
-      left: 30%;
+      left: 45%;
       font-size: 10px;
       color: black;
     }
@@ -212,7 +307,7 @@
     #section2about>div{
       width: 100%;
       height: 8%;
-      background-color: #7C5E24;
+      background-color: #00748D;
       border-radius: 10px;
       text-align: center;
     }
@@ -225,34 +320,59 @@
 
     /* section3 */
 
-    #three{
-
+    #section3{
+      background-color: #1B222C;
     }
 
-    #section3{
-      background: linear-gradient(180deg, #76460C 2.54%, #896D4D 12.73%, #4C2705 68.58%, #46311E 97.66%);
+    #section3>h1>dfn>strong{
+      color: #ffffff;
+      font-family: 'Lemon', cursive;
     }
 
     #uiux{
+      position: absolute;
       width: 25%;
       height: 60%;
-      position: absolute;
+      background-color: #000E1E;
       top: 10%;
       left:5%;
+      color:white;
+      transition-duration: 3s;
+      transition-property:all;
+      transition: 3s;
       border-radius: 10px;
-      background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
     }
+    #uiux:hover{
+      transition-duration: 3s;
+      transition-property:all;
+      border: 4px solid #00F6F6 ;
+      transform: scale(1.08, 1.08);
+      z-index: 2;
+    }
+
+
+
+
+    /* #uiux{
+     width: 25%;
+     height: 60%;
+     position: absolute;
+     top: 10%;
+     left:5%;
+     border-radius: 10px;
+     background-color: #000E1E;
+    } */
 
     #uiux>img{
       position: absolute;
-      left:30%;
+      left:25%;
     }
 
     #uiux>h1{
       position: absolute;
       text-align: center;
       font-size: 25px;
-      top: 20%;
+      top: 28%;
       left:30%;
       color: white;
     }
@@ -271,9 +391,9 @@
       height: 60%;
       position: absolute;
       top: 10%;
-      left:35%;
+      left:38%;
       border-radius: 10px;
-      background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
+      background-color: #000E1E;
     }
 
     #www>img{
@@ -285,7 +405,7 @@
       position: absolute;
       text-align: center;
       font-size: 25px;
-      top: 25%;
+      top: 28%;
       left:30%;
       color: white;
     }
@@ -306,7 +426,7 @@
       top: 10%;
       left:70%;
       border-radius: 10px;
-      background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.52) 48.96%, #000 97.4%);
+      background-color: #000E1E;
     }
 
     #bugfix>img{
@@ -318,7 +438,7 @@
       position: absolute;
       text-align: center;
       font-size: 25px;
-      top: 25%;
+      top: 28%;
       left:30%;
       color: white;
     }
@@ -336,156 +456,299 @@
       font-size: 15px;
       top: 70%;
       left:2%;
+      color: white;
     }
 
-    #languagetools{
-      width: 100%;
-      height: 60%;
-      position:absolute;
-      top: 80%;
-      left: 0%;
-    }
+    /* #languagetools{
+     width: 100%;
+     height: 60%;
+     position:absolute;
+     top: 80%;
+     left: 0%;
+    } */
 
     #languagetools>img{
-      padding-left: 40px;
+      position:relative;
+      right:41px;
+      transition: 3s;
+      margin-top: 33%;
+      left: 0%;
     }
+    #languagetools>img:hover{
+      transform: scale(0.5, 0.5);
+      z-index: 2;
+
+    }
+
+    /* #languagetools>img{
+     padding-left: 40px;
+    } */
 
     /* section4 */
 
     #section4{
-      background: linear-gradient(180deg, #925C0B 5.62%, #695D45 13.05%, rgba(0, 0, 0, 0.90) 70.33%);
+      background-color: #040C13;
+
+    }
+
+    #section4>h1>dfn>strong{
+      color: #ffffff;
+      font-family: 'Lemon', cursive;
+    }
+
+    #calculator{
+      width: 28%;
+      height: 35%;
+      position: absolute;
+      background-color: #051324;
+      top: 15%;
+      left:3%;
+      border-radius: 30px;
 
 
     }
 
-    #calculator{
-      width: 35%;
-      height: 30%;
-      position: absolute;
-      background-color: aliceblue;
-      top: 15%;
-      left:5%;
-      border-radius: 10px;
-      background: linear-gradient(90deg, rgba(245, 242, 235, 0.00) -2.44%, #A36D05 58.69%);
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      border: 5px solid black;
-
-
+    #calculator>img{
+      position: relative;
+      top: 5%;
+      left: 30%;
     }
 
     #calculator>pre{
       position: absolute;
-      top: 15%;
-      left:4%;
+      top: 62%;
+      left:27%;
+      color: white;
+      font-family: 'Kaisei Opti', serif;
+      font-size: 25px ;
     }
 
     #connet4games{
-      width: 35%;
-      height: 30%;
+      width: 28%;
+      height: 35%;
       position: absolute;
-
+      background-color: #051324;
       top: 15%;
-      left:50%;
-      border-radius: 10px;
-      background: linear-gradient(90deg, rgba(245, 242, 235, 0.00) -2.44%, #A36D05 58.69%);
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      left:36%;
+      border-radius: 30px;
+
+    }
+
+    #connet4games>img{
+      position: relative;
+      top: 5%;
+      left: 30%;
     }
 
     #connet4games>pre{
       position: absolute;
-      top: 40%;
-      left:8%;
+      top: 62%;
+      left:10%;
+      color: white;
+      font-family: 'Kaisei Opti', serif;
+      font-size: 25px ;
     }
 
     #furniture{
-      width: 35%;
-      height: 30%;
+      width: 28%;
+      height: 35%;
       position: absolute;
+      background-color: #051324;
+      top: 15%;
+      left:68%;
+      border-radius: 30px;
 
-      top: 50%;
-      left:5%;
-      border-radius: 10px;
-      background: linear-gradient(90deg, rgba(245, 242, 235, 0.00) -2.44%, #A36D05 58.69%);
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #furniture>img{
+      position: relative;
+      top: 5%;
+      left: 30%;
     }
 
     #furniture>pre{
       position: absolute;
-      top: 40%;
-      left:8%;
+      top: 62%;
+      left:5%;
+      color: white;
+      font-family: 'Kaisei Opti', serif;
+      font-size: 25px ;
     }
 
     #hostal{
-      width: 35%;
-      height: 30%;
+      width: 28%;
+      height: 35%;
       position: absolute;
+      background-color: #051324;
+      top: 55%;
+      left:3%;
+      border-radius: 30px;
 
-      top: 50%;
-      left:50%;
-      border-radius: 10px;
-      background: linear-gradient(90deg, rgba(245, 242, 235, 0.00) -2.44%, #A36D05 58.69%);
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #hostal>img{
+      position: relative;
+      top: 5%;
+      left: 30%;
     }
 
     #hostal>pre{
       position: absolute;
-      top: 40%;
-      left:8%;
+      top: 62%;
+      left:10%;
+      color: white;
+      font-family: 'Kaisei Opti', serif;
+      font-size: 25px ;
     }
 
-    #viewmore1{
-      width: 20%;
-      height: 5%;
+    #student{
+      width: 28%;
+      height: 35%;
       position: absolute;
+      background-color: #051324;
+      top: 55%;
+      left:35%;
+      border-radius: 30px;
 
-      top: 85%;
-      left:70%;
-      border-radius: 10px;
-      background: linear-gradient(180deg, #926014 99.99%, rgba(56, 34, 1, 0.00) 100%);
+    }
+
+    #student>img{
+      position: relative;
+      top: 5%;
+      left: 30%;
+    }
+
+    #student>pre{
+      position: absolute;
+      top: 62%;
+      left:10%;
+      color: white;
+      font-family: 'Kaisei Opti', serif;
+      font-size: 25px ;
+    }
+
+    #chatApplication{
+      width: 28%;
+      height: 35%;
+      position: absolute;
+      background-color: #051324;
+      top: 55%;
+      left:68%;
+      border-radius: 30px;
+
+    }
+
+    #chatApplication>img{
+      position: relative;
+      top: 5%;
+      left: 30%;
+    }
+
+    #chatApplication>pre{
+      position: absolute;
+      top: 62%;
+      left:10%;
+      color: white;
+      font-family: 'Kaisei Opti', serif;
+      font-size: 25px ;
+    }
+
+    /* #viewmore1{
+     width: 20%;
+     height: 5%;
+     position: absolute;
+
+     top: 90%;
+     left:70%;
+     border-radius: 10px;
+     background: linear-gradient(180deg, #926014 99.99%, rgba(56, 34, 1, 0.00) 100%);
 
     }
 
     #viewmore1>h2{
-      position: absolute;
-      top: -40%;
-      left:10%;
-    }
+     position: absolute;
+     top: -40%;
+     left:10%;
+    } */
 
     /* section5 */
 
     #section5{
-      background: linear-gradient(117deg, #72490B 1.66%, #FF9C06 30.96%, #0C0A08 38.66%, #825104 47.6%, #8E7951 51.06%, #000 98.23%);
+      background-color: #07131C;
+    }
 
-
+    #section5>h3>strong{
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      left: 3%;
+      top: 3%;
     }
 
     #div1{
+      position: absolute;
       width: 30%;
       height: 50%;
-      position: absolute;
-      background: #3E2D13;
+      background-color: #233034;
       top: 10%;
-      left:2%;
-      border-radius: 10px;
+      left:5%;
+      color:white;
+      transition-duration: 3s;
+      transition-property:all;
+      transition: 3s;
+      border-radius: 50px;
+    }
+    #div1:hover{
+      transition-duration: 3s;
+      transition-property:all;
+      background: #191d1d ;
+      transform: scale(1.08, 1.08);
+      z-index: 2;
+    }
+
+    /* #div1{
+     width: 30%;
+     height: 50%;
+     position: absolute;
+     background: #233034;
+     top: 15%;
+     left:2%;
+     border-radius: 50px;
+    } */
+
+    #div1>h1{
+      color: #11E2FF;
+      position: absolute;
+      left: 20%;
+
     }
 
     #div1>img{
       position: absolute;
-      left:30%;
+      left:25%;
+      top: 30%;
     }
 
     #div2{
       width: 30%;
       height: 50%;
       position: absolute;
-      background: #3E2D13;
-      top: 10%;
+      background: #233034;
+      top: 15%;
       left:35%;
-      border-radius: 10px;
+      border-radius: 50px;
     }
+    #div2>h1{
+      color: #11E2FF;
+      position: absolute;
+      left: 15%;
+
+    }
+
     #div2>img{
       position: absolute;
-      left:30%;
+      left:25%;
+      top: 30%;
     }
 
 
@@ -493,22 +756,29 @@
       width: 30%;
       height: 50%;
       position: absolute;
-      background: #3E2D13;
-      top: 10%;
+      background: #233034;
+      top: 15%;
       left:67%;
-      border-radius: 10px;
+      border-radius: 50px;
+    }
+    #div3>h1{
+      color: #11E2FF;
+      position: absolute;
+      left: 15%;
+
     }
 
     #div3>img{
       position: absolute;
-      left:30%;
+      left:25%;
+      top: 30%;
     }
 
     #viewmore3{
-      width: 20%;
-      height: 5%;
+      width: 15%;
+      height: 8%;
       position: absolute;
-      background-color: rgb(230, 215, 12);
+      background-color: #6BB1F1;
       top: 75%;
       left:70%;
       border-radius: 10px;
@@ -516,79 +786,78 @@
 
     #viewmore3>a>h2{
       position: absolute;
-      top: -38%;
+      top: -10%;
       left:20%;
       color: black;
     }
 
     /* section6 */
 
-    #section6{
-      background: linear-gradient(180deg, rgba(91, 61, 16, 0.43) 2.2%, rgba(225, 138, 7, 0.73) 10.41%, #2E1E08 21.92%, rgba(125, 84, 22, 0.79) 44.36%, rgba(163, 106, 20, 0.60) 64.49%, rgba(38, 25, 5, 0.24) 90.02%, rgba(192, 116, 2, 0.16) 94.98%, rgba(7, 6, 4, 0.49) 137.81%);
+    /* #section6{
+     background: linear-gradient(180deg, rgba(91, 61, 16, 0.43) 2.2%, rgba(225, 138, 7, 0.73) 10.41%, #2E1E08 21.92%, rgba(125, 84, 22, 0.79) 44.36%, rgba(163, 106, 20, 0.60) 64.49%, rgba(38, 25, 5, 0.24) 90.02%, rgba(192, 116, 2, 0.16) 94.98%, rgba(7, 6, 4, 0.49) 137.81%);
 
 
     }
 
     #certificate1{
-      width: 30%;
-      height: 70%;
-      position: absolute;
-      background-color: rgb(223, 51, 180);
-      top: 10%;
-      left:10%;
-      border-radius: 10px;
+     width: 30%;
+     height: 70%;
+     position: absolute;
+     background-color: rgb(223, 51, 180);
+     top: 10%;
+     left:10%;
+     border-radius: 10px;
     }
 
     #certificate1>img{
-      position: absolute;
-      top: 10%;
-      left:8%;
+     position: absolute;
+     top: 10%;
+     left:8%;
     }
 
     #certificate2{
-      width: 30%;
-      height: 70%;
-      position: absolute;
-      background-color: rgb(51, 54, 223);
-      top: 10%;
-      left:50%;
-      border-radius: 10px;
+     width: 30%;
+     height: 70%;
+     position: absolute;
+     background-color: rgb(51, 54, 223);
+     top: 10%;
+     left:50%;
+     border-radius: 10px;
     }
 
     #certificate2>img{
-      position: absolute;
-      top: 10%;
-      left:8%;
+     position: absolute;
+     top: 10%;
+     left:8%;
     }
 
     #viewmore2{
-      width: 20%;
-      height: 5%;
-      position: absolute;
-      background-color: rgb(51, 142, 223);
-      top: 85%;
-      left:70%;
-      border-radius: 10px;
+     width: 20%;
+     height: 5%;
+     position: absolute;
+     background-color: rgb(51, 142, 223);
+     top: 85%;
+     left:70%;
+     border-radius: 10px;
     }
 
     #viewmore2>h2{
-      position: absolute;
-      top: -40%;
-      left:10%;
-    }
+     position: absolute;
+     top: -40%;
+     left:10%;
+    } */
 
     /* section7 */
 
     #section7{
-      background: linear-gradient(243deg, #0F0E0C 0.98%, rgba(65, 44, 3, 0.91) 50.72%, rgba(217, 143, 0, 0.72) 54.41%, rgba(153, 86, 6, 0.77) 57.92%, rgba(204, 135, 0, 0.46) 99%, rgba(167, 123, 37, 0.00) 100%, rgba(244, 149, 36, 0.00) 100%);
-
+      background-color: #1B222C;
     }
 
     #achive1{
       width: 40%;
       height: 10%;
       position: absolute;
-      background-color: #D28E09;
+      background-color: #0C111F;
       top: 10%;
       left:10%;
       border-radius: 30px;
@@ -596,22 +865,24 @@
     }
 
     #achive1>pre{
-      position: absolute;
-      top: -15%;
-      left:-20%;
+      position: relative;
+      top: -4%;
+      left:-10%;
+      font-family: 'Kalam', cursive;
+      color: white;
     }
 
     #achive1>img{
       position: absolute;
       top: -10%;
-      left:-15%;
+      left:-18%;
     }
 
     #achive2{
       width: 40%;
       height: 10%;
       position: absolute;
-      background-color:  #D28E09;
+      background-color:  #0C111F;
       top: 25%;
       left:20%;
       border-radius: 30px;
@@ -619,15 +890,17 @@
     }
 
     #achive2>pre{
-      position: absolute;
-      top: -15%;
-      left:-20%;
+      position: relative;
+      top: -4%;
+      left:-10%;
+      font-family: 'Kalam', cursive;
+      color: white;
     }
 
     #achive2>img{
       position: absolute;
       top: -10%;
-      left:-15%;
+      left:-18%;
     }
 
 
@@ -635,7 +908,7 @@
       width: 40%;
       height: 10%;
       position: absolute;
-      background-color:  #da950c;
+      background-color:  #0C111F;
       top: 40%;
       left:30%;
       border-radius: 30px;
@@ -643,15 +916,17 @@
     }
 
     #achive3>pre{
-      position: absolute;
-      top: -15%;
-      left:-20%;
+      position: relative;
+      top: -4%;
+      left:-10%;
+      font-family: 'Kalam', cursive;
+      color: white;
     }
 
     #achive3>img{
       position: absolute;
       top: -10%;
-      left:-15%;
+      left:-18%;
     }
 
 
@@ -659,7 +934,7 @@
       width: 40%;
       height: 10%;
       position: absolute;
-      background-color:  #D28E09;
+      background-color:  #0C111F;
       top: 55%;
       left:40%;
       border-radius: 30px;
@@ -667,15 +942,17 @@
     }
 
     #achive4>pre{
-      position: absolute;
-      top: -15%;
-      left:-20%;
+      position: relative;
+      top: -4%;
+      left:-10%;
+      font-family: 'Kalam', cursive;
+      color: white;
     }
 
     #achive4>img{
       position: absolute;
       top: -10%;
-      left:-15%;
+      left:-18%;
     }
 
 
@@ -683,7 +960,7 @@
       width: 40%;
       height: 10%;
       position: absolute;
-      background-color:  #D28E09;
+      background-color:  #0C111F;
       top: 70%;
       left:50%;
       border-radius: 30px;
@@ -691,50 +968,56 @@
     }
 
     #achive5>pre{
-      position: absolute;
-      top: -15%;
-      left:-20%;
+      position: relative;
+      top: -4%;
+      left:-10%;
+      font-family: 'Kalam', cursive;
+      color: white;
     }
 
     #achive5>img{
       position: absolute;
       top: -10%;
-      left:-15%;
+      left:-18%;
     }
 
     #img1{
       position: absolute;
       top: 14%;
-      left: 55%;
+      left: 53%;
     }
 
     #img2{
       position: absolute;
       top: 30%;
-      left:65%;
+      left:63%;
     }
 
     #img3{
       position: absolute;
       top: 45%;
-      left:75%;
+      left:73%;
     }
 
     #img4{
       position: absolute;
       top: 60%;
-      left:85%;
+      left:83%;
     }
 
     /* section8 */
 
+    #section8{
+      background-color: #1B222C;
+    }
+
     #innovesta{
-      width: 80%;
-      height: 30%;
+      width: 85%;
+      height: 40%;
       position: absolute;
-      background-color: #1D1001;
+      background-color: #000E1E;
       top: 10%;
-      left:10%;
+      left:6%;
       border-radius: 10px;
     }
 
@@ -744,18 +1027,23 @@
       left:-40%;
     }
 
+    #innovesta>img{
+      padding-left: 40px;
+    }
+
     #innovesta>img:first-child{
       position: absolute;
       padding-left: 40px;
-      top: 15%;
-      left:-40%;
+      top: 24%;
+      left: -2%;
+
     }
 
-    #innovesta>img:nth-child(2){
+    #innovesta>img:nth-child(2) {
       position: absolute;
       padding-left: 40px;
-      top: 10%;
-      left:10%;
+      top: 25%;
+      left: -3%;
     }
 
     #innovesta>img:nth-child(3){
@@ -765,27 +1053,26 @@
       left: 37%;
     }
 
-    #innovesta>img:nth-child(4){
+    innovesta>img:nth-child(4) {
       position: absolute;
       padding-left: 40px;
-      top: 10%;
-      left:30%;
+      top: 32%;
+      left: 38%;
     }
 
-    #innovesta>video{
+    #innovesta>video {
       position: absolute;
       padding-left: 40px;
-      top: 10%;
-      left:40%;
+      top: 0%;
+      left: 64%;
     }
-
     #wasantha{
-      width: 80%;
-      height: 30%;
+      width: 85%;
+      height: 40%;
       position: absolute;
-      background-color: #1D1001;
-      top: 50%;
-      left:10%;
+      background-color: #000E1E;
+      top: 55%;
+      left:6%;
       border-radius: 10px;
     }
 
@@ -797,27 +1084,62 @@
       padding-left: 40px;
     }
 
+    #wasantha>img:first-child{
+      position: absolute;
+      left: 0%;
+      top: 10%;
+    }
+
+
+
     /* section9 */
 
+    #section9{
+      background-color: #02070C;
+    }
+
+    #section9>h1>dfn>strong{
+      position: absolute;
+      top: 2%;
+      left: 1%;
+      font-size: 30px;
+      color: #ffffff;
+      font-family: 'Lemon', cursive;
+    }
+
     #ijsecampas{
-      width: 100%;
-      height: 60%;
       position:absolute;
-      top: 15%;
+      top: 5%;
       left: 0%;
     }
 
     #ijsecampas>h2{
       position:absolute;
-      top: 0%;
+      top: 5%;
       left: 2%;
       font-size: 20px;
+      color: #00F6F6;
     }
 
+    /*
+           #ijsecampas>img{
+            padding-left: 40px;
+           } */
 
-    #ijsecampas>img{
+    #ijsecampas>img:first-child{
       padding-left: 40px;
+      position:absolute;
+      top: 10%;
+      left: 30%;
     }
+
+    #ijsecampas>img:nth-child(2){
+      padding-left: 40px;
+      position:absolute;
+      top: 25%;
+      right: 55%;
+    }
+
 
     #personal{
       width: 100%;
@@ -832,6 +1154,7 @@
       top: -10%;
       left: 2%;
       font-size: 20px;
+      color: #00F6F6;
     }
 
 
@@ -841,55 +1164,131 @@
 
 
 
+
     /* footer */
+
+    #footer{
+      background-color:#111D28 ;
+    }
 
     #footer>h1>dfn>strong{
       position: absolute;
       top: 2%;
       left: 1%;
       font-size: 30px;
-      font-family: 'Kadwa', serif;
+      color: #ffffff;
+      font-family: 'Lemon', cursive;
+    }
+
+    #image1{
+      position: absolute;
+      top: 15%;
+      left: 5%;
+    }
+
+    #href1{
+      position: absolute;
+      top: 18%;
+      left: 10%;
+      color: white;
+      font-size: large;
+    }
+
+    #image2{
+      position: absolute;
+      top: 28%;
+      left: 5%;
+    }
+
+    #href2{
+      position: absolute;
+      top: 28%;
+      left: 10%;
+      color: white;
+      font-size: large;
+    }
+
+    #image3{
+      position: absolute;
+      top: 38%;
+      left: 5%;
+    }
+
+    #href3{
+      position: absolute;
+      top: 38%;
+      left: 10%;
+      color: white;
+      font-size: large;
+    }
+
+    #image4{
+      position: absolute;
+      top: 48%;
+      left: 5%;
+    }
+
+    #href4{
+      position: absolute;
+      top: 48%;
+      left: 10%;
+      color: white;
+      font-size: large;
     }
 
 
-    #contactimage>nav>img:first-child{
+    #details{
+
+      position: relative;
+      background-color: #000E1E;
+      top: 60%;
+      left:50%;
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    #details>h2{
       position: absolute;
-      padding-left: 40px;
+      top: 0%;
+      left: 1%;
+      font-size: 30px;
+      color: #ffffff;
+      font-family: 'Joti One', cursive;
+    }
+
+    #details>form>label:first-child{
+      position: absolute;
+      top: 3%;
+      left: 1%;
+      font-size: 20px;
+      color: #ffffff;
+      font-family: 'Joti One', cursive;
+    }
+
+    #details>form>input:first-child{
+      position: absolute;
+      top: 5%;
+      left: 1%;
+    }
+
+    #details>form>label:nth-child(2){
+      position: absolute;
+      top: 5%;
+      left: 1%;
+      font-size: 20px;
+      color: #ffffff;
+      font-family: 'Joti One', cursive;
+    }
+
+    #details>form>label:nth-child(3){
+      position: absolute;
       top: 10%;
-      left:10%;
+      left: 1%;
+      font-size: 20px;
+      color: #ffffff;
+      font-family: 'Joti One', cursive;
     }
 
-    #contactimage>nav>img:nth-child(2){
-      position: absolute;
-      padding-left: 40px;
-      top: 10%;
-      left:80%;
-    }
-
-    #contactimage>nav>img:nth-child(3){
-      position: absolute;
-      padding-left: 40px;
-      top: 40%;
-      left:10%;
-    }
-
-    #contactimage>nav>img:last-child{
-      position: absolute;
-      padding-left: 40px;
-      top: 10%;
-      left:80%;
-    }
-
-    /* #details{
-     width: 35%;
-     height: 30%;
-     position: absolute;
-     background-color: aliceblue;
-     top: 95%;
-     left:5%;
-     border-radius: 10px;
- }
-   */
 
 
 
@@ -908,13 +1307,13 @@
   <nav>
     <menu>
             <pre>
-                <a href="#About me" style=" color: white">About</a>  <a href="#Skills">Skills</a>  <a href="#Education">Education</a>  <a href="#Activities">Activities</a>  <a href="#Gallery">Gallery</a>  <a href="#Contact">Contact</a>
+                <a href="#header1" style=" color: #AEEBE7">About</a>  <a href="#Skills" style=" color: #AEEBE7">Skills</a>  <a href="#Education" style=" color: #AEEBE7">Education</a>  <a href="#Activities" style=" color: #AEEBE7">Activities</a>  <a href="#Gallery" style=" color: #AEEBE7">Gallery</a>  <a href="#Contact" style=" color: #AEEBE7">Contact</a>
             </pre>
     </menu>
   </nav>
   <div>
     <aside>
-      <img src="assets/image/LOGO.jpg" alt="png" width="50" height="50">
+      <img src="assets/image/LOGO.png" alt="png" width="50" height="50">
     </aside>
     <h4>Jayathilaka</h4>
   </div>
@@ -945,39 +1344,20 @@
       </section>
       <aside>
         <img src="assets/image/home%20profile%20(2).png" alt="png" height="375" width="375">
+        <h4>I can do whatever You want today</h4>
       </aside>
 
-      <section id="icon">
-        <h4>I can do whatever You want today</h4>
-        <nav>
-          <img usemap="#fbMap" src="assets/image/faceBook.png" alt="png" height="60" width="60">
-          <img usemap="#githubMap" src="assets/image/github1.png" alt="png" height="60" width="60">
-          <img usemap="#twitterMap" src="assets/image/twitter1.png" alt="png" height="60" width="60">
-          <img  usemap="#youtubeMap" src="assets/image/youtube%203.png" alt="png" height="60" width="60">
-          <img  usemap="#insterMap" src="assets/image/inster.png" alt="png" height="60" width="60">
 
-          <map name="fbMap">
-            <area shape="rect" coords="0,0,100,100" href="https://www.facebook.com/profile.php?id=100079070987907&mibextid=ZbWKwL" alt="GO TO FACEBOOK">
-          </map>
 
-          <map name="githubMap">
-            <area shape="rect" coords="0,0,100,100" href="https://github.com/ParamiJayathilaka" alt="GO TO GITHUB">
-          </map>
+      <div class="icon">
+        <a class="fb"  href="https://www.facebook.com/ramani.manamperi.9"><i class="fa-brands fa-facebook"></i></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/dulanji-abeysekara-0945b527b/"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="twitter" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a class="git" href="https://github.com/DulanjiAbeysekara"><i class="fa-brands fa-github"></i></a>
+        <a class="YouTube" href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      </div>
 
-          <map name="twitterMap">
-            <area shape="rect" coords="0,0,100,100" href="https://twitter.com" alt="GO TO GITHUB">
-          </map>
 
-          <map name="youtubeMap">
-            <area shape="rect" coords="0,0,100,100" href="https://youtube.com" alt="GO TO GITHUB">
-          </map>
-
-          <map name="insterMap">
-            <area shape="rect" coords="0,0,100,100" href="https://instergam.com" alt="GO TO GITHUB">
-          </map>
-
-        </nav>
-      </section>
     </section>
 
   </section>
@@ -986,6 +1366,9 @@
   <!-- section 2 -->
 
   <section id="two">
+    <header id="header1">
+
+    </header>
     <section id="section2">
       <h1>
         <dfn id="About me"><strong>About me</strong></dfn>
@@ -995,10 +1378,10 @@
       </aside>
       <article>
                 <pre>
-                    I’m Parami Jayathilaka ,
-                    I am curruntly studying  a software engineer diploma at IJSE and
-                    I am also studying in other subjects.
-                    I’ve spend most of my working hourse for the last years for Oparating web sites,
+                    I am Parami Jayathilaka, I am curruntly studying  a software engineer diploma
+                    at IJSE and I am also studying in other subjects.
+
+                    I am spend most of my working hourse for the last years for Oparating web sites,
                     programming and designing.
                     I have improve the knowledge and skills neccessary to make your project success.
 
@@ -1030,9 +1413,12 @@
   <!-- section 3 -->
 
   <section id="three">
+    <header id="header2">
+
+    </header>
     <section id="section3">
       <h1><dfn id="Skills"><strong>Skills</strong></dfn></h1>
-      <div id="uiux"><img src="assets/image/ui%20ux.png" alt="png" height="100" width="100">
+      <div id="uiux"><img src="assets/image/uiux.png" alt="png" height="100" width="200">
         <h1>UI/UX Design</h1>
         <pre>
                     User interface (UI)
@@ -1074,7 +1460,7 @@
       <div id="languagetools">
         <img src="assets/image/html.png" alt="png" height="100" width="100">
         <img src="assets/image/java.png" alt="png" height="100" width="100">
-        <img src="assets/image/node.png" alt="png" height="100" width="100">
+        <img src="assets/image/node.png" alt="png" height="100" width="150">
         <img src="assets/image/php.png" alt="png" height="100" width="100">
         <img src="assets/image/sceanBuilder.png" alt="png" height="100" width="100">
         <img src="assets/image/ij.png" alt="png" height="100" width="100">
@@ -1087,65 +1473,71 @@
 
   <!-- section 4 -->
   <section id="four">
+    <header id="header3">
+
+    </header>
     <section id="section4">
       <h1><dfn id="Education"><strong>Education</strong></dfn></h1>
       <h3>01. Project</h3>
       <div id="calculator">
-        <img src="assets/image/calc.png" alt="png" height="100" width="100">
-        <pre>
-             I have just created a calculator.
-            It enables you to perform operations
-            such as addition, subtraction, division,
-            multiplication, etc.
-        </pre>
+        <img src="assets/image/calc.png" alt="png" height="130" width="170">
+        <pre>Here i have created a software for connecting four games.</pre>
       </div>
 
       <div id="connet4games">
-        <img src="assets/image/connect%204%20games.png" alt="png" height="100" width="100">
-        <pre>Here i have created a software
-            for connecting four games.
-        </pre>
+        <img src="assets/image/connect 4 games.png" alt="png" height="130" width="130">
+        <pre>Connected Four Games Project</pre>
       </div>
 
       <div id="furniture">
-        <img src="assets/image/furniture.png" alt="png" height="100" width="100">
-        <pre>Here i have created a software for
-                managing Furniture shop .
-            </pre>
+        <img src="assets/image/furniture.png" alt="png" height="130" width="150">
+        <pre>Furniture Shop Managment Project</pre>
       </div>
 
       <div id="hostal">
-        <img src="assets/image/furniture.png" alt="png" height="100" width="100">
-        <pre>Here i have created a software for
-                managing Furniture shop .
-            </pre>
+        <img src="assets/image/hostal.png" alt="png" height="130" width="130">
+        <pre>Hostal Managment Project</pre>
       </div>
 
-      <div id="viewmore1">
-        <h2>View More</h2>
+      <div id="student">
+        <img src="assets/image/student.png" alt="png" height="130" width="170">
+        <pre>Student Managment Project</pre>
       </div>
+
+      <div id="chatApplication">
+        <img src="assets/image/chataApplication.png" alt="png" height="130" width="150">
+        <pre>Chat Application Project</pre>
+      </div>
+
+      <!--
+              <div id="viewmore1">
+                  <h2>View More</h2>
+              </div> -->
     </section>
   </section>
 
 
   <!-- section 5 -->
   <section id="five">
+    <header id="header4">
+
+    </header>
     <section id="section5">
       <h3><strong>Assigment</strong></h3>
 
       <div id="div1">
         <h1>CSS Assinment</h1>
-        <img src="assets/image/assign1.png" alt="png" height="200" width="200">
+        <img src="assets/image/assigment1.png" alt="png" height="200" width="250">
       </div>
 
       <div id="div2">
         <h1>Animation Assinment</h1>
-        <img src="assets/image/assign1.png" alt="png" height="200" width="200">
+        <img src="assets/image/assignment2.png" alt="png" height="200" width="200">
       </div>
 
       <div id="div3">
-        <h1>Transition Assignment</h1>
-        <img src="assets/image/assign1.png" alt="png" height="200" width="200">
+        <h1 >Transition Assignment</h1>
+        <img src="assets/image/assignment3.png" alt="png" height="200" width="200">
       </div>
 
       <div id="viewmore3">
@@ -1155,69 +1547,72 @@
   </section>
 
   <!-- section 6 -->
-  <section id="six">
-    <section id="section6">
-      <h3><strong>02. Certificate</strong></h3>
-      <div id="certificate1">
-        <img src="assets/image/cetificate%201.png" alt="png" height="300" width="300">
-      </div>
+  <!-- <section id="six">
+      <section id="section6">
+          <h3><strong>02. Certificate</strong></h3>
+          <div id="certificate1">
+              <img src="assets/image/cetificate%201.png" alt="png" height="300" width="300">
+          </div>
 
-      <div id="certificate2">
-        <img src="assets/image/cetificate%202.png" alt="png" height="300" width="300">
-      </div>
+          <div id="certificate2">
+              <img src="assets/image/cetificate%202.png" alt="png" height="300" width="300">
+          </div>
 
-      <div id="viewmore2">
-        <h2>View More</h2>
-      </div>
-    </section>
-  </section>
+          <div id="viewmore2">
+              <h2>View More</h2>
+          </div>
+      </section>
+  </section> -->
 
 
   <!-- section 7 -->
   <section id="seven">
+    <header id="header5">
+
+    </header>
     <section id="section7">
       <h3><strong>03. Achievements</strong></h3>
 
       <div id="achive1">
-        <img src="assets/image/exam.png" alt="png">
+        <img src="assets/image/exam.png" alt="png" height="80" width="80">
         <pre>
                     In 2010 faced the Scholarship Examination & get a
                     good pass & passed the exam.</pre>
       </div>
 
       <div id="achive2">
-        <img src="assets/image/exam.png" alt="png">
+        <img src="assets/image/exam.png" alt="png" height="80" width="80">
         <pre>
                     In 2017 faced the 0/L Examination & get a
                     good pass & passed the exam.</pre>
       </div>
 
       <div id="achive3">
-        <img src="assets/image/exam.png" alt="png">
+        <img src="assets/image/exam.png" alt="png" height="80" width="80">
         <pre>
                     In 2020 faced the A/L Examination & get a
                     good pass & passed the exam.</pre>
       </div>
 
       <div id="achive4">
-        <img src="assets/image/graduate.png" alt="png">
+        <img src="assets/image/graduate.png" alt="png" height="80" width="80">
         <pre>
                     In 2021 I had done English & ICT diploma in AIBT
                     Campas and finally, I get the best results for that exams</pre>
       </div>
 
       <div id="achive5">
-        <img src="assets/image/graduate.png" alt="png">
+        <img src="assets/image/graduate.png" alt="png" height="80" width="80">
         <pre>
                     In 2022 I joined the IJSE Campas & currently
                     studying for a software engineer diploma & other subjects.  </pre>
       </div>
 
       <div id="achiveArrows">
-        <img id="img1" src="assets/image/arrow.png" alt="png">
-        <img id="img2" src="assets/image/arrow.png" alt="png">
-        <img id="img3" src="assets/image/arrow.png" alt="png">
-        <img id="img4" src="assets/image/arrow.png" alt="png">
+        <img id="img1" src="assets/image/arrow.png" alt="png" height="50" width="50">
+        <img id="img2" src="assets/image/arrow.png" alt="png" height="50" width="50">
+        <img id="img3" src="assets/image/arrow.png" alt="png" height="50" width="50">
+        <img id="img4" src="assets/image/arrow.png" alt="png" height="50" width="50">
       </div>
     </section>
   </section>
@@ -1225,11 +1620,14 @@
 
   <!-- section 8 -->
   <section id="eight">
+    <header id="header7">
+
+    </header>
     <section id="section8">
       <h1><dfn id="Activities"><strong>Activities</strong></dfn></h1>
       <div id="innovesta">
         <h2>Innovesta 23</h2>
-        <img src="assets/image/inno%201.png" alt="png" height="130" width="200">
+        <img src="assets/image/inno%201.png" alt="png" height="150" width="250">
         <img src="assets/image/inno%202.png" alt="png" height="200" width="200">
         <img src="assets/image/inno%203.png" alt="png" height="100" width="100">
         <video src="assets/vedio/VID-20230216-WA0093.mp4" controls height="200" width="200">
@@ -1240,9 +1638,9 @@
       </div>
       <div id="wasantha">
         <h2>IJSE Wasantha Arunalu</h2>
-        <img src="assets/image/wasantha%201.png" alt="png">
-        <img src="assets/image/wasantha%202.png" alt="png">
-        <img src="assets/image/wasantha%203.png" alt="png">
+        <img src="assets/image/wasantha%201.png" alt="png" height="150" width="200">
+        <img src="assets/image/wasantha%202.png" alt="png" height="100" width="100">
+        <img src="assets/image/wasantha%203.png" alt="png" height="100" width="100">
       </div>
     </section>
   </section>
@@ -1250,6 +1648,9 @@
 
   <!-- section 9 -->
   <section id="nine">
+    <header id="header8">
+
+    </header>
     <section id="section9">
 
       <h1><dfn id="Gallery"><strong>Gallery</strong></dfn></h1>
@@ -1278,14 +1679,15 @@
 </main>
 
 <footer id="footer">
+  <header id="header9"></header>
 
   <h1><dfn id="Contact"><strong>You Have any question</strong></dfn></h1>
   <div id="contactimage">
     <nav>
-      <img usemap="whatsappMap" src="assets/image/whatsapp.png" alt="png" height="50" width="50">  <a href="https://maps.app.goo.gl/Z4zexwKfdcveDTbR7">0778606375</a>
-      <img usemap="mailMap" src="assets/image/mail.png" alt="png" height="50" width="50">  <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">thinithiparami53@gmail.com</a>
-      <img usemap="callMap" src="assets/image/call.png" alt="png" height="50" width="50">  <a href="https://api.whatsapp.com/send/?phone=%2B94778606375&amp;text&amp;app_absent=0">0778606375</a>
-      <img usemap="locationMap" src="assets/image/location.png" alt="png" height="50" width="50">  <a href="https://maps.app.goo.gl/Z4zexwKfdcveDTbR7">Galle, Sri Lanka</a>
+      <img id="image1" usemap="whatsappMap" src="assets/image/whatsapp.png" alt="png" height="50" width="50">  <a id="href1" href="https://maps.app.goo.gl/Z4zexwKfdcveDTbR7">0778606375</a>
+      <img id="image2" usemap="mailMap" src="assets/image/mail.png" alt="png" height="50" width="50">  <a id="href2" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">thinithiparami53@gmail.com</a>
+      <img id="image3" usemap="callMap" src="assets/image/call.png" alt="png" height="50" width="50">  <a id="href3" href="https://api.whatsapp.com/send/?phone=%2B94778606375&amp;text&amp;app_absent=0">0778606375</a>
+      <img id="image4" usemap="locationMap" src="assets/image/location.png" alt="png" height="50" width="50">  <a id="href4" href="https://maps.app.goo.gl/Z4zexwKfdcveDTbR7">Galle, Sri Lanka</a>
 
       <map name="whatsappMap">
         <area shape="rect" coords="0,0,100,100" href="https://maps.app.goo.gl/Z4zexwKfdcveDTbR7" alt="GO TO FACEBOOK">
@@ -1312,7 +1714,7 @@
     <form id="Enter Your Details: " >
 
 
-      <legend>Enter your details :</legend>
+
 
       <label for="name">Name :</label>
       <input id="name" type="text" placeholder="enter your name"  required><br><br>
@@ -1331,11 +1733,11 @@
   <div id="followme">
     <nav>
       <h2>Follow me :</h2>
-      <img usemap="#fbMap" src="assets/image/faceBook.png" alt="png" height="100" width="100">
-      <img usemap="#githubMap" src="assets/image/github1.png" alt="png" height="100" width="100">
-      <img usemap="#twitterMap" src="assets/image/twitter1.png" alt="png" height="100" width="100">
-      <img  usemap="#youtubeMap" src="assets/image/youtube%203.png" alt="png" height="100" width="100">
-      <img  usemap="#insterMap" src="assets/image/inster.png" alt="png" height="100" width="100">
+      <img usemap="#fbMap" src="assets/image/faceBook.png" alt="png" height="50" width="50">
+      <img usemap="#githubMap" src="assets/image/github1.png" alt="png" height="50" width="50">
+      <img usemap="#twitterMap" src="assets/image/twitter1.png" alt="png" height="50" width="50">
+      <img  usemap="#youtubeMap" src="assets/image/youtube.png" alt="png" height="50" width="50">
+      <img  usemap="#insterMap" src="assets/image/linkedIn.png" alt="png" height="50" width="50">
 
       <map name="fbMap">
         <area shape="rect" coords="0,0,100,100" href="https://www.facebook.com/profile.php?id=100079070987907&mibextid=ZbWKwL" alt="GO TO FACEBOOK">

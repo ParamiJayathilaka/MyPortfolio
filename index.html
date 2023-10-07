@@ -19,7 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Borel&family=Give+You+Glory&family=Joti+One&family=Judson&family=Kadwa&family=Kanit:wght@100&family=Kaushan+Script&family=Kumar+One&family=Ledger&family=Lemon&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Borel&family=Give+You+Glory&family=Joti+One&family=Judson&family=Junge&family=Kadwa&family=Kanit:wght@100&family=Kaushan+Script&family=Kumar+One&family=Ledger&family=Lemon&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Borel&family=Give+You+Glory&family=Joti+One&family=Judson&family=Junge&family=Kadwa&family=Kanit:wght@100&family=Kantumruy+Pro:ital,wght@0,500;1,500&family=Kaushan+Script&family=Kumar+One&family=Ledger&family=Lemon&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width initial-scale=1">
     
     
     
@@ -66,6 +67,12 @@
             border-top: 1px solid rgb(14, 165, 224);
             border-bottom: 1px solid rgb(18, 156, 211);
             color:#000000;
+            
+       }
+
+       #topic{
+        background:transparent;
+        text-decoration: none;
        }
 
        body>header>div{
@@ -127,6 +134,7 @@
         position:absolute;
         top:70%;
         right: 18%;
+        /* text-shadow: 1px 2px -3px 0 #00F6F6; */
        }
       
        #icon{
@@ -136,9 +144,58 @@
        }
 
     
-       #icon>nav>img{
+       /* .icon{
         padding-left: 10px;
+        display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    
+    
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #D31A38;
+    transition: .5s ease;
+        
        }
+
+       #icon>nav> img:hover{
+
+        background: #00F6F6;
+        color: #040C13;
+        box-shadow: 0 0 1rem #00F6F6;
+       } */
+
+       .icon{
+        position: absolute;
+        padding-left: 90%;
+        top: 30%;
+        
+       }
+
+       .icon a{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background:transparent;
+    border: 2px solid #00F6F6;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #00F6F6;
+    transition: .5s ease;
+    text-decoration: none;
+
+}
+
+.icon a:hover{
+    background: #00F6F6;
+    color: #040C13;
+    box-shadow: 0 0 1rem #00F6F6;
+
+}
 
        #icon>nav>img:first-child{
         position:absolute;
@@ -279,16 +336,29 @@
        }
 
        #uiux{
-        width: 25%;
-        height: 60%;
-        position: absolute; 
-        top: 10%;
-        left:5%;
-        border-radius: 10px;
+    position: absolute;
+    width: 25%;
+    height: 60%;
         background-color: #000E1E;
-       }
+    top: 10%;
+    left:5%;
+    color:rgb(0, 238, 255);
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 3s;
+    border-radius: 10px;
+    } 
 
-       #uiux>img{
+    #uiux:hover{
+    transition-duration: 3s;
+    transition-property:all;
+    border: 4px solid #00F6F6 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+
+
+#uiux>img{
         position: absolute;
         left:25%;
        }
@@ -310,8 +380,39 @@
         color: white;
        }
 
+       /* #uiux{
+        width: 25%;
+        height: 60%;
+        position: absolute; 
+        top: 10%;
+        left:5%;
+        border-radius: 10px;
+        background-color: #000E1E;
+       } */
 
+       
        #www{
+    position: absolute;
+    width: 25%;
+    height: 60%;
+        background-color: #000E1E;
+    top: 10%;
+    left:38%;
+    color:rgb(0, 238, 255);
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 3s;
+    border-radius: 10px;
+    } 
+
+    #www:hover{
+    transition-duration: 3s;
+    transition-property:all;
+    border: 4px solid #00F6F6 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+       /* #www{
         width: 25%;
         height: 60%;
         position: absolute; 
@@ -319,7 +420,7 @@
         left:38%;
         border-radius: 10px;
         background-color: #000E1E;
-       }
+       } */
 
        #www>img{
         position: absolute;
@@ -344,6 +445,28 @@
        }
 
        #bugfix{
+    position: absolute;
+    width: 25%;
+    height: 60%;
+        background-color: #000E1E;
+    top: 10%;
+    left:70%;
+    color:rgb(0, 238, 255);
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 3s;
+    border-radius: 10px;
+    } 
+
+    #bugfix:hover{
+    transition-duration: 3s;
+    transition-property:all;
+    border: 4px solid #00F6F6 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+
+       /* #bugfix{
         width: 25%;
         height: 60%;
         position: absolute;
@@ -352,7 +475,7 @@
         left:70%;
         border-radius: 10px;
         background-color: #000E1E;
-       }
+       } */
 
        #bugfix>img{
         position: absolute;
@@ -384,17 +507,30 @@
            color: white;
        }
 
-       #languagetools{
+       /* #languagetools{
         width: 100%;
         height: 60%;
         position:absolute;
         top: 80%;
         left: 0%;
-       }
-       
+       } */
+
        #languagetools>img{
+        position:relative;
+       right:41px;
+       transition: 3s;
+      margin-top: 33%;
+       left: 0%;
+}
+#languagetools>img:hover{
+    transform: scale(0.5, 0.5);
+    z-index: 2;
+   
+}
+       
+       /* #languagetools>img{
         padding-left: 40px;
-       }
+       } */
 
        /* section4 */
 
@@ -596,8 +732,29 @@
         left: 3%;
         top: 3%;
        }
-       
+
        #div1{
+    position: absolute;
+    width: 30%;
+        height: 50%;
+        background-color: #233034;
+        top: 15%;
+        left:2%;
+    color:white;
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 3s;
+    border-radius: 50px;
+}
+#div1:hover{
+    transition-duration: 3s;
+    transition-property:all;
+    background: #000000 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+       
+       /* #div1{
         width: 30%;
         height: 50%;
         position: absolute;
@@ -605,7 +762,7 @@
         top: 15%;
         left:2%;
         border-radius: 50px;
-       }
+       } */
 
        #div1>h1{
         color: #11E2FF;
@@ -621,6 +778,27 @@
        }
 
        #div2{
+    position: absolute;
+    width: 30%;
+        height: 50%;
+        background-color: #233034;
+        top: 15%;
+        left:35%;
+    color:white;
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 3s;
+    border-radius: 50px;
+}
+#div2:hover{
+    transition-duration: 3s;
+    transition-property:all;
+    background: #000000 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+/* 
+       #div2{
         width: 30%;
         height: 50%;
         position: absolute;
@@ -628,7 +806,7 @@
         top: 15%;
         left:35%;
         border-radius: 50px;
-       }
+       } */
        #div2>h1{
         color: #11E2FF;
         position: absolute;
@@ -641,9 +819,30 @@
         left:25%;
         top: 30%;
        }
-       
 
        #div3{
+    position: absolute;
+    width: 30%;
+        height: 50%;
+        background-color: #233034;
+        top: 15%;
+        left:67%;
+    color:white;
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 3s;
+    border-radius: 50px;
+}
+#div3:hover{
+    transition-duration: 3s;
+    transition-property:all;
+    background: #000000 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+       
+
+       /* #div3{
         width: 30%;
         height: 50%;
         position: absolute;
@@ -651,7 +850,7 @@
         top: 15%;
         left:67%;
         border-radius: 50px;
-       }
+       } */
        #div3>h1{
         color: #11E2FF;
         position: absolute;
@@ -744,18 +943,30 @@
         background-color: #1B222C;
          }
 
-       #achive1{
-        width: 40%;
+         #achive1{
+    position: absolute;
+    width: 40%;
         height: 10%;
-        position: absolute;
-        background-color: #0C111F; 
+        background-color: #0C111F;
         top: 10%;
         left:10%;
-        border-radius: 30px;
-        border: 5px solid black;
-       }
+    color:rgb(0, 238, 255);
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 2s;
+    border-radius: 30px;
+    border: 5px solid black;
+    } 
 
-       #achive1>pre{
+    #achive1:hover{
+    transition-duration: 2s;
+    transition-property:all;
+    border: 4px solid #b3b8b8 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+
+#achive1>pre{
         position: relative;
         top: -4%;
         left:-10%;
@@ -769,18 +980,41 @@
         left:-18%;
        }
 
-       #achive2{
+       /* #achive1{
         width: 40%;
         height: 10%;
         position: absolute;
-        background-color:  #0C111F; 
-        top: 25%;
-        left:20%;
+        background-color: #0C111F; 
+        top: 10%;
+        left:10%;
         border-radius: 30px;
         border: 5px solid black;
-       }
+       } */
 
-       #achive2>pre{
+       #achive2{
+    position: absolute;
+    width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 25%;
+        left:20%;
+    color:rgb(0, 238, 255);
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 2s;
+    border-radius: 30px;
+    border: 5px solid black;
+    } 
+
+    #achive2:hover{
+    transition-duration: 2s;
+    transition-property:all;
+    border: 4px solid #b3b8b8 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+
+#achive2>pre{
         position: relative;
         top: -4%;
         left:-10%;
@@ -793,20 +1027,42 @@
         top: -10%;
         left:-18%;
        }
-
-
-       #achive3{
+       /* #achive2{
         width: 40%;
         height: 10%;
         position: absolute;
         background-color:  #0C111F; 
-        top: 40%;
-        left:30%;
+        top: 25%;
+        left:20%;
         border-radius: 30px;
         border: 5px solid black;
-       }
+       } */
 
-       #achive3>pre{
+       
+       #achive3{
+    position: absolute;
+    width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 40%;
+        left:30%;
+    color:rgb(0, 238, 255);
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 2s;
+    border-radius: 30px;
+    border: 5px solid black;
+    } 
+
+    #achive3:hover{
+    transition-duration: 2s;
+    transition-property:all;
+    border: 4px solid #b3b8b8 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+
+#achive3>pre{
         position: relative;
         top: -4%;
         left:-10%;
@@ -821,18 +1077,42 @@
        }
 
 
-       #achive4{
+       /* #achive3{
         width: 40%;
         height: 10%;
         position: absolute;
         background-color:  #0C111F; 
-        top: 55%;
-        left:40%;
+        top: 40%;
+        left:30%;
         border-radius: 30px;
         border: 5px solid black;
-       }
+       } */
 
-       #achive4>pre{
+       #achive4{
+    position: absolute;
+    width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 55%;
+        left:40%;
+    color:rgb(0, 238, 255);
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 2s;
+    border-radius: 30px;
+    border: 5px solid black;
+    } 
+
+    #achive4:hover{
+    transition-duration: 2s;
+    transition-property:all;
+    border: 4px solid #b3b8b8 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+
+
+#achive4>pre{
         position: relative;
         top: -4%;
         left:-10%;
@@ -846,19 +1126,42 @@
         left:-18%;
        }
 
-
-       #achive5{
+       /* #achive4{
         width: 40%;
         height: 10%;
         position: absolute;
         background-color:  #0C111F; 
-        top: 70%;
-        left:50%;
+        top: 55%;
+        left:40%;
         border-radius: 30px;
         border: 5px solid black;
-       }
+       } */
 
-       #achive5>pre{
+
+       #achive5{
+    position: absolute;
+    width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 70%;
+        left:50%;
+    color:rgb(0, 238, 255);
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 2s;
+    border-radius: 30px;
+    border: 5px solid black;
+    } 
+
+    #achive5:hover{
+    transition-duration: 2s;
+    transition-property:all;
+    border: 4px solid #b3b8b8 ;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
+}
+
+#achive5>pre{
         position: relative;
         top: -4%;
         left:-10%;
@@ -871,6 +1174,18 @@
         top: -10%;
         left:-18%;
        }
+       /* #achive5{
+        width: 40%;
+        height: 10%;
+        position: absolute;
+        background-color:  #0C111F; 
+        top: 70%;
+        left:50%;
+        border-radius: 30px;
+        border: 5px solid black;
+       } */
+
+      
 
        #img1{
         position: absolute;
@@ -930,34 +1245,40 @@
         
        }
 
-       #innovesta>img:nth-child(2){
-        position: absolute;
-        padding-left: 40px;
-        top: 10%;
-        left:10%;
-       }
+       #innovesta>img:nth-child(3) {
+    position: absolute;
+    padding-left: 40px;
+    top: 6%;
+    left: 29%;
+}
 
-       #innovesta>img:nth-child(3){
+       #innovesta>img:nth-child(2) {
+    position: absolute;
+    padding-left: 40px;
+    top: 25%;
+    left: -3%;
+}
+
+       /* #innovesta>img:nth-child(3){
         position: absolute;
     padding-left: 40px;
     top: 3%;
     left: 37%;
-       }
+       } */
 
-       #innovesta>img:nth-child(4){
-        position: absolute;
-        padding-left: 40px;
-        top: 10%;
-        left:30%;
-       }
+       innovesta>img:nth-child(4) {
+    position: absolute;
+    padding-left: 40px;
+    top: 32%;
+    left: 38%;
+}
 
-       #innovesta>video{
-        position: absolute;
-        padding-left: 40px;
-        top: 10%;
-        left:40%;
-       }
-
+#innovesta>video {
+    position: absolute;
+    padding-left: 40px;
+    top: 0%;
+    left: 64%;
+}
        #wasantha{
         width: 85%;
         height: 40%;
@@ -1185,8 +1506,21 @@
        
 
 
+/* media Quaery */
+    @media all and (max-width: 320px) {
 
+    body>header>div>h4 {
+    position: absolute;
+    top: 483%;
+    left: 193%;
+    font-size: 9px;
+    font-family: 'Give You Glory', cursive;
+    color: #00F6F6;
+}
 
+    }
+
+    @media all and (min-width:325px) and (max-width: 375px) {}
 
 
     </style>
@@ -1198,7 +1532,7 @@
 <header>
     <nav>
         <menu>
-            <pre>
+            <pre id="topic">
                 <a href="#header1" style=" color: #AEEBE7">About</a>  <a href="#Skills" style=" color: #AEEBE7">Skills</a>  <a href="#Education" style=" color: #AEEBE7">Education</a>  <a href="#Activities" style=" color: #AEEBE7">Activities</a>  <a href="#Gallery" style=" color: #AEEBE7">Gallery</a>  <a href="#Contact" style=" color: #AEEBE7">Contact</a>
             </pre>
         </menu>
@@ -1239,37 +1573,17 @@
                 <h4>I can do whatever You want today</h4>
             </aside>
     
-            <section id="icon">
+            
+
+                <div class="icon">
+                    <a class="fb"  href="https://www.facebook.com/ramani.manamperi.9"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/dulanji-abeysekara-0945b527b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="twitter" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="git" href="https://github.com/DulanjiAbeysekara"><i class="fa-brands fa-github"></i></a>
+                    <a class="YouTube" href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                </div>
                 
-                <nav>
-                    <img usemap="#fbMap" src="assets/image/faceBook.png" alt="png" height="50" width="50">
-                    <img usemap="#githubMap" src="assets/image/github1.png" alt="png" height="50" width="50">
-                    <img usemap="#twitterMap" src="assets/image/twitter1.png" alt="png" height="50" width="50">
-                    <img  usemap="#youtubeMap" src="assets/image/youtube.png" alt="png" height="50" width="50">
-                    <img  usemap="#insterMap" src="assets/image/linkedIn.png" alt="png" height="50" width="50">
-    
-                    <map name="fbMap">
-                        <area shape="rect" coords="0,0,100,100" href="https://www.facebook.com/profile.php?id=100079070987907&mibextid=ZbWKwL" alt="GO TO FACEBOOK">
-                    </map>
-    
-                    <map name="githubMap">
-                        <area shape="rect" coords="0,0,100,100" href="https://github.com/ParamiJayathilaka" alt="GO TO GITHUB">
-                    </map>
-    
-                    <map name="twitterMap">
-                        <area shape="rect" coords="0,0,100,100" href="https://twitter.com" alt="GO TO TWITTER">
-                    </map>
-    
-                    <map name="youtubeMap">
-                        <area shape="rect" coords="0,0,100,100" href="https://youtube.com" alt="GO TO YOUTUBE">
-                    </map>
-    
-                    <map name="insterMap">
-                        <area shape="rect" coords="0,0,100,100" href="https://www.linkedin.com/in/thinithi-parami-7b35b927b/?originalSubdomain=lk" alt="GO TO LINKEDIN">
-                    </map>
-    
-                </nav>
-            </section>
+           
         </section>
 
     </section>
