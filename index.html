@@ -28,12 +28,16 @@
 
         /* ----------main----------- */
         main{
-            background-color: black;
+            background-color: #2a2d2d;
             overflow: hidden;
             position: relative;
             width: 100%;
             height: 100%;
             margin-top: 4%;
+        }
+
+        body{
+            background-color: #2a2d2d;
         }
 
         footer{
@@ -1446,76 +1450,155 @@ body {
        /* footer */
 
        #footer{
+        
         background-color:#111D28 ;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
        }
 
-       #footer>h1>dfn>strong{
+       #footer>header{
+            background-color: #272626e5;
+            width: 100%;
+            height: 7vh;
+            text-align: center;
+            top: 0;
+            position: sticky;
+            z-index: 2;
+        }
+       
+
+       #footer>header>h1>dfn>strong{
         position: absolute;
         top: 2%;
         left: 1%;
-        font-size: 30px;
+        font-size: 20px;
         color: #ffffff;
         font-family: 'Lemon', cursive;
        }
 
+       #details{
+        width: 53%;
+    height: 51%;
+    position: absolute;
+    background-color: #00F6F6;
+    border: 2px solid black;
+    border-radius: 15px;
+    top: 20%;
+    left: 45%;
+
+       }
+
+       #nameLabel {
+        position: absolute;
+    left: 2%;
+    top: 27%;
+       }
+
+       #name{
+        position: absolute;
+    left: 10%;
+    width: 36%;
+    height: 15%;
+    top: 22%;
+
+       }
+
+       #emailLabel{
+        position: absolute;
+    top: 28%;
+    height: 10%;
+    left: 54%;
+       }
+
+       #email{
+        position: absolute;
+    height: 15%;
+    top: 22%;
+    width: 36%;
+    left: 62%;
+       }
+
+       #massageLabel{
+        position: absolute;
+    top: 49%;
+    left: 1%;
+
+       } 
+
+       #massage{
+        position: absolute;
+    top: 47%;
+    left: 10%;
+    height: 29%;
+    width: 88%;
+
+       }
+
+       #submit{
+        position: absolute;
+    left: 84%;
+    top: 87%;
+       }
+/* 
        #image1{
         position: absolute;
         top: 15%;
         left: 5%;
-       }
+       } */
 
-       #href1{
+       /* #href1{
         position: absolute;
         top: 18%;
         left: 10%;
         color: white;
         font-size: large;
-       }
+       } */
 
-       #image2{
+       /* #image2{
         position: absolute;
         top: 28%;
         left: 5%;
-       }
-
+       } */
+/* 
        #href2{
         position: absolute;
         top: 28%;
         left: 10%;
         color: white;
         font-size: large;
-       }
+       } */
 
-       #image3{
+       /* #image3{
         position: absolute;
         top: 38%;
         left: 5%;
-       }
+       } */
 
-       #href3{
+       /* #href3{
         position: absolute;
         top: 38%;
         left: 10%;
         color: white;
         font-size: large;
-       }
+       } */
 
-       #image4{
+       /* #image4{
         position: absolute;
         top: 48%;
         left: 5%;
-       }
+       } */
 
-       #href4{
+       /* #href4{
         position: absolute;
         top: 48%;
         left: 10%;
         color: white;
         font-size: large;
-       }
+       } */
 
 
-       #details{
+       /* #details{
         
         position: relative;
         background-color: #000E1E; 
@@ -1523,56 +1606,56 @@ body {
         left:50%;
         width: 40%;
         border-radius: 10px;
-    }
+    } */
 
-    #details>h2{
+    /* #details>h2{
         position: absolute;
         top: 0%;
         left: 1%;
         font-size: 30px;
         color: #ffffff;
         font-family: 'Joti One', cursive;
-    }
+    } */
 
-    #details>form>label:first-child{
+    /* #details>form>label:first-child{
         position: absolute;
         top: 3%;
         left: 1%;
         font-size: 20px;
         color: #ffffff;
         font-family: 'Joti One', cursive;
-    }
+    } */
 
-    #details>form>input:first-child{
+    /* #details>form>input:first-child{
         position: absolute;
         top: 5%;
         left: 1%;
-    }
+    } */
 
-    #details>form>label:nth-child(2){
+    /* #details>form>label:nth-child(2){
         position: absolute;
         top: 5%;
         left: 1%;
         font-size: 20px;
         color: #ffffff;
         font-family: 'Joti One', cursive;
-    }
+    } */
 
-    #details>form>label:nth-child(3){
+    /* #details>form>label:nth-child(3){
         position: absolute;
         top: 10%;
         left: 1%;
         font-size: 20px;
         color: #ffffff;
         font-family: 'Joti One', cursive;
-    }
-     
+    } */
+      /**!*/
         
        
 
 
 /* media Quaery */
-    @media all and (max-width: 320px) {
+    /* @media all and (max-width: 320px) {
 
     body>header>div>h4 {
     position: absolute;
@@ -1592,9 +1675,9 @@ body {
     left: -18%;
 }
 
-    }
+    } */
 
-    @media all and (min-width:325px) and (max-width: 375px) {}
+    /* @media all and (min-width:325px) and (max-width: 375px) {} */
 
 
     </style>
@@ -1623,27 +1706,10 @@ body {
 <main>
 
     <!-- section 1 -->
-    <script> - var texts = ['W', 'e', 'l', 'c', 'o', 'm', 'e', ': )'];
-        - var number_of_particle = 12;
-        
-        - for (var i = 0; i < texts.length; i++)
-          .background(class="background" + i)
-        .criterion
-          - for (var i = 0; i < texts.length; i++)
-            .text(class='text' + i) #{texts[i]}
-          - for (var i = 0; i < texts.length; i++)
-            .frame(class='frame' + i)
-          - for (var i = 0; i < texts.length; i++)
-            - for (var j = 0; j < number_of_particle; j++)
-              .particle(class="particle" + i + j)
-
-    </script>
-    <script src="assests/boostrap/js/bootstrap.bundle.js"></script>
+    
 
     
     <section id="one">
-       
-
         <section id="section1">
             <section id="welcome" >
                 <hgroup>
@@ -1998,9 +2064,12 @@ body {
 </main>
 
 <footer id="footer">
-    <header id="header9"></header>
+    <header id="header9">
+        <h1><dfn id="Contact"><strong>You Have any question</strong></dfn></h1>
+        <!-- <h1>You Have any question</h1> -->
+    </header>
 
-    <h1><dfn id="Contact"><strong>You Have any question</strong></dfn></h1>
+    
     <div id="contactimage">
         <nav>
             <img id="image1" usemap="whatsappMap" src="assets/image/whatsapp.png" alt="png" height="50" width="50">  <a id="href1" href="https://maps.app.goo.gl/Z4zexwKfdcveDTbR7">0778606375</a>
@@ -2030,22 +2099,20 @@ body {
  
     <div id="details">
         <h2>Enter your details :</h2>
-        <form id="Enter Your Details: " >
+        <form id="enterYourDetails" >
 
            
-                
-
-                <label for="name">Name :</label>
+                <label id="nameLabel" for="name">Name :</label>
                 <input id="name" type="text" placeholder="enter your name"  required><br><br>
 
-                <label for="email">Email :</label>
+                <label id="emailLabel" for="email">Email :</label>
                 <input id="email" type="email" placeholder="enter your valied email address"  required><br><br>
 
-                <label for="massage">Massage :</label>
-                <textarea rows="4" id="massage" placeholder="Enter your massage" style="width: 396px; height: 210%;"></textarea><br><br>
+                <label id="massageLabel" for="massage">Massage :</label>
+                <textarea rows="4" id="massage" placeholder="Enter your massage" ></textarea><br><br>
 
 
-                <button type="submit">Submit Data</button>
+                <button id="submit" type="submit">Submit Data</button>
 
         </form>
     </div>
