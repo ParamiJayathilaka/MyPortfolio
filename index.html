@@ -1623,8 +1623,27 @@ body {
 <main>
 
     <!-- section 1 -->
+    <script> - var texts = ['W', 'e', 'l', 'c', 'o', 'm', 'e', ': )'];
+        - var number_of_particle = 12;
+        
+        - for (var i = 0; i < texts.length; i++)
+          .background(class="background" + i)
+        .criterion
+          - for (var i = 0; i < texts.length; i++)
+            .text(class='text' + i) #{texts[i]}
+          - for (var i = 0; i < texts.length; i++)
+            .frame(class='frame' + i)
+          - for (var i = 0; i < texts.length; i++)
+            - for (var j = 0; j < number_of_particle; j++)
+              .particle(class="particle" + i + j)
 
+    </script>
+    <script src="assests/boostrap/js/bootstrap.bundle.js"></script>
+
+    
     <section id="one">
+       
+
         <section id="section1">
             <section id="welcome" >
                 <hgroup>
@@ -2023,7 +2042,7 @@ body {
                 <input id="email" type="email" placeholder="enter your valied email address"  required><br><br>
 
                 <label for="massage">Massage :</label>
-                <textarea rows="4" id="massage" placeholder="Enter your massage"></textarea><br><br>
+                <textarea rows="4" id="massage" placeholder="Enter your massage" style="width: 396px; height: 210%;"></textarea><br><br>
 
 
                 <button type="submit">Submit Data</button>
