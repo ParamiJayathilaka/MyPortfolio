@@ -401,56 +401,60 @@
 
 
 
-<!--<script>-->
+<script>
 
-<!--  let dash = document.querySelector("#dashboardContent");-->
-<!--  let customer = document.querySelector("#customerContent");-->
-<!--  let item = document.querySelector("#itemContent");-->
-<!--  let order = document.querySelector("#orderContent");-->
+  let dash = document.querySelector("#dashboardContent");
+  let customer = document.querySelector("#customerContent");
+  let item = document.querySelector("#itemContent");
+  let order = document.querySelector("#orderContent");
 
-<!--  let lnkHome = document.querySelector("#lnkHome");-->
-<!--  let lnkCustomer = document.querySelector("#lnkCustomer");-->
-<!--  let lnkItem = document.querySelector("#lnkItem");-->
-<!--  let lnkOrder = document.querySelector("#lnkOrders");-->
+  let lnkHome = document.querySelector("#lnkHome");
+  let lnkCustomer = document.querySelector("#lnkCustomer");
+  let lnkItem = document.querySelector("#lnkItem");
+  let lnkOrder = document.querySelector("#lnkOrders");
 
-<!--  dash.style.display = 'block';-->
-<!--  customer.style.display = 'none';-->
-<!--  item.style.display = 'none';-->
-<!--  order.style.display = 'none';-->
-
-
-<!--  lnkHome.addEventListener("click", function () {-->
-<!--    dash.style.display = 'block';-->
-<!--    customer.style.display = 'none';-->
-<!--    item.style.display = 'none';-->
-<!--    order.style.display = 'none';-->
-<!--  })-->
+  main.style.display = 'block';
+  customer.style.display = 'none';
+  item.style.display = 'none';
+  order.style.display = 'none';
 
 
-<!--  lnkCustomer.addEventListener("click", function () {-->
-<!--    dash.style.display = 'none';-->
-<!--    customer.style.display = 'block';-->
-<!--    item.style.display = 'none';-->
-<!--    order.style.display = 'none';-->
-<!--  })-->
 
 
-<!--  lnkItem.addEventListener("click", function () {-->
-<!--    dash.style.display = 'none';-->
-<!--    customer.style.display = 'none';-->
-<!--    item.style.display = 'block';-->
-<!--    order.style.display = 'none';-->
-<!--  })-->
 
 
-<!--  lnkOrder.addEventListener("click", function () {-->
-<!--    dash.style.display = 'none';-->
-<!--    customer.style.display = 'none';-->
-<!--    item.style.display = 'none';-->
-<!--    order.style.display = 'block';-->
-<!--  })-->
+  lnkHome.addEventListener("click", function () {
+    dash.style.display = 'block';
+    customer.style.display = 'none';
+    item.style.display = 'none';
+    order.style.display = 'none';
+  })
 
 
+  lnkCustomer.addEventListener("click", function () {
+    dash.style.display = 'none';
+    customer.style.display = 'block';
+    item.style.display = 'none';
+    order.style.display = 'none';
+  })
+
+
+  lnkItem.addEventListener("click", function () {
+    dash.style.display = 'none';
+    customer.style.display = 'none';
+    item.style.display = 'block';
+    order.style.display = 'none';
+  })
+
+
+  lnkOrder.addEventListener("click", function () {
+    dash.style.display = 'none';
+    customer.style.display = 'none';
+    item.style.display = 'none';
+    order.style.display = 'block';
+  })
+
+  </script>
 
 
 
@@ -587,7 +591,7 @@
 <!--  //     alert("D");-->
 <!--  // });-->
 
-<!--</script>-->
+
 <script src="assests/boostrap/js/bootstrap.bundle.js"></script>
 <script src="assests/boostrap/js/jquery-3.7.1.min.js"></script>
 <script src="assignments/JS/SPA/Controllers/Validation/CustomerValidation.js"></script>
@@ -599,8 +603,8 @@
 <script src="assignments/JS/SPA/Controllers/OrderPurchaseController.js"></script>
 <script src="assignments/JS/SPA/DB/DB.js"></script>
 <script src="assignments/JS/SPA/Module/Customer.js"></script>
-<script src="controllers/validations/CustomerValidations.js"></script>
-<script src="controllers/validations/ItemValidations.js"></script>
+<script src="assignments/JS/SPA/Module/Item.js"></script>
+<script src="assignments/JS/SPA/Module/OrderDetails.js"></script>
 <script src="controllers/validations/OrderValidations.js"></script>
 
 </body>
