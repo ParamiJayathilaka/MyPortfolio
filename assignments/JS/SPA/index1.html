@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+  <meta content="width=device-width initial-scale=1" name="viewport">
   <link rel="stylesheet" href="assests/boostrap/css/bootstrap.css">
   <link rel="stylesheet" href="assests/boostrap/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Borel&family=Bubbler+One&family=Explora&family=Gabriela&family=Give+You+Glory&family=Joti+One&family=Judson&family=Junge&family=Kadwa&family=Kaisei+Opti&family=Kalam:wght@300&family=Kanit:wght@100&family=Kantumruy+Pro:ital,wght@0,500;1,500&family=Karma:wght@300&family=Kaushan+Script&family=Kumar+One&family=Ledger&family=Lemon&family=Libre+Baskerville&family=Oswald:wght@200;300&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Bigshot+One&family=Borel&family=Bubbler+One&family=Explora&family=Gabriela&family=Give+You+Glory&family=Joti+One&family=Judson&family=Junge&family=Kadwa&family=Kaisei+Opti&family=Kalam:wght@300&family=Kanit:wght@100&family=Kantumruy+Pro:ital,wght@0,500;1,500&family=Karma:wght@300&family=Kaushan+Script&family=Kumar+One&family=Ledger&family=Lemon&family=Libre+Baskerville&family=Oswald:wght@200;300&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+
   <style>
     ul > li {
       cursor: pointer;
@@ -15,13 +19,13 @@
 </head>
 <body style="background: url(assests/image/blue-background-7470781_1280.jpg)">
 <!--header-->
-<header class="jumbotron text-white p-3" style="background: url(assests/image/360_F_309246316_uXQOS2tcdUceurcmAJprpxBbbktiSW0C.jpg)">
-  <h1 class="position-absolute" id="nav"></h1>
-  <ul class="list-group list-group-horizontal text-danger justify-content-lg-start font-weight-bold ">
-    <li class="list-group-item bg-black text-white me-3 border" id="lnkHome"><a class="text-white" href="#">Home</a></li>
-    <li class="list-group-item bg-black  text-white me-3 border" id="lnkCustomer"><a href="#">Customer</a></li>
-    <li class="list-group-item bg-black text-white me-3 border" id="lnkItem"><a href="#">Item</a></li>
-    <li class="list-group-item bg-black text-white me-3 border" id="lnkOrders"><a href="#">Orders</a></li>
+<header class="jumbotron text-white p-4" style="background: url(assests/image/360_F_309246316_uXQOS2tcdUceurcmAJprpxBbbktiSW0C.jpg)">
+  <h3 class="position-absolute justify-content-lg-start" id="nav" style="font-family: 'Bigshot One', serif;" >Cool <br> Planet</h3>
+  <ul class="list-group list-group-horizontal text-white justify-content-lg-end font-weight-bold " >
+    <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px; " id="lnkHome"><a class="text-white" href="#">Home</a></li>
+    <li class="list-group-item bg-black  text-white me-3 border-2 border-dark" style="border-radius: 30px; " id="lnkCustomer"><a href="#">Customer</a></li>
+    <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px;" id="lnkItem"><a href="#">Item</a></li>
+    <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px;" id="lnkOrders"><a href="#">Orders</a></li>
   </ul>
 </header>
 
@@ -34,8 +38,8 @@
           <div class="card">
             <div class="card-header bg-dark text-white font-weight-bolder">Customers</div>
             <div class="card-body position-relative" style=" height: 20vw; background: url(assests/image/3d-fluency-three-men.png); background-position:center; background-size: contain; background-repeat: no-repeat; ">
-              <div class="dash-tile-icon "><i class="fas fa-users"></i></div>
-              <div class="dash-tile-text text-right text-black"><h2>45</h2></div>
+              <div class="dash-tile-icon"><i class="fas fa-users"></i></div>
+              <div class="dash-tile-text text-left text-info"><h2>10</h2></div>
             </div>
           </div>
         </div>
@@ -44,7 +48,7 @@
             <div class="card-header bg-dark text-white font-weight-bolder ">Items</div>
             <div class="card-body" style=" height: 20vw; background: url(assests/image/3d-casual-life-e-commerce-completed-order.png); background-position:center; background-size: contain; background-repeat: no-repeat; ">
               <div class="dash-tile-icon"><i class="fas fa-cubes"></i></div>
-              <div class="dash-tile-text text-right text-black"><h2>101</h2></div>
+              <div class="dash-tile-text text-right text-black"><h2>25</h2></div>
             </div>
           </div>
         </div>
@@ -53,7 +57,7 @@
             <div class="card-header bg-dark text-white font-weight-bolder">My Orders</div>
             <div class="card-body" style=" height: 20vw; background: url(assests/image/3d-casual-life-delivery-package-boxes.png); background-position:center; background-size: contain; background-repeat: no-repeat; ">
               <div class="dash-tile-icon"><i class="fas fa-shopping-cart"></i></div>
-              <div class="dash-tile-text text-right text-black"><h2>999</h2></div>
+              <div class="dash-tile-text text-right text-black"><h2>18</h2></div>
             </div>
           </div>
         </div>
@@ -78,8 +82,8 @@
 
 <!--customer-->
 <main class="container-fluid" id="customerContent">
-  <section class="row">
-    <div class="col-12 col-lg-4">
+  <section class="row ">
+    <div class="col-12 col-lg-4 ">
       <h1 class="text-dark">Customer Registration</h1>
 
       <div class="form-group">
@@ -143,7 +147,7 @@
 <main class="container-fluid" id="itemContent">
   <section class="row">
     <div class="col-12 col-lg-4">
-      <h1>Item Form</h1>
+      <h1 class="text-dark">Item Form</h1>
 
       <div class="form-group">
         <label for="itemCode"  class="text-white">Item Code</label>
