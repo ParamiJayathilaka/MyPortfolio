@@ -2,7 +2,6 @@
 const CUS_ID_REGEX = /^(C00-)[0-9]{3}$/;
 const CUS_NAME_REGEX = /^[A-Za-z ]{5,}$/;
 const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
-const CUS_CONTACT_REGEX = /^[A-Za-z0-9 ]{8,}$/;
 const CUS_SALARY_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
 
 //add validations and text fields to the
@@ -10,12 +9,11 @@ let c_vArray = new Array();
 c_vArray.push({field: $("#txtCustomerID"), regEx: CUS_ID_REGEX});
 c_vArray.push({field: $("#txtCustomerName"), regEx: CUS_NAME_REGEX});
 c_vArray.push({field: $("#txtCustomerAddress"), regEx: CUS_ADDRESS_REGEX});
-c_vArray.push({field: $("#txtCustomerContact"), regEx: CUS_CONTACT_REGEX});
 c_vArray.push({field: $("#txtCustomerSalary"), regEx: CUS_SALARY_REGEX});
 
 function clearCustomerInputFields() {
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerContact,#txtCustomerSalary").val("");
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerContact,#txtCustomerSalary").css("border", "1px solid #ced4da");
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").val("");
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").css("border", "1px solid #ced4da");
     $("#txtCustomerID").focus();
     setBtn();
 }

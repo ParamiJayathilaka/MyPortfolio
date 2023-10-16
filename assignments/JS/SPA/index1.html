@@ -103,12 +103,6 @@
       </div>
 
       <div class="form-group">
-        <label for="txtCustomerContact" class="text-white">Customer Contact</label>
-        <input class="form-control text-bg-dark" id="txtCustomerContact" type="text">
-        <span class="control-error" id="lblcuscontact"></span>
-      </div>
-
-      <div class="form-group">
         <label for="txtCustomerSalary" class="text-white">Customer Salary</label>
         <input class="form-control text-bg-dark" id="txtCustomerSalary" type="text">
         <span class="control-error" id="lblcussalary"></span>
@@ -130,7 +124,6 @@
           <th>Customer ID</th>
           <th>Customer Name</th>
           <th>Customer Address</th>
-          <th>Customer Contact</th>
           <th>Customer Salary</th>
         </tr>
         </thead>
@@ -398,29 +391,24 @@
 </main>
 
 
-
-
-
 <script>
-
+  // select all contents
   let dash = document.querySelector("#dashboardContent");
   let customer = document.querySelector("#customerContent");
   let item = document.querySelector("#itemContent");
   let order = document.querySelector("#orderContent");
 
+  //select all the link and bind click events
   let lnkHome = document.querySelector("#lnkHome");
   let lnkCustomer = document.querySelector("#lnkCustomer");
   let lnkItem = document.querySelector("#lnkItem");
   let lnkOrder = document.querySelector("#lnkOrders");
 
-  main.style.display = 'block';
+  //hide all the 4 content sections and display only dashboard
+  dash.style.display = 'block';
   customer.style.display = 'none';
   item.style.display = 'none';
   order.style.display = 'none';
-
-
-
-
 
 
   lnkHome.addEventListener("click", function () {
@@ -454,158 +442,142 @@
     order.style.display = 'block';
   })
 
-  </script>
 
 
 
-<!--  //Customer Mange-->
-<!--  // let btnSave = document.querySelector("#btnCustomer");-->
-<!--  // let btnGetAll = document.querySelector("#btnGetAll");-->
-<!--  // let tBody = document.querySelector("#tblCustomer");-->
 
-<!--  //select 4 text fields-->
-<!--  // let txtID = document.querySelector("#txtCustomerID");-->
-<!--  // let txtName = document.querySelector("#txtCustomerName");-->
-<!--  // let txtAddress = document.querySelector("#txtCustomerAddress");-->
-<!--  // let txtSalary = document.querySelector("#txtCustomerSalary");-->
+  //Customer Mange
+  // let btnSave = document.querySelector("#btnCustomer");
+  // let btnGetAll = document.querySelector("#btnGetAll");
+  // let tBody = document.querySelector("#tblCustomer");
 
-
-<!--  //save a customer-->
-<!--  // btnSave.addEventListener("click", function () {-->
-<!--  //     //create customer object and fill all the data-->
-<!--  //     var customer = {-->
-<!--  //         id: txtID.value,-->
-<!--  //         name: txtName.value,-->
-<!--  //         address: txtAddress.value,-->
-<!--  //         salary: txtSalary.value-->
-<!--  //     }-->
-<!--  //     //add customer to object to the array-->
-<!--  //     customers.push(customer);-->
-<!--  //     console.log(customers);-->
-<!--  // });-->
+  //select 4 text fields
+  // let txtID = document.querySelector("#txtCustomerID");
+  // let txtName = document.querySelector("#txtCustomerName");
+  // let txtAddress = document.querySelector("#txtCustomerAddress");
+  // let txtSalary = document.querySelector("#txtCustomerSalary");
 
 
-<!--  //load all customers from the array to the table-->
-<!--  // btnGetAll.addEventListener("click", function () {-->
-<!--  //     for (let i = 0; i < customers.length; i++) {-->
-<!--  //-->
-<!--  //         let tr = document.createElement("tr");-->
-<!--  //         let td1 = document.createElement("td");-->
-<!--  //         td1.textContent = customers[i].id;-->
-<!--  //         let td2 = document.createElement("td");-->
-<!--  //         td2.textContent = customers[i].name;-->
-<!--  //         let td3 = document.createElement("td");-->
-<!--  //         td3.textContent = customers[i].address;-->
-<!--  //         let td4 = document.createElement("td");-->
-<!--  //         td4.textContent = customers[i].salary;-->
-<!--  //         tr.append(td1, td2, td3, td4);-->
-<!--  //         tBody.append(tr);-->
-<!--  //     }-->
-<!--  //-->
-<!--  // });-->
-
-<!--  //temporary db-->
-<!--  var customers = [-->
-<!--    {id: "C001", name: "Dasun", address: "Galle", salary: 1000.22},-->
-<!--    {id: "C002", name: "Iman", address: "Mathara", salary: 2000.22}-->
-<!--  ];-->
+  //save a customer
+  // btnSave.addEventListener("click", function () {
+  //     //create customer object and fill all the data
+  //     var customer = {
+  //         id: txtID.value,
+  //         name: txtName.value,
+  //         address: txtAddress.value,
+  //         salary: txtSalary.value
+  //     }
+  //     //add customer to object to the array
+  //     customers.push(customer);
+  //     console.log(customers);
+  // });
 
 
-<!--  //refactor save with jQuery-->
-<!--  $("#btnCustomer").click(function () {-->
+  //load all customers from the array to the table
+  // btnGetAll.addEventListener("click", function () {
+  //     for (let i = 0; i < customers.length; i++) {
+  //
+  //         let tr = document.createElement("tr");
+  //         let td1 = document.createElement("td");
+  //         td1.textContent = customers[i].id;
+  //         let td2 = document.createElement("td");
+  //         td2.textContent = customers[i].name;
+  //         let td3 = document.createElement("td");
+  //         td3.textContent = customers[i].address;
+  //         let td4 = document.createElement("td");
+  //         td4.textContent = customers[i].salary;
+  //         tr.append(td1, td2, td3, td4);
+  //         tBody.append(tr);
+  //     }
+  //
+  // });
 
-<!--    let cus_ID = $("#txtCustomerID").val();-->
-<!--    let cus_Name = $("#txtCustomerName").val();-->
-<!--    let cus_Address = $("#txtCustomerAddress").val();-->
-<!--    let cus_Salary = $("#txtCustomerSalary").val();-->
-
-<!--    var customer = {-->
-<!--      id: cus_ID,-->
-<!--      name: cus_Name,-->
-<!--      address: cus_Address,-->
-<!--      salary: cus_Salary-->
-<!--    }-->
-
-<!--    //add customer to object to the array-->
-<!--    customers.push(customer);-->
-<!--    getAllCustomers();-->
-<!--    console.log(customers);-->
-<!--  });-->
-
-
-<!--  //refactor get_all with jQuery-->
-<!--  $("#btnGetAll").click(function () {-->
-<!--    getAllCustomers();-->
-<!--  });-->
-
-<!--  getAllCustomers();-->
-
-<!--  function getAllCustomers() {-->
-<!--    //remove all the child elements of tbody before adding the table rows-->
-<!--    $("#tblCustomer").empty();-->
-
-<!--    for (let i = 0; i < customers.length; i++) {-->
-<!--      let row = `<tr>-->
-<!--                            <td>${customers[i].id}</td>-->
-<!--                            <td>${customers[i].name}</td>-->
-<!--                            <td>${customers[i].address}</td>-->
-<!--                            <td>${customers[i].salary}</td>-->
-<!--                        </tr>`;-->
-<!--      $("#tblCustomer").append(row);-->
-<!--    }-->
-
-<!--    bindEvents();-->
-
-<!--  }-->
-
-<!--  bindEvents();-->
-
-<!--  function bindEvents(){-->
-<!--    $('#tblCustomer>tr').click(function () {-->
-<!--      // console.log(this);//tr -> this will return tr html element-->
-<!--      // console.log($(this));//jquery ob //if we want to access jQuery method we have to convert it to a jquery object-->
-<!--      // console.log($(this).text()); // now here it will return all the text of tr-->
-
-<!--      let id = $(this).children(':nth-child(1)').text();-->
-<!--      let name = $(this).children(':nth-child(2)').text();-->
-<!--      let address = $(this).children(':nth-child(3)').text();-->
-<!--      let salary = $(this).children(':nth-child(4)').text();-->
-
-<!--      setTextFieldValues(id,name,address,salary);-->
-<!--    });-->
-<!--  }-->
-<!--  //check this out.?-->
+  //temporary db
+  var customers = [
+    {id: "C001", name: "Dasun", address: "Galle", salary: 1000.22},
+    {id: "C002", name: "Iman", address: "Mathara", salary: 2000.22}
+  ];
 
 
-<!--  function setTextFieldValues(id, name, address, salary) {-->
-<!--    $("#txtCustomerID").val(id);-->
-<!--    $("#txtCustomerName").val(name);-->
-<!--    $("#txtCustomerAddress").val(address);-->
-<!--    $("#txtCustomerSalary").val(salary);-->
-<!--  }-->
+  //refactor save with jQuery
+  $("#btnCustomer").click(function () {
+
+    let cus_ID = $("#txtCustomerID").val();
+    let cus_Name = $("#txtCustomerName").val();
+    let cus_Address = $("#txtCustomerAddress").val();
+    let cus_Salary = $("#txtCustomerSalary").val();
+
+    var customer = {
+      id: cus_ID,
+      name: cus_Name,
+      address: cus_Address,
+      salary: cus_Salary
+    }
+
+    //add customer to object to the array
+    customers.push(customer);
+    getAllCustomers();
+    console.log(customers);
+  });
 
 
-<!--  //please be alert about the execution order when you are writing js codes-->
-<!--  //because it runs to an order-->
-<!--  // $("#tblCustomer>tr").click(function (){-->
-<!--  //     alert("D");-->
-<!--  // });-->
+  //refactor get_all with jQuery
+  $("#btnGetAll").click(function () {
+    getAllCustomers();
+  });
+
+  getAllCustomers();
+
+  function getAllCustomers() {
+    //remove all the child elements of tbody before adding the table rows
+    $("#tblCustomer").empty();
+
+    for (let i = 0; i < customers.length; i++) {
+      let row = `<tr>
+                            <td>${customers[i].id}</td>
+                            <td>${customers[i].name}</td>
+                            <td>${customers[i].address}</td>
+                            <td>${customers[i].salary}</td>
+                        </tr>`;
+      $("#tblCustomer").append(row);
+    }
+
+    bindEvents();
+
+  }
+
+  bindEvents();
+
+  function bindEvents(){
+    $('#tblCustomer>tr').click(function () {
+      // console.log(this);//tr -> this will return tr html element
+      // console.log($(this));//jquery ob //if we want to access jQuery method we have to convert it to a jquery object
+      // console.log($(this).text()); // now here it will return all the text of tr
+
+      let id = $(this).children(':nth-child(1)').text();
+      let name = $(this).children(':nth-child(2)').text();
+      let address = $(this).children(':nth-child(3)').text();
+      let salary = $(this).children(':nth-child(4)').text();
+
+      setTextFieldValues(id,name,address,salary);
+    });
+  }
+  //check this out.?
 
 
-<script src="assests/boostrap/js/bootstrap.bundle.js"></script>
-<script src="assests/boostrap/js/jquery-3.7.1.min.js"></script>
-<script src="assignments/JS/SPA/Controllers/Validation/CustomerValidation.js"></script>
-<script src="assignments/JS/SPA/Controllers/Validation/ItemValidation.js"></script>
-<script src="assignments/JS/SPA/Controllers/Validation/OrderValidation.js"></script>
-<script src="assignments/JS/SPA/Controllers/CustomerController.js"></script>
-<script src="assignments/JS/SPA/Controllers/ItemController.js"></script>
-<script src="assignments/JS/SPA/Controllers/MainPageController.js"></script>
-<script src="assignments/JS/SPA/Controllers/OrderPurchaseController.js"></script>
-<script src="assignments/JS/SPA/DB/DB.js"></script>
-<script src="assignments/JS/SPA/Module/Customer.js"></script>
-<script src="assignments/JS/SPA/Module/Item.js"></script>
-<script src="assignments/JS/SPA/Module/OrderDetails.js"></script>
-<script src="controllers/validations/OrderValidations.js"></script>
+  function setTextFieldValues(id, name, address, salary) {
+    $("#txtCustomerID").val(id);
+    $("#txtCustomerName").val(name);
+    $("#txtCustomerAddress").val(address);
+    $("#txtCustomerSalary").val(salary);
+  }
+
+
+
+</script>
+
+
+
 
 </body>
 </html>
