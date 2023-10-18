@@ -7,7 +7,8 @@ main>section:nth-child(1) {
     height: 70vh;
     display: flex;
     background-size: 100vw 80vh;
-    background-color: #131d2f;
+    background-color: #0a0c0e;
+
 }
 
 main>section:nth-child(1)>h1{
@@ -15,7 +16,7 @@ main>section:nth-child(1)>h1{
     left: 1%;
     top: -3%;
     font-size: 2.3rem;
-    color: white;
+    color: #6b8787;
 }
 
 .css{
@@ -31,17 +32,19 @@ main>section:nth-child(1)>h1{
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(6,1fr);
     transition: .5s ease;
+
 }
 
 .css>div{
 
-    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.68);
-/border-radius: 10vw;/
+    box-shadow: 6px 10px 10px 6px rgba(0, 223, 253, 0.68);
+/border-radius: 15vw;/
 border: 2px solid black;
     margin-top: 5%;
     margin-bottom: 10%;
-    margin-left: 3%;
+    margin-left: 6%;
     transition: .5s ease;
+    border-radius: 10%;
 }
 
 .css>div:hover{
@@ -50,6 +53,15 @@ border: 2px solid black;
     transition: 2s;
     transform: scale(1.02);
 /box-shadow: 0 0 1rem #0ef;
+}
+
+.css>div:nth-child(1)>h1{
+    position: absolute;
+    font-family: 'Margarine', sans-serif;
+    top: 0%;
+    left: 0%;
+    color: #00c7ff;
+    font-size:2rem;
 }
 /*.activity>div:nth-child(1){*/
 /*    background: url("assets/image/i1.jpg");*/
