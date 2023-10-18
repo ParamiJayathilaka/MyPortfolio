@@ -11,6 +11,7 @@ main{
     margin-top: 4%;
 }
 
+
 body{
     position: relative;
     /*background-color: #2a2d2d;*/
@@ -449,7 +450,7 @@ main>section:nth-child(3)>h1>strong{
 
 main>section:nth-child(3)>h4{
     position: absolute;
-    font-size: 15px;
+    font-size: 21px;
     top: 70%;
     left:2%;
     color: white;
@@ -484,12 +485,21 @@ main>section:nth-child(4)>h1>strong{
     color: #ffffff;
     font-family: 'Lemon', cursive;
     position: absolute;
-    top : 5%;
-    left:40%;
+    top: 2%;
+    left: 1%;
     font-size:2rem;
 }
 
-#calculator{
+main>section:nth-child(4)>h3{
+    font-family: 'Lustria', serif;
+    color: white;
+    position: absolute;
+    left: 3%;
+    top: 6%;
+    font-size:1.7rem;
+}
+
+.calculator{
     width: 28%;
     height: 35%;
     position: absolute;
@@ -501,13 +511,13 @@ main>section:nth-child(4)>h1>strong{
 
 }
 
-#calculator>img{
+.calculator>img{
     position: relative;
     top: 5%;
     left: 30%;
 }
 
-#calculator>pre{
+.calculator>pre{
     position: absolute;
     top: 62%;
     left:27%;
@@ -516,7 +526,30 @@ main>section:nth-child(4)>h1>strong{
     font-size: 25px ;
 }
 
-#connet4games{
+.calculator .calcLayer {
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    width: 28%;
+    height: 35%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    border-radious: 10px;
+
+}
+
+.calculator:hover .calcLayer {
+    transform: translateY(0);
+}
+
+.connet4games{
     width: 28%;
     height: 35%;
     position: absolute;
@@ -527,13 +560,13 @@ main>section:nth-child(4)>h1>strong{
 
 }
 
-#connet4games>img{
+.connet4games>img{
     position: relative;
     top: 5%;
     left: 30%;
 }
 
-#connet4games>pre{
+.connet4games>pre{
     position: absolute;
     top: 62%;
     left:10%;
@@ -542,7 +575,30 @@ main>section:nth-child(4)>h1>strong{
     font-size: 25px ;
 }
 
-#furniture{
+.connet4games .connetedLayer {
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    width: 28%;
+    height: 35%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    border-radious: 10px;
+
+}
+
+.connet4games:hover .connetedLayer {
+    transform: translateY(0);
+}
+
+.furniture{
     width: 28%;
     height: 35%;
     position: absolute;
@@ -553,13 +609,13 @@ main>section:nth-child(4)>h1>strong{
 
 }
 
-#furniture>img{
+.furniture>img{
     position: relative;
     top: 5%;
     left: 30%;
 }
 
-#furniture>pre{
+.furniture>pre{
     position: absolute;
     top: 62%;
     left:5%;
@@ -568,7 +624,30 @@ main>section:nth-child(4)>h1>strong{
     font-size: 25px ;
 }
 
-#hostal{
+.furniture .furnitureLayer {
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    width: 28%;
+    height: 35%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    border-radious: 10px;
+
+}
+
+.furniture:hover .furnitureLayer {
+    transform: translateY(0);
+}
+
+.hostal{
     width: 28%;
     height: 35%;
     position: absolute;
@@ -579,13 +658,13 @@ main>section:nth-child(4)>h1>strong{
 
 }
 
-#hostal>img{
+.hostal>img{
     position: relative;
     top: 5%;
     left: 30%;
 }
 
-#hostal>pre{
+.hostal>pre{
     position: absolute;
     top: 62%;
     left:10%;
@@ -594,7 +673,31 @@ main>section:nth-child(4)>h1>strong{
     font-size: 25px ;
 }
 
-#student{
+.hostal .hostalLayer {
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    width: 28%;
+    height: 35%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    border-radious: 10px;
+
+}
+
+.hostal:hover .hostalLayer {
+    transform: translateY(0);
+}
+
+
+.student{
     width: 28%;
     height: 35%;
     position: absolute;
@@ -605,13 +708,13 @@ main>section:nth-child(4)>h1>strong{
 
 }
 
-#student>img{
+.student>img{
     position: relative;
     top: 5%;
     left: 30%;
 }
 
-#student>pre{
+.student>pre{
     position: absolute;
     top: 62%;
     left:10%;
@@ -620,7 +723,30 @@ main>section:nth-child(4)>h1>strong{
     font-size: 25px ;
 }
 
-#chatApplication{
+.student .studentLayer {
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    width: 28%;
+    height: 35%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    border-radious: 10px;
+
+}
+
+.student:hover .studentLayer {
+    transform: translateY(0);
+}
+
+.chatApplication{
     width: 28%;
     height: 35%;
     position: absolute;
@@ -631,19 +757,42 @@ main>section:nth-child(4)>h1>strong{
 
 }
 
-#chatApplication>img{
+.chatApplication>img{
     position: relative;
     top: 5%;
     left: 30%;
 }
 
-#chatApplication>pre{
+.chatApplication>pre{
     position: absolute;
     top: 62%;
     left:10%;
     color: white;
     font-family: 'Kaisei Opti', serif;
     font-size: 25px ;
+}
+
+.chatApplication .chatLayer {
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    width: 28%;
+    height: 35%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    border-radious: 10px;
+
+}
+
+.chatApplication:hover .chatLayer {
+    transform: translateY(0);
 }
 
 /* #viewmore1{
@@ -674,11 +823,12 @@ main>section:nth-child(5){
 }
 
 main>section:nth-child(5)>h3>strong{
+    font-family: 'Lustria', serif;
     color: white;
     position: absolute;
     left: 3%;
-    top: 3%;
-    font-size:2rem;
+    top: 6%;
+    font-size:1.7rem;
 
 
 
@@ -789,20 +939,34 @@ main>section:nth-child(5)>h3>strong{
     top: 30%;
 }
 
+
+
 #viewmore3{
+    position: absolute;
     width: 15%;
     height: 8%;
-    position: absolute;
     background-color: #6BB1F1;
     top: 75%;
     left:70%;
+    color:white;
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 3s;
     border-radius: 10px;
+}
+
+#viewmore3:hover{
+    transition-duration: 3s;
+    transition-property:all;
+    background: #00fff7;
+    transform: scale(1.08, 1.08);
+    z-index: 2;
 }
 
 #viewmore3>a>h2{
     position: absolute;
-    top: -10%;
-    left:20%;
+    top: -35%;
+    left: 18%;
     color: black;
     font-size:2rem;
 }
@@ -816,12 +980,21 @@ main>section:nth-child(6){
     background-color: #1B222C;
 }
 
+main>section:nth-child(6)>h3>strong{
+    font-family: 'Lustria', serif;
+    color: white;
+    position: absolute;
+    left: 3%;
+    top: 6%;
+    font-size:1.7rem;
+}
+
 #achive1{
     position: absolute;
     width: 40%;
     height: 10%;
     background-color: #0C111F;
-    top: 10%;
+    top: 20%;
     left:10%;
     color:rgb(0, 238, 255);
     transition-duration: 1s;
@@ -869,7 +1042,7 @@ main>section:nth-child(6){
     width: 40%;
     height: 10%;
     background-color: #0C111F;
-    top: 25%;
+    top: 35%;
     left:20%;
     color:rgb(0, 238, 255);
     transition-duration: 3s;
@@ -917,7 +1090,7 @@ main>section:nth-child(6){
     width: 40%;
     height: 10%;
     background-color: #0C111F;
-    top: 40%;
+    top: 50%;
     left:30%;
     color:rgb(0, 238, 255);
     transition-duration: 3s;
@@ -966,7 +1139,7 @@ main>section:nth-child(6){
     width: 40%;
     height: 10%;
     background-color: #0C111F;
-    top: 55%;
+    top: 65%;
     left:40%;
     color:rgb(0, 238, 255);
     transition-duration: 3s;
@@ -1014,7 +1187,7 @@ main>section:nth-child(6){
     width: 40%;
     height: 10%;
     background-color: #0C111F;
-    top: 70%;
+    top: 80%;
     left:50%;
     color:rgb(0, 238, 255);
     transition-duration: 3s;
@@ -1058,31 +1231,30 @@ main>section:nth-child(6){
 
 #img1{
     position: absolute;
-    top: 14%;
+    top: 22%;
     left: 53%;
 }
 
 #img2{
     position: absolute;
-    top: 30%;
+    top: 38%;
     left:63%;
 }
 
 #img3{
     position: absolute;
-    top: 45%;
+    top: 53%;
     left:73%;
 }
 
 #img4{
     position: absolute;
-    top: 60%;
+    top: 68%;
     left:83%;
 }
 
 /*section 7*/
-
-main>section:nth-child(7){
+main>section:nth-child(7) {
     position: relative;
     height: 100vh;
     display: flex;
@@ -1090,101 +1262,129 @@ main>section:nth-child(7){
     background-color: #131d2f;
 }
 
-#innovesta{
-    width: 85%;
-    height: 40%;
+main>section:nth-child(7)>h1{
     position: absolute;
-    background-color: #000E1E;
-    top: 10%;
-    left:6%;
-    border-radius: 10px;
+    left: 1%;
+    top: -3%;
+    font-size: 2.3rem;
+    color: white;
 }
 
-#innovesta>h2{
+#name1{
+    position: absolute;
+    top: 12%;
+    font-size: 1.3rem;
     font-family: 'Joti One', cursive;
-    color: #CD7E08;
-    left:-40%;
-}
-#innovesta>img {
-    padding-left: 40px;
-    position: absolute;
-    height: 64%;
-    width: 22%;
-    left: -3%;
-    top: 26%;
-}
-#innovesta>img:nth-child(2) {
-    position: absolute;
-    height: 69%;
-    width: 27%;
-    top: 20%;
-    left: 22%;
+    color: #07e0e0;
+    left: 1%;
 }
 
-#innovesta>img:nth-child(3) {
+#name2{
     position: absolute;
-    height: 65%;
-    width: 14%;
-    top: 21%;
-    left: 50%;
+    top: 53%;
+    font-size: 1.3rem;
+    font-family: 'Joti One', cursive;
+    color: #07e0e0;
+    left: 1%;
 }
 
-/* #innovesta>img:nth-child(3){
- position: absolute;
-padding-left: 40px;
-top: 3%;
-left: 37%;
-} */
 
-#innovesta>video {
-    position: absolute;
-    padding-left: 40px;
-    height: 87%;
-    top: 4%;
-    width: 30%;
-    left: 65%;
-}
-#wasantha{
-    width: 85%;
-    height: 40%;
-    position: absolute;
-    background-color: #000E1E;
-    top: 55%;
-    left:6%;
-    border-radius: 10px;
+
+.activity{
+    display: grid;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 90vw;
+    height: 80vh;
+    top: 8vh;
+    bottom: 0;
+    margin: auto;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(6,1fr);
+    transition: .5s ease;
 }
 
-#wasantha>h2{
-    color: #CD7E08;
+.activity>div{
+
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.68);
+/border-radius: 10vw;/
+border: 2px solid black;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 3%;
+    transition: .5s ease;
 }
 
-#wasantha>img:nth-child(2) {
-    padding-left: 40px;
-    position: absolute;
-    top: 23%;
-    left: -3%;
-    height: 70%;
-    width: 26%;
+.activity>div:hover{
+    transition-duration: 3s;
+    transition-property:all;
+    transition: 2s;
+    transform: scale(1.02);
+/box-shadow: 0 0 1rem #0ef;
 }
+.activity>div:nth-child(1){
+    background: url("assets/image/i1.jpg");
+    background-size: cover;
+    grid-column: 0/6;
+    /*grid-row: 1/6;*/
+    transition: .5s ease;
 
-#wasantha>img:first-child{
-    position: absolute;
-    left: 0%;
-    top: 10%;
 }
-
-/* #wasantha>img:nth-child(2){
- position: absolute;
- left: 0%;
- top: 10%;
-} */
-
-#wasantha>img:nth-child(3) {
-    position: absolute;
-    left: 31%;
-    top: 17%;
-    width: 25%;
-    height: 76%;
+.activity>div:nth-child(2){
+    background: url(assets/image/i2.jpg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(3){
+    background: url(assets/image/i3.jpeg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(4){
+    background: url(assets/image/i5.jpg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(5){
+    background: url(assets/image/i4.jpeg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(6){
+    background: url(assets/image/i6.jpg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(7){
+    background: url(assets/image/w1.jpg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(8){
+    background: url(assets/image/w2.jpg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(9){
+    background: url(assets/image/w3.jpeg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(10){
+    background: url(assets/image/w4.jpg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(11){
+    background: url(assets/image/w5.jpeg);
+    background-size: cover;
+    transition: .5s ease;
+}
+.activity>div:nth-child(12){
+    background: url(assets/image/g2.jpeg);
+    background-size: cover;
+    transition: .5s ease;
 }
 
 
@@ -1201,7 +1401,7 @@ main>section:nth-child(8) {
 main>section:nth-child(8)>h1{
     position: absolute;
     left: 1%;
-    top: 6%;
+    top: 5%;
     font-size: 2.3rem;
     color: white;
 }
@@ -1308,6 +1508,7 @@ border: 2px solid black;
     background-size: cover;
     transition: .5s ease;
 }
+
 
 /*footer*/
 body>footer{
