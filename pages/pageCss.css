@@ -56,12 +56,14 @@ border: 2px solid black;
 /box-shadow: 0 0 1rem #0ef;
 }
 
-.css>div:nth-child(1)>h1{
+.css>div:nth-child(1)>a{
     position: absolute;
+    font-size: 20px;
+    color: #00c7ff;
     margin: auto;
     top: 3%;
     left: 5%;
-    color: #00c7ff;
+    text-decoration: none;
     font-size:2rem;
 }
 
@@ -108,14 +110,16 @@ border: 2px solid black;
 /*}*/
 
 
-/*.css>div:nth-child(1){*/
-/*    !*background: url("image/icons8-course-assign-24.png");*!*/
-/*    background-size: cover;*/
-/*    grid-column: 0/6;*/
-/*    !*grid-row: 1/6;*!*/
-/*    transition: .5s ease;*/
+.css>div:nth-child(1){
+    background: url("image/icons8-course-assign-24.png");
+    background-size: cover;
+    background-attachment:fixed;
+    backgrond-position:center;
+    grid-column: 0/6;
+    /*grid-row: 1/6;*/
+    transition: .5s ease;
 
-/*}*/
+}
 
 /*section 2*/
 main>section:nth-child(2) {
@@ -367,4 +371,13 @@ border: 2px solid black;
     left: 5%;
     color: #00c7ff;
     font-size:2rem;
+}
+
+main>section:nth-child(6) {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    background-size: 100vw 80vh;
+    background-color: #0a0c0e;
+
 }

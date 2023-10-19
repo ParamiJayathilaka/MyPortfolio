@@ -141,31 +141,31 @@ main>section:nth-child(1)>aside>h4{
 
 }
 
-#icon>nav>img:first-child{
+.icon>nav>img:first-child{
     position:absolute;
     top: 30%;
     right: 5%;
 }
 
-#icon>nav>img:nth-child(2){
+.icon>nav>img:nth-child(2){
     position:absolute;
     top: 40%;
     right: 5%;
 }
 
-#icon>nav>img:nth-child(3){
+.icon>nav>img:nth-child(3){
     position:absolute;
     top: 50%;
     right: 5%;
 }
 
-#icon>nav>img:nth-child(4){
+.icon>nav>img:nth-child(4){
     position:absolute;
     top: 60%;
     right: 5%;
 }
 
-#icon>nav>img:nth-child(5){
+.icon>nav>img:nth-child(5){
     position:absolute;
     top: 70%;
     right: 5%;
@@ -1609,6 +1609,130 @@ body>footer>header>h1>strong{
     left: 84%;
     top: 87%;
 }
+
+.contactimage{
+    width: 50%;
+    height: 60%;
+
+}
+
+.contactimage{
+    position: absolute;
+    padding-left: 0%;
+    top: 30%;
+
+}
+
+.contactimage a{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    background:transparent;
+    border: 2px solid #00F6F6;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #00F6F6;
+    transition: .5s ease;
+    text-decoration: none;
+
+}
+
+.contactimage a:hover{
+    background: #00F6F6;
+    color: #040C13;
+    box-shadow: 0 0 1rem #00F6F6;
+
+}
+
+.contactimage>nav>img:first-child{
+    position:absolute;
+    top: 30%;
+    right: 5%;
+}
+
+.contactimage>nav>img:nth-child(2){
+    position:absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.contactimage>nav>img:nth-child(3){
+    position:absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.contactimage>nav>img:nth-child(4){
+    position:absolute;
+    top: 60%;
+    right: 5%;
+}
+
+
+.followme{
+    width: 50%;
+    height: 60%;
+
+}
+
+.followme{
+    position: absolute;
+    padding-left: 30%;
+    top: 30%;
+
+}
+
+.followme a{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    background:transparent;
+    border: 2px solid #00F6F6;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #00F6F6;
+    transition: .5s ease;
+    text-decoration: none;
+
+}
+
+.followme a:hover{
+    background: #00F6F6;
+    color: #040C13;
+    box-shadow: 0 0 1rem #00F6F6;
+
+}
+
+.followme>nav>img:first-child{
+    position:absolute;
+    top: 30%;
+    right: 5%;
+}
+
+.followme>nav>img:nth-child(2){
+    position:absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.followme>nav>img:nth-child(3){
+    position:absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.followme>nav>img:nth-child(4){
+    position:absolute;
+    top: 60%;
+    right: 5%;
+}
+
 
 
 
