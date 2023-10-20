@@ -111,13 +111,13 @@ border: 2px solid black;
 
 
 .css>div:nth-child(1){
-    background: url("image/icons8-course-assign-24.png");
+    background: url("image/assignmentnew2.png");
     background-size: cover;
     background-attachment:fixed;
     backgrond-position:center;
     grid-column: 0/6;
     /*grid-row: 1/6;*/
-    transition: .5s ease;
+
 
 }
 
