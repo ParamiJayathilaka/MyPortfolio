@@ -18,7 +18,7 @@ body{
 }
 
 main>section>header{
-    background-color: #272626e5;
+    background-color: rgba(0, 0, 0, 0.9);
     width: 99vw;
     height: 7vh;
     text-align: center;
@@ -1328,7 +1328,7 @@ top: 35%;
     color: white;
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 7%;
 
 }
 .chatApplication-layer p{
@@ -1506,8 +1506,6 @@ main>section:nth-child(5)>h3>strong{
     left:25%;
     top: 30%;
 }
-
-
 
 #viewmore3{
     position: absolute;
@@ -2094,11 +2092,11 @@ body>footer>header{
     position: sticky;
     z-index: 2;
 }
-body>footer>header>h1>strong{
+body>footer>header>h1{
     position: absolute;
     top: 2%;
     left: 1%;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #ffffff;
     font-family: 'Lemon', cursive;
 }
@@ -2119,7 +2117,7 @@ body>footer>header>h1>strong{
     width: 53%;
     height: 51%;
     position: absolute;
-    background-color: #00F6F6;
+    background-color: #244c4c;
     border: 2px solid black;
     border-radius: 15px;
     top: 20%;
@@ -2299,6 +2297,95 @@ body>footer>header>h1>strong{
     position:absolute;
     top: 60%;
     right: 5%;
+}
+
+
+
+/*media Quaery*/
+@media all and (max-width: 320px) {
+
+    #welcome>hgroup>h2 {
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        font-size: 12px;
+        color: #11E2FF;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    #welcome>hgroup>h1 {
+        position: absolute;
+        top: 17%;
+        left: 3%;
+        font-size: 18px;
+        font-family: 'Kumar One', cursive;
+        color: #FFFFFF;
+    }
+
+    #welcome>article>pre {
+        position: absolute;
+        top: 22%;
+        left: 12%;
+        font-size: 12px;
+        font-family: 'Judson', serif;
+        color: #DBE4E4;
+    }
+
+    main>section:nth-child(1)>aside>img {
+        position: absolute;
+        height: 96%;
+        width: 171%;
+        top: 33%;
+        right: -31%;
+    }
+    main>section:nth-child(1)>aside>h4 {
+        font-family: 'Abhaya Libre', serif;
+        color: white;
+        position: absolute;
+        top: 126%;
+        right: -26%;
+        left: -87%;
+        font-size: 20px;
+    }
+
+    .icon {
+        position: absolute;
+        padding-left: 6%;
+        top: 45%;
+    }
+
+    .icon a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: 2px solid #00F6F6;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #00F6F6;
+        transition: .5s ease;
+        text-decoration: none;
+    }
+    /*body>header>div>h4 {*/
+    /*    position: absolute;*/
+    /*    top: 483%;*/
+    /*    left: 193%;*/
+    /*    font-size: 9px;*/
+    /*    font-family: 'Give You Glory', cursive;*/
+    /*    color: #00F6F6;*/
+    /*}*/
+
+
+    /*#headImage>aside>img {*/
+    /*    height: 6vh;*/
+    /*    width: 10vw;*/
+    /*    position: absolute;*/
+    /*    top: 225%;*/
+    /*    left: -18%;*/
+    /*}*/
+
 }
 
 
