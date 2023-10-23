@@ -10,215 +10,164 @@
 
 </head>
 
-<body style=" background-color: #381d05">
-<script src="assests/boostrap/js/bootstrap.bundle.js"></script>
-<div class="container-fluid  ">
-    <div class="row">
+<body style="background: url(assests/image/blue-background-7470781_1280.jpg)">
+<!--header-->
+<header class="jumbotron text-white p-4" style="background: url(assests/image/360_F_309246316_uXQOS2tcdUceurcmAJprpxBbbktiSW0C.jpg)">
+    <h3 class="position-absolute justify-content-lg-start" id="nav" style="font-family: 'Bigshot One', serif;" >Cool <br> Planet</h3>
+    <ul class="list-group list-group-horizontal text-white justify-content-lg-end font-weight-bold " >
+        <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px; " id="lnkHome"><a class="text-white" href="#">Home</a></li>
+        <li class="list-group-item bg-black  text-white me-3 border-2 border-dark" style="border-radius: 30px; " id="lnkCustomer"><a href="#">Customer</a></li>
+        <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px;" id="lnkItem"><a href="#">Item</a></li>
+        <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px;" id="lnkOrders"><a href="#">Orders</a></li>
+    </ul>
+</header>
 
-        <div class="col ">
-            <nav class="navbar navbar-expand-lg  " style=" background-color: black">
-                <div class="container-fluid bg-black">
-                    <a class="navbar-brand text-white fw-bold" href="index.html">POS System</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+<!--order-->
+<main class="container-fluid" id="orderContent" >
+    <div class="container-fluid mt-2" >
+        <div class="row border" >
+            <div class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis  border border-primary-subtle rounded-3"
+                 style="border-radius: 10px; border: 2px solid #02e9ff; background-color: #000000">
+                <h4 style="text-align: center; color: #05d5e8; ">Invoice Details</h4>
+                <div class="row g-2" style="color: white">
+                    <div class="col-6">
+                        <label for="OrderId" class="form-label">Order Id :</label>
+                        <input type="text" id="OrderId" class="form-control" placeholder="Order Id" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-6">
+                        <label for="date" class="form-label">Order Date :</label>
+                        <input type="date" id="date" class="form-control" placeholder="Order Date" aria-label="Order Date" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-6">
+                        <label for="CustominputState" class="form-label">Customer :</label>
+                        <select id="CustominputState" class="form-select" style="background-color: #334344; color: white">
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <li class="nav-item ">
-                                <a class="nav-link active text-white" aria-current="page" href="Customer.html">Customer Manage</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-white " href="Item.html">Item Manage</a>
-                            </li>
-
-                            <li class="nav-item ">
-                                <a class="nav-link text-white " href="Order.html">Order Details</a>
-                            </li>
-
-                            <li class="nav-item ">
-                                <a class="nav-link text-white " href="placeOrder.html">Order Manage</a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link text-success  " href="#">Sign Up</a>
-                            </li>
-
-                            <li class="nav-item ">
-                                <a class="nav-link text-success  " href="#">Login</a>
-                            </li>
-
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2 bg-dark text-white" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn  text-white " type="submit">Search</button>
-                        </form>
-
-
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="custIdSetOrder" class="form-label" >Customer Id :</label>
+                        <input type="text" id="custIdSetOrder" class="form-control" placeholder="Customer Id" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-6">
+                        <label for="custNameSetOrder" class="form-label" >Customer Name :</label>
+                        <input type="text" id="custNameSetOrder" class="form-control" placeholder="Customer Name" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-6">
+                        <label for="custSalarySetOrder" class="form-label" >Customer Salary :</label>
+                        <input type="text" id="custSalarySetOrder" class="form-control" placeholder="Salary" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-6">
+                        <label for="custAddressSetOrder" class="form-label">Customer Address :</label>
+                        <input type="text" id="custAddressSetOrder" class="form-control" placeholder="Address" aria-label="Last name" style="background-color: #334344; color: white">
                     </div>
                 </div>
-            </nav>
+            </div>
+            <div
+                    class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis  border border-primary-subtle rounded-3"
+                    style="border-radius: 10px; border: 2px solid #00f7ff; background-color: #000000">
+                <!--item section-->
+                <h4 style="text-align: center; color: #05f7ff">Item Select</h4>
+                <div class="row g-2" style="color: white">
+                    <div class="col-6">
+                        <label for="IteminputState" class="form-label">Item :</label>
+                        <select id="IteminputState" class="form-select" style="background-color: #334344; color: white">
 
-        </div>
-    </div>
-</div>
-
-<!--contact bar-->
-
-<div class="container-fluid   mt-5 ">
-    <div class="row">
-        <div class="col">
-
-            <div class="container d-flex align-items-center   justify-content-center ">
-                <div class="row">
-                    <div class="col  bg-dark">
-
-                        <form class="w-100 ">
-
-                            <div class="form-group mt-4 ">
-                                <input type="text" class="form-control" id="id" aria-describedby="emailHelp" placeholder="Order Id">
-                            </div>
-
-                            <div class="form-group mt-4 ">
-                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Item Id">
-                            </div>
-
-                            <div class="form-group mt-4">
-                                <input type="text" class="form-control" id="address" placeholder="Item QTY">
-                            </div>
-
-                            <div class="form-group mt-4">
-                                <input type="email" class="form-control" id="email" placeholder="Customer Email">
-                            </div>
-
-                            <div class="form-group mt-4">
-                                <input type="text" class="form-control" id="contact" placeholder="Total">
-                            </div>
-
-
-
-                            <button type="submit" class="btn btn-success  mt-5 me-1 mt-sm-5 me-sm-4  ">save</button>
-                            <button type="submit" class="btn btn-danger   mt-5 me-1 mt-sm-5 me-sm-4 ">update</button>
-                            <button type="submit" class="btn btn-primary  mt-5 me-1 mt-sm-5 me-sm-4 ">Delete</button>
-                            <a href="index.html" class="btn btn-warning mt-5 me-1 mt-sm-5 me-sm-4 ">Back</a>
-
-                        </form>
-
+                        </select>
                     </div>
+                    <div class="col-6">
+                        <label for="ItemIdSetOrder" class="form-label">Item Code :</label>
+                        <input type="text" id="ItemIdSetOrder" class="form-control" placeholder="Item Code" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-4">
+                        <label for="ItemNameSetOrder" class="form-label">Item Name :</label>
+                        <input type="text" id="ItemNameSetOrder" class="form-control" placeholder="Item Name" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-4">
+                        <label for="ItemPriceSetOrder" class="form-label">Price :</label>
+                        <input type="text" id="ItemPriceSetOrder" class="form-control" placeholder="Price" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-4">
+                        <label for="ItemQTYSetOrder" class="form-label">QtyOnHand :</label>
+                        <input type="text" id="ItemQTYSetOrder" class="form-control" placeholder="QtyOnHand" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">OrderQty :</label>
+                        <input type="text" id="ChoiceQTYOrder" class="form-control" placeholder="OrderQty" aria-label="Last name" style="background-color: #334344; color: white">
+                        <div style="display: flex">
+                            <label id="qtymassage" class="form-label" style="font-size: 12px; color: red; display: none">Please enter amount lower than :</label>
+                            <label id="h1hello" style="position:relative;font-size: 12px; color: red; left:1%; display: none"> </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button id="addToCardOrder" type="button" class="btn btn-success mt-3  " style="background-color: #00e4fc; color:black ;">AddToCart</button>
                 </div>
 
+                <!--porch section-->
+            </div>
+            <div
+                    class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis  border border-primary-subtle rounded-3"
+                    style="border-radius: 10px; border: 2px solid #00f2fc; background-color: #050505">
+                <h2 style="color: #00c4ff">Total : RS <span id="lableTotPrice">0</span>/=</h2>
+                <h2 style=" color: #00b7ff">SubTotal : RS <span id="lableSubTotal">0</span>/=</h2>
+                <div class="row g-2" style="color: white">
+                    <div class="col-6">
+                        <label for="inputCash" class="form-label">Cash :</label>
+                        <input type="text" id="inputCash" class="form-control" placeholder="Cash" aria-label="First name" style="background-color: #334344; color: white">
+                        <div style="display: flex">
+                            <label id="cashLOwMasse" class="form-label" style="font-size: 12px; color: #ff0000; display: none">Please enter amount greater than :</label>
+                            <label id="cashShow" style="position:relative;font-size: 12px; color: #ff0000; left:1%; display: none"> </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="discount" class="form-label">Discount :</label>
+                        <input type="number" id="discount" class="form-control" placeholder="Discount" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="col-12">
+                        <label for="BalanceInput" class="form-label">Balance :</label>
+                        <input type="text" id="BalanceInput" class="form-control" placeholder="Balance" aria-label="Last name" style="background-color: #334344; color: white">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="purchase" type="button" class="btn btn-success" style="width: 30%;  background-color: #00e4fc; color:black ;">Purchase</button>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
     </div>
-</div>
 
-<!--tABLE-->
-    <div class="table-responsive mt-5 " style="height: 430px">
-        <table class="table table-bordered table-hover table-striped ">
+
+    <!--Table-->
+    <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
+        <table class="table table-bordered table-hover table-striped-columns ">
             <thead>
-            <tr>
-                <th class="bg-black text-white">Order Id</th>
-                <th class="bg-black text-white">Item Id</th>
-                <th class="bg-black text-white">Item Name </th>
-                <th class="bg-black text-white">Item QTY</th>
-                <th class="bg-black text-white">Item UnitPrice</th>
-                <th class="bg-black text-white">Total </th>
-
+            <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+                <th class="bg-primary-subtle">Item Code</th>
+                <th class="bg-primary-subtle">Item Name</th>
+                <th class="bg-primary-subtle">Price</th>
+                <th class="bg-primary-subtle">Quantity</th>
+                <th class="bg-primary-subtle">Total</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <td>ORD:001</td>
-                <td>I001</td>
-                <td>Table</td>
-                <td>1</td>
-                <td>Rs.10,000</td>
-                <td>Rs.10,000</td>
+            <tbody id="TBodyOrder">
 
-            </tr>
-            <tr>
-                <td>ORD:002</td>
-                <td>I002</td>
-                <td>Sofa</td>
-                <td>5</td>
-                <td>Rs.100,000</td>
-                <td>Rs.500,000</td>
-
-            </tr>
-            <tr>
-                <td>ORD:003</td>
-                <td>I003</td>
-                <td>Chair</td>
-                <td>1</td>
-                <td>Rs.5,000</td>
-                <td>Rs.5,000</td>
-
-            </tr>
-            <tr>
-                <td>ORD:004</td>
-                <td>I004</td>
-                <td>Table</td>
-                <td>1</td>
-                <td>Rs.10,000</td>
-                <td>Rs.10,000</td>
-
-            </tr>
-            <tr>
-                <td>ORD:005</td>
-                <td>I005</td>
-                <td>Sofa</td>
-                <td>5</td>
-                <td>Rs.100,000</td>
-                <td>Rs.500,000</td>
-
-            </tr>
-            <tr>
-                <td>ORD:006</td>
-                <td>I006</td>
-                <td>Chair</td>
-                <td>1</td>
-                <td>Rs.5,000</td>
-                <td>Rs.5,000</td>
-
-            </tr>
-
-            <tr>
-                <td>ORD:007</td>
-                <td>I007</td>
-                <td>Table</td>
-                <td>1</td>
-                <td>Rs.10,000</td>
-                <td>Rs.10,000</td>
-
-            </tr>
-            <tr>
-                <td>ORD:008</td>
-                <td>I008</td>
-                <td>Sofa</td>
-                <td>5</td>
-                <td>Rs.100,000</td>
-                <td>Rs.500,000</td>
-
-            </tr>
-            <tr>
-                <td>ORD:009</td>
-                <td>I009</td>
-                <td>Chair</td>
-                <td>1</td>
-                <td>Rs.5,000</td>
-                <td>Rs.5,000</td>
-
-            </tr>
             </tbody>
         </table>
     </div>
+
+
+</main>
+
+
+
+<script src="assests/boostrap/js/jquery-3.7.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
 </body>
 </html>

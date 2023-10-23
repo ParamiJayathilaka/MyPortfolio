@@ -20,6 +20,122 @@
 </head>
 <body style="background: url(assests/image/blue-background-7470781_1280.jpg)">
 <!--header-->
+<header class="jumbotron text-white p-4" style="background: url(assests/image/360_F_309246316_uXQOS2tcdUceurcmAJprpxBbbktiSW0C.jpg)">
+  <h3 class="position-absolute justify-content-lg-start" id="nav" style="font-family: 'Bigshot One', serif;" >Cool <br> Planet</h3>
+  <ul class="list-group list-group-horizontal text-white justify-content-lg-end font-weight-bold " >
+    <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px; " id="lnkHome"><a class="text-white" href="#">Home</a></li>
+    <li class="list-group-item bg-black  text-white me-3 border-2 border-dark" style="border-radius: 30px; " id="lnkCustomer"><a href="#">Customer</a></li>
+    <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px;" id="lnkItem"><a href="#">Item</a></li>
+    <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px;" id="lnkOrders"><a href="#">Orders</a></li>
+  </ul>
+</header>
+
+<!--display-->
+<main class="container-fluid " id="dashboardContent" >
+  <div class="jumbotron pt-md-5">
+    <div id="home-tiles">
+      <div class="row ">
+        <div class="col-lg-6 col-xl-3 mb-2">
+          <div class="card">
+            <div class="card-header bg-dark text-white font-weight-bolder">Customers</div>
+            <div class="card-body position-relative" style=" height: 20vw; background: url(assests/image/3d-fluency-three-men.png); background-position:center; background-size: contain; background-repeat: no-repeat; ">
+              <div class="dash-tile-icon"><i class="fas fa-users"></i></div>
+              <div class="dash-tile-text text-left text-info"><h2>10</h2></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3 mb-2">
+          <div class="card">
+            <div class="card-header bg-dark text-white font-weight-bolder ">Items</div>
+            <div class="card-body" style=" height: 20vw; background: url(assests/image/3d-casual-life-e-commerce-completed-order.png); background-position:center; background-size: contain; background-repeat: no-repeat; ">
+              <div class="dash-tile-icon"><i class="fas fa-cubes"></i></div>
+              <div class="dash-tile-text text-right text-black"><h2>25</h2></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3 mb-2">
+          <div class="card" >
+            <div class="card-header bg-dark text-white font-weight-bolder">My Orders</div>
+            <div class="card-body" style=" height: 20vw; background: url(assests/image/3d-casual-life-delivery-package-boxes.png); background-position:center; background-size: contain; background-repeat: no-repeat; ">
+              <div class="dash-tile-icon"><i class="fas fa-shopping-cart"></i></div>
+              <div class="dash-tile-text text-right text-black"><h2>18</h2></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3 mb-2">
+          <div class="card">
+            <div class="card-header bg-dark text-white font-weight-bolder">Settings</div>
+            <div class="card-body" style=" height: 20vw; background: url(assests/image/3d-casual-life-laptop-greentech.png); background-position:center; background-size: contain; background-repeat: no-repeat; ">
+              <div class="dash-tile-icon" style=""><i class="fas fa-cogs"></i></div>
+              <div class="dash-tile-text text-right text-black">
+                <h2>
+                  <button class="btn btn-success bg-dark text-white">new</button>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!--customer-->
+<main class="container-fluid" id="customerContent">
+  <section class="row ">
+    <div class="col-12 col-lg-4 ">
+      <h1 class="text-dark">Customer Registration</h1>
+
+      <div class="form-group">
+        <label for="txtCustomerID" class="text-white">Customer ID</label>
+        <input class="form-control text-bg-dark" id="txtCustomerID" required type="text">
+        <span class="control-error" id="lblcusid"></span>
+      </div>
+      <div class="form-group">
+        <label for="txtCustomerName" class="text-white">Customer Name</label>
+        <input class="form-control text-bg-dark" id="txtCustomerName" type="text">
+        <span class="control-error" id="lblcusname"></span>
+      </div>
+      <div class="form-group">
+        <label for="txtCustomerAddress" class="text-white">Customer Address</label>
+        <input class="form-control text-bg-dark" id="txtCustomerAddress" type="text">
+        <span class="control-error" id="lblcusaddress"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="txtCustomerSalary" class="text-white">Customer Salary</label>
+        <input class="form-control text-bg-dark" id="txtCustomerSalary" type="text">
+        <span class="control-error" id="lblcussalary"></span>
+      </div>
+
+      <div class="btn-group ">
+        <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
+        <button class="btn btn-danger" id="btnCusDelete">Remove</button>
+        <button class="btn btn-warning" id="btnUpdate">Update</button>
+        <button class="btn btn-success" id="btnGetAll">Get All</button>
+        <button class="btn btn-danger" id="btn-clear1">Clear All</button>
+      </div>
+
+    </div>
+    <div class="col-12 col-lg-8 mt-3">
+      <table class="table table-bordered table-hover">
+        <thead class="bg-danger text-white">
+        <tr>
+          <th>Customer ID</th>
+          <th>Customer Name</th>
+          <th>Customer Address</th>
+          <th>Customer Salary</th>
+        </tr>
+        </thead>
+
+        <tbody id="tblCustomer">
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
 
 <!--item-->
 <main class="container-fluid" id="itemContent">

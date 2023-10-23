@@ -10,209 +10,80 @@
 
 </head>
 
-<body style=" background-color: #381d05">
-<script src="assests/boostrap/js/bootstrap.bundle.js"></script>
-
-<div class="container-fluid  " >
-    <div class="row">
-
-        <div class="col ">
-            <nav class="navbar navbar-expand-lg  " style=" background-color:black">
-                <div class="container-fluid ">
-                    <a class="navbar-brand text-white fw-bold" href="index.html">POS System</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                            <li class="nav-item">
-                                <a class="nav-link  text-white" aria-current="page" href="Customer.html">Customer Manage</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link active text-white" href="Item.html">Item Manage</a>
-                            </li>
-
-                            <li class="nav-item ">
-                                <a class="nav-link text-white " href="Order.html">Order Details</a>
-                            </li>
-
-                            <li class="nav-item   " >
-                                <a class="nav-link text-white " href="placeOrder.html">Order Manage</a>
-                            </li>
+<body style="background: url(assests/image/blue-background-7470781_1280.jpg)">
+<!--header-->
+<header class="jumbotron text-white p-4" style="background: url(assests/image/360_F_309246316_uXQOS2tcdUceurcmAJprpxBbbktiSW0C.jpg)">
+    <h3 class="position-absolute justify-content-lg-start" id="nav" style="font-family: 'Bigshot One', serif;" >Cool <br> Planet</h3>
+    <ul class="list-group list-group-horizontal text-white justify-content-lg-end font-weight-bold " >
+        <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px; " id="lnkHome"><a class="text-white" href="#">Home</a></li>
+        <li class="list-group-item bg-black  text-white me-3 border-2 border-dark" style="border-radius: 30px; " id="lnkCustomer"><a href="#">Customer</a></li>
+        <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px;" id="lnkItem"><a href="#">Item</a></li>
+        <li class="list-group-item bg-black text-white me-3 border-2 border-dark" style="border-radius: 30px;" id="lnkOrders"><a href="#">Orders</a></li>
+    </ul>
+</header>
 
 
-                            <li class="nav-item">
-                                <a class="nav-link text-success  " href="#">Sign Up</a>
-                            </li>
 
-                            <li class="nav-item ">
-                                <a class="nav-link text-success  " href="#">Login</a>
-                            </li>
+<!--item-->
+<main class="container-fluid" id="itemContent">
+    <section class="row">
+        <div class="col-12 col-lg-4">
+            <h1 class="text-dark">Item Form</h1>
 
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2 bg-dark text-white" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn  text-white " type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-
-        </div>
-    </div>
-</div>
-
-
-<!--contact bar-->
-<div class="container-fluid  mt-5 ">
-    <div class="row">
-        <div class="col">
-
-            <div class="container d-flex align-items-center justify-content-center ">
-                <div class="row">
-                    <div class="col-12  col bg-dark">
-
-                        <form class="w-100 ">
-                            <div class="form-group mt-4 ">
-                                <input type="text" class="form-control" id="id" aria-describedby="emailHelp" placeholder="Item Id">
-                            </div>
-
-                            <div class="form-group mt-4 ">
-                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Item Name">
-                            </div>
-
-                            <div class="form-group mt-4">
-                                <input type="number" class="form-control" id="contact" placeholder="Item Unit Price">
-                            </div>
-
-                            <div class="form-group mt-4">
-                                <input type="number" class="form-control" id="email" placeholder="ItemQuantity">
-                            </div>
-
-                            <button type="submit" class="btn btn-success  mt-5 me-1 mt-sm-5 me-sm-4  ">save</button>
-                            <button type="submit" class="btn btn-danger   mt-5 me-1 mt-sm-5 me-sm-4 ">update</button>
-                            <button type="submit" class="btn btn-primary  mt-5 me-1 mt-sm-5 me-sm-4 ">Delete</button>
-                            <a href="index.html" class="btn btn-warning mt-5 me-1 mt-sm-5 me-sm-4 ">Back</a>
-
-
-                        </form>
-
-                    </div>
-                </div>
-
+            <div class="form-group">
+                <label for="inputItemCode"  class="text-white">Item Code</label>
+                <input class="form-control text-bg-dark" id="inputItemCode" type="text">
+                <span class="control-error" id="lblCode"></span>
             </div>
+            <div class="form-group">
+                <label for="inputItemName" class="text-white">Item Name</label>
+                <input class="form-control text-bg-dark" id="inputItemName" type="text">
+                <span class="control-error" id="lblname"></span>
+            </div>
+            <div class="form-group">
+                <label for="inputItemQty" class="text-white">Item Qty</label>
+                <input class="form-control text-bg-dark" id="inputItemQty" type="text">
+                <span class="control-error" id="lblqty"></span>
+            </div>
+            <div class="form-group">
+                <label for="inputItemPrice" class="text-white">Unit Price</label>
+                <input class="form-control text-bg-dark" id="inputItemPrice" type="text">
+                <span class="control-error" id="lblprice"></span>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-primary" id="btnItem">Add Item</button>
+                <button class="btn btn-danger" id="btnItemDelete">Remove</button>
+                <button class="btn btn-warning" id="btnItemUpdate">Update</button>
+                <button class="btn btn-success" id="btnItemGetAll">Get All</button>
+                <button class="btn btn-danger" id="btn-clear">Clear All</button>
+            </div>
+
         </div>
-    </div>
-</div>
+        <div class="col-12 col-lg-8 mt-3">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Item Qty</th>
+                    <th>Item Price</th>
+                </tr>
+                </thead>
+                <tbody id="tblItem">
 
-<!--table-->
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-<div class="table-responsive mt-5 " style="height: 430px">
-    <table class="table table-bordered table-hover table-striped ">
-        <thead>
-        <tr>
-            <th class="bg-black text-white">Item Id</th>
-            <th class="bg-black text-white">Item Name</th>
-            <th class="bg-black text-white">Item Unite Price</th>
-            <th class="bg-black text-white">Item QTY </th>
-
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-
-            <td>I001</td>
-            <td>Table</td>
-            <td>25</td>
-            <td>Rs.10,000</td>
+</main>
 
 
-        </tr>
-        <tr>
-
-            <td>I002</td>
-            <td>Sofa</td>
-            <td>35</td>
-            <td>Rs.100,000</td>
 
 
-        </tr>
-        <tr>
 
-            <td>I003</td>
-            <td>Chair</td>
-            <td>10</td>
-            <td>Rs.5,000</td>
-
-
-        </tr>
-        <tr>
-
-            <td>I004</td>
-            <td>Table</td>
-            <td>25</td>
-            <td>Rs.10,000</td>
-
-
-        </tr>
-        <tr>
-
-            <td>I005</td>
-            <td>Sofa</td>
-            <td>35</td>
-            <td>Rs.100,000</td>
-
-
-        </tr>
-        <tr>
-
-            <td>I006</td>
-            <td>Chair</td>
-            <td>10</td>
-            <td>Rs.5,000</td>
-
-
-        </tr>
-
-        <tr>
-
-            <td>I007</td>
-            <td>Table</td>
-            <td>25</td>
-            <td>Rs.10,000</td>
-
-
-        </tr>
-        <tr>
-
-            <td>I008</td>
-            <td>Sofa</td>
-            <td>35</td>
-            <td>Rs.100,000</td>
-
-
-        </tr>
-        <tr>
-
-            <td>I009</td>
-            <td>Chair</td>
-            <td>10</td>
-            <td>Rs.5,000</td>
-
-
-        </tr>
-
-
-        </tbody>
-
-
-    </table>
-</div>
+<script src="assests/boostrap/js/jquery-3.7.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 
 
