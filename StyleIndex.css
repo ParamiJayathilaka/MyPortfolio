@@ -4962,13 +4962,160 @@ body>footer>header{
 
 
 
-
-
-
-
 }
 
-@media (min-width: 768px) and (max-width:1024px ){}
+@media (min-width: 768px) and (max-width:1024px ){
+
+    #welcome>hgroup>h2 {
+        position: absolute;
+        top: 12%;
+        left: 3%;
+        font-size: 30px;
+        color: #11E2FF;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    #welcome>hgroup>h1 {
+        position: absolute;
+        top: 27%;
+        left: 5%;
+        font-size: 32px;
+        font-family: 'Kumar One', cursive;
+        color: #FFFFFF;
+    }
+
+    #welcome>article>pre {
+        position: absolute;
+        top: 39%;
+        left: 8%;
+        font-size: 19px;
+        font-family: 'Judson', serif;
+        color: #DBE4E4;
+    }
+
+    main>section:nth-child(1)>aside>h4 {
+        font-family: 'Abhaya Libre', serif;
+        color: white;
+        position: absolute;
+        top: 202%;
+        right: 20%;
+        font-size: 27px;
+    }
+
+    .icon {
+        position: absolute;
+        padding-left: 88%;
+        top: 32%;
+    }
+
+
+
+    main > section:nth-child(1) > aside > img {
+        position: absolute;
+        top: 22%;
+        right: 13%;
+        width: 48%;
+        height: 223%;
+    }
+
+    main>section:nth-child(2)>aside>img {
+        top: 16%;
+        position: absolute;
+        left: 2%;
+        width: 27%;
+        height: 57%;
+    }
+
+    main>section:nth-child(2)>article>pre {
+        color: #04CFFC;
+        position: absolute;
+        top: 13%;
+        left: 13%;
+        font-size: 15.5px;
+    }
+
+    #section2about {
+        width: 10%;
+        height: 60%;
+        position: absolute;
+        top: 44%;
+        left: 34%;
+        font-size: 10px;
+        color: black;
+    }
+
+    main>section:nth-child(2)>address {
+        position: absolute;
+        top: 43%;
+        left: 48%;
+        font-size: 10px;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+    #uiux>img {
+        position: absolute;
+        left: 11%;
+    }
+
+    #uiux>h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 26%;
+        left: 21%;
+        color: white;
+    }
+
+    #uiux>pre {
+        position: absolute;
+        font-size: 15px;
+        top: 40%;
+        left: -52%;
+        color: white;
+    }
+
+    #www>img {
+        position: absolute;
+        left: 29%;
+        top: 3%;
+    }
+
+    #www>h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 30%;
+        left: 19%;
+        color: white;
+    }
+
+    #www>pre {
+        position: absolute;
+        font-size: 15px;
+        top: 45%;
+        left: -56%;
+        color: white;
+    }
+
+    #bugfix>pre {
+        position: absolute;
+        font-size: 15px;
+        top: 43%;
+        left: -47%;
+        color: white;
+    }
+
+    #languagetools>img {
+        position: relative;
+        right: 39px;
+        transition: 3s;
+        margin-top: 50%;
+        left: 0%;
+        height: 19%;
+    }
+
+}
 
 
 
