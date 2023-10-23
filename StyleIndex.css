@@ -2092,7 +2092,7 @@ body>footer>header{
     position: sticky;
     z-index: 2;
 }
-body>footer>header>h1{
+#contact>h1{
     position: absolute;
     top: 2%;
     left: 1%;

@@ -69,45 +69,45 @@ border: 2px solid black;
 
 
 
-/*.css>div:nth-child(2)>h1{*/
-/*    position: absolute;*/
-/*    top: 3%;*/
-/*    left: 22%;*/
-/*    color: #00c7ff;*/
-/*    font-size:2rem;*/
-/*}*/
+.css>div:nth-child(2)>a{
+    position: absolute;
+    top: 3%;
+    left: 22%;
+    color: #00c7ff;
+    font-size:2rem;
+}
 
-/*.css>div:nth-child(3)>h1{*/
-/*    position: absolute;*/
-/*    top: 3%;*/
-/*    left: 38%;*/
-/*    color: #00c7ff;*/
-/*    font-size:2rem;*/
-/*}*/
+.css>div:nth-child(3)>a{
+    position: absolute;
+    top: 3%;
+    left: 38%;
+    color: #00c7ff;
+    font-size:2rem;
+}
 
-/*.css>div:nth-child(4)>h1{*/
-/*    position: absolute;*/
-/*    top: 3%;*/
-/*    left: 52%;*/
-/*    color: #00c7ff;*/
-/*    font-size:2rem;*/
-/*}*/
+.css>div:nth-child(4)>a{
+    position: absolute;
+    top: 3%;
+    left: 52%;
+    color: #00c7ff;
+    font-size:2rem;
+}
 
-/*.css>div:nth-child(5)>h1{*/
-/*    position: absolute;*/
-/*    top: 2%;*/
-/*    left: 5%;*/
-/*    color: #00c7ff;*/
-/*    font-size:2rem;*/
-/*}*/
+.css>div:nth-child(5)>a{
+    position: absolute;
+    top: 2%;
+    left: 75%;
+    color: #00c7ff;
+    font-size:2rem;
+}
 
-/*.css>div:nth-child(6)>h1{*/
-/*    position: absolute;*/
-/*    top: 2%;*/
-/*    left: 5%;*/
-/*    color: #00c7ff;*/
-/*    font-size:2rem;*/
-/*}*/
+.css>div:nth-child(6)>a{
+    position: absolute;
+    top: 2%;
+    left: 82%;
+    color: #00c7ff;
+    font-size:2rem;
+}
 
 
 .css>div:nth-child(1){
@@ -175,12 +175,23 @@ border: 2px solid black;
 /box-shadow: 0 0 1rem #0ef;
 }
 
-.animation>div:nth-child(1)>h1{
+.animation>div:nth-child(1)>a{
     position: absolute;
     margin: auto;
     top: 3%;
     left: 5%;
     color: #00c7ff;
+    text-decoration: none;
+    font-size:2rem;
+}
+
+.animation>div:nth-child(2)>a{
+    position: absolute;
+    margin: auto;
+    top: 3%;
+    left: 15%;
+    color: #00c7ff;
+    text-decoration: none;
     font-size:2rem;
 }
 
