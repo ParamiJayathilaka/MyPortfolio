@@ -4399,16 +4399,16 @@ body>footer>header{
         background: transparent;
         text-decoration: none;
         position: absolute;
-        right: 15px;
-        top: 26px;
-        font-size: 19px;
+        right: 12px;
+        top: 7px;
+        font-size: 9px;
     }
 
     #welcome>hgroup>h2 {
         position: absolute;
         top: 7%;
         left: 3%;
-        font-size: 37px;
+        font-size: 22px;
         color: #11E2FF;
         font-family: 'Kaushan Script', cursive;
     }
@@ -4417,7 +4417,7 @@ body>footer>header{
         position: absolute;
         top: 16%;
         left: 5%;
-        font-size: 50px;
+        font-size: 26px;
         font-family: 'Kumar One', cursive;
         color: #FFFFFF;
     }
@@ -4426,7 +4426,7 @@ body>footer>header{
         position: absolute;
         top: 24%;
         left: 3%;
-        font-size: 30px;
+        font-size: 19px;
         font-family: 'Judson', serif;
         color: #DBE4E4;
     }
@@ -4435,8 +4435,17 @@ body>footer>header{
         width: 101%;
         height: 40%;
         position: absolute;
-        top: 41%;
-        right: -14%;
+        top: 23%;
+        right: 5%;
+    }
+
+    main>section:nth-child(1)>aside>h4 {
+        font-family: 'Abhaya Libre', serif;
+        color: white;
+        position: absolute;
+        top: 163%;
+        right: 2%;
+        font-size: large;
     }
 
     .icon {
@@ -4447,36 +4456,36 @@ body>footer>header{
 
     main>section:nth-child(2)>h1 {
         position: absolute;
-        top: 5%;
+        top: 1%;
         left: 1%;
-        font-size: 37px;
+        font-size: 29px;
         color: #ffffff;
         font-family: 'Lemon', cursive;
     }
 
     main>section:nth-child(2)>aside>img {
-        top: 33%;
+        top: 42%;
         position: absolute;
         left: 2%;
-        width: 43%;
-        height: 59%;
+        width: 38%;
+        height: 40%;
     }
 
     main>section:nth-child(2)>article>pre {
         color: #04CFFC;
         position: absolute;
-        top: 13%;
-        left: -20%;
-        font-size: 16px;
+        top: 12%;
+        left: -32%;
+        font-size: 13px;
     }
 
     #section2about {
-        width: 15%;
+        width: 22%;
         height: 58%;
         position: absolute;
-        top: 44%;
-        left: 49%;
-        font-size: 10px;
+        top: 46%;
+        left: 41%;
+        font-size: 8px;
         color: black;
     }
 
@@ -4484,11 +4493,10 @@ body>footer>header{
         position: absolute;
         top: 47%;
         left: 65%;
-        font-size: 10px;
+        font-size: 7px;
         color: white;
         padding-bottom: 31px;
     }
-
     #div1>img {
         position: absolute;
         left: 5%;
