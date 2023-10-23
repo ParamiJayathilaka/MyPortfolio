@@ -2521,20 +2521,28 @@ body>footer>header{
         color: #DBE4E4;
     }
 
+    main>section:first-child>aside {
+        width: 50%;
+        height: 60%;
+        position: absolute;
+        top: 6%;
+        right: 0%;
+    }
+
     main>section:nth-child(1)>aside>img {
         position: absolute;
         height: 96%;
         width: 171%;
-        top: 33%;
-        right: -31%;
+        top: 47%;
+        right: -9%;
     }
     main>section:nth-child(1)>aside>h4 {
         font-family: 'Abhaya Libre', serif;
         color: white;
         position: absolute;
-        top: 126%;
-        right: -26%;
-        left: -87%;
+        top: 113%;
+        right: -38%;
+        left: -60%;
         font-size: 20px;
     }
 
@@ -4525,9 +4533,442 @@ body>footer>header{
 
 }
 
-@media (min-width: 768px) and (max-width:1024px ){}
+@media (min-width: 768px) and (max-width:1024px ){
 
-@media (min-width: 1024px) and (max-width:1440px ){}
+    #topic {
+        background: transparent;
+        text-decoration: none;
+        position: absolute;
+        right: 19px;
+        top: 0px;
+        font-size: 18px;
+    }
+
+    #welcome>hgroup>h2 {
+        position: absolute;
+        top: 4%;
+        left: 3%;
+        font-size: 30px;
+        color: #11E2FF;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    #welcome>hgroup>h1 {
+        position: absolute;
+        top: 18%;
+        left: 5%;
+        font-size: 32px;
+        font-family: 'Kumar One', cursive;
+        color: #FFFFFF;
+    }
+
+    #welcome>article>pre {
+        position: absolute;
+        top: 27%;
+        left: 8%;
+        font-size: 19px;
+        font-family: 'Judson', serif;
+        color: #DBE4E4;
+    }
+
+    main>section:first-child>aside {
+        width: 101%;
+        height: 40%;
+        position: absolute;
+        top: 3%;
+        right: -5%;
+    }
+
+    main > section:nth-child(1) > aside > img {
+        position: absolute;
+        top: 24%;
+        right: -2%;
+        width: 68%;
+        height: 231%;
+    }
+
+    main>section:nth-child(1)>aside>h4 {
+        font-family: 'Abhaya Libre', serif;
+        color: white;
+        position: absolute;
+        top: 211%;
+        right: 35%;
+        font-size: large;
+    }
+
+    .icon {
+        position: absolute;
+        padding-left: 5%;
+        top: 45%;
+
+    }
+
+    .icon a {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        left: 16%;
+        width: 32px;
+        height: 36px;
+        background: #0c0c0c;
+        border: 2px solid #00F6F6;
+        border-radius: 50%;
+        margin: 1rem 1rem 1rem;
+        font-size: 2rem;
+        color: #00F6F6;
+        transition: .5s ease;
+        text-decoration: none;
+        flex-direction: row-reverse;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    main>section:nth-child(2)>h1 {
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        font-size: 26px;
+        color: #ffffff;
+        font-family: 'Lemon', cursive;
+    }
+
+    main>section:nth-child(2)>aside>img {
+        top: 39%;
+        position: absolute;
+        left: 2%;
+        width: 38%;
+        height: 57%;
+    }
+
+    main>section:nth-child(2)>article>pre {
+        color: #04CFFC;
+        position: absolute;
+        top: 13%;
+        left: -15%;
+        font-size: 14px;
+    }
+
+    #uiux {
+        position: absolute;
+        width: 28%;
+        height: 53%;
+        background-color: #000E1E;
+        top: 14%;
+        left: 5%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 10px;
+    }
+
+    #uiux>img {
+        position: absolute;
+        left: -1%;
+    }
+
+    #uiux>h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 21%;
+        left: 9%;
+        color: white;
+    }
+    #uiux>pre {
+        position: absolute;
+        font-size: 11px;
+        top: 40%;
+        left: -52%;
+        color: white;
+    }
+
+    #www {
+        position: absolute;
+        width: 28%;
+        height: 53%;
+        background-color: #000E1E;
+        top: 14%;
+        left: 38%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 10px;
+    }
+
+    #www>img {
+        position: absolute;
+        left: 26%;
+    }
+
+    #www>h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 28%;
+        left: 19%;
+        color: white;
+    }
+
+    #www>pre {
+        position: absolute;
+        font-size: 11px;
+        top: 45%;
+        left: -55%;
+        color: white;
+    }
+
+    #bugfix {
+        position: absolute;
+        width: 28%;
+        height: 53%;
+        background-color: #000E1E;
+        top: 14%;
+        left: 70%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 10px;
+    }
+
+    #bugfix>img {
+        position: absolute;
+        left: 30%;
+    }
+
+    #bugfix>h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 28%;
+        left: 29%;
+        color: white;
+    }
+
+    #bugfix>pre {
+        position: absolute;
+        font-size: 11px;
+        top: 43%;
+        left: -47%;
+        color: white;
+    }
+
+    main>section:nth-child(3)>h4 {
+        position: absolute;
+        font-size: 21px;
+        top: 67%;
+        left: 2%;
+        color: white;
+    }
+
+    #languagetools>img {
+        position: relative;
+        right: 39px;
+        transition: 3s;
+        margin-top: 66%;
+        left: 0%;
+        height: 19%;
+    }
+
+    #div1>img {
+        position: absolute;
+        left: 16%;
+        top: 39%;
+        width: 79%;
+        height: 46%;
+    }
+
+    #div2>img {
+        position: absolute;
+        left: 16%;
+        top: 39%;
+        width: 79%;
+        height: 46%;
+    }
+
+    #div3>img {
+        position: absolute;
+        left: 16%;
+        top: 39%;
+        width: 79%;
+        height: 46%;
+    }
+
+    #viewmore3 {
+        position: absolute;
+        width: 25%;
+        height: 8%;
+        background-color: #6BB1F1;
+        top: 75%;
+        left: 70%;
+        color: white;
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 10px;
+    }
+
+    #achive1>pre {
+        position: relative;
+        top: -4%;
+        left: -31%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 13px;
+    }
+
+    #achive2>pre {
+        position: relative;
+        top: -5%;
+        left: -23%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 13px;
+    }
+
+    #achive3>pre {
+        position: relative;
+        top: -5%;
+        left: -23%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 13px;
+    }
+
+    #achive4>pre {
+        position: relative;
+        top: -5%;
+        left: -23%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 13px;
+    }
+
+    #achive5>pre {
+        position: relative;
+        top: -5%;
+        left: -23%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 13px;
+    }
+
+    #quection {
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        font-size: 2.1rem;
+        color: #ffffff;
+        font-family: 'Lemon', cursive;
+    }
+
+    #nameLabel {
+        position: absolute;
+        left: 1%;
+        top: 27%;
+        font-size: 17px;
+    }
+
+    #name {
+        position: absolute;
+        left: 12%;
+        width: 35%;
+        height: 11%;
+        top: 24%;
+        font-size: 16px;
+    }
+
+    #emailLabel {
+        position: absolute;
+        left: 52%;
+        top: 27%;
+        font-size: 17px;
+    }
+
+    #email {
+        position: absolute;
+        left: 67%;
+        width: 27%;
+        height: 11%;
+        top: 24%;
+        font-size: 16px;
+    }
+
+    #massageLabel {
+        position: absolute;
+        top: 40%;
+        left: 1%;
+        font-size: 17px;
+    }
+    #massage {
+        position: absolute;
+        top: 47%;
+        left: 10%;
+        height: 29%;
+        width: 81%;
+    }
+
+    #submit {
+        position: absolute;
+        left: 58%;
+        top: 84%;
+    }
+
+    .followme {
+        position: absolute;
+        padding-left: 30%;
+        top: 26%;
+    }
+
+    #fb {
+        position: absolute;
+        top: 85%;
+        left: 25%;
+    }
+
+    #linkedin {
+        position: absolute;
+        top: 85%;
+        left: 39%;
+    }
+
+    #twitter {
+        position: absolute;
+        top: 85%;
+        left: 52%;
+    }
+    #git {
+        position: absolute;
+        top: 85%;
+        left: 65%;
+    }
+
+    #YouTube {
+        position: absolute;
+        top: 85%;
+        left: 79%;
+    }
+
+    #copyright {
+        position: absolute;
+        top: 89%;
+        left: 15%;
+        font-size: 1.1rem;
+        color: #060606;
+        font-family: 'Lemon', cursive;
+    }
+
+
+
+
+
+
+
+}
+
+@media (min-width: 768px) and (max-width:1024px ){}
 
 
 
