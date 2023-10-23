@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="../../../../assets/8.0.1_normalize.css">
+
+  <style>
+
+      body {
+          background-color: black;
+      }
+
+      body > section {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        width: 1200px;
+        height: 350px;
+
+      }
+
+
+      div{
+          height: 50px;
+          width: 120px;
+          border: 1px solid black;
+          display: flex;
+          margin-left: 1%;
+
+      }
+
+     body>section div:nth-child(1){
+      margin-bottom: 20vh;
+      }
+
+     body>section div:nth-child(6){
+       margin-top: 20vh;
+
+     }
+
+      h1 {
+          color: white;
+          text-align: center;
+          margin-top: 5%;
+      }
+
+      #div1{
+        width: 780px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 44%;
+        left: 25%;
+      }
+
+      #div2{
+
+          width: 780px;
+          height: 2px;
+          background-color: white;
+          position: absolute;
+          bottom: 44%;
+          left: 25%;
+      }
+
+  </style>
+
+
+</head>
+<body>
+
+<h1>Java Script Queue</h1>
+
+<section>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</section>
+
+   <div id="div1"></div>
+   <div id="div2"></div>
+
+
+<script>
+    let divs=document.querySelectorAll("section>div");
+   let color =["red", "green", "blue", "yellow", "pink", "plum"];
+
+   setInterval(processQue,200);
+
+    function processQue() {
+        for (let i = 0; i < color.length; i++) {
+            divs[i].style.background = color[i];
+        }
+
+
+        let lastValue = color.pop();
+        color.unshift(lastValue);
+
+    }
+
+</script>
+</body>
+</html>

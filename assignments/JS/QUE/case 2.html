@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+    #main{
+      padding-top: 10%;
+      /*background-color: hotpink;*/
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    hr{
+      width: 80%;
+      background-color: black;
+      height: 1px;
+    }
+
+    #main_sec{
+      width: 80vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      background-color: lightgray;
+    }
+
+    h1{
+      color: darkred;
+      font-size: 35px;
+    }
+
+    #gif_div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    #h1_id{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+
+    #house{
+      width: 200px;
+      height: 200px;
+      margin-bottom: 40px;
+    }
+
+    #men_div{
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+
+<section id="main">
+  <hr>
+  <section id="main_sec">
+    <div id="h1_id" ><h1>JS Que</h1></div>
+
+    <br><br>
+
+
+    <div id="gif_div" >
+
+      <div id="men_div">
+        <br>
+        <div class="videoContainer">
+          <h4 id="heading1">A</h4>
+          <img src="assest/image/walk.gif" >
+        </div>
+
+        <div class="videoContainer">
+          <h4 id="heading2">B</h4>
+          <img src="assest/image/walk.gif" >
+        </div>
+
+        <div class="videoContainer">
+          <h4 id="heading3">C</h4>
+          <img src="assest/image/walk.gif" >
+        </div>
+
+        <div class="videoContainer">
+          <h4 id="heading4">D</h4>
+          <img src="assest/image/walk.gif" >
+        </div>
+
+        <div class="videoContainer">
+          <h4 id="heading5">E</h4>
+          <img src="assest/image/walk.gif"  >
+        </div>
+
+        <div class="videoContainer">
+          <h4 id="heading6">F</h4>
+          <img src="assest/image/walk.gif" >
+        </div>
+      </div>
+
+
+
+      <div>
+        <img src="assest/image/giphy.gif" id="house">
+      </div>
+
+    </div>
+
+
+    <br><br>
+
+  </section>
+  <hr>
+
+</section>
+
+<script>
+  function changeHeading1(heading){
+    var heading = document.getElementById("heading1");
+    let letter = getLetter(heading.textContent);
+    heading.textContent = letter;
+  }
+
+  function changeHeading2(){
+    var heading = document.getElementById("heading2");
+    let letter = getLetter(heading.textContent);
+    heading.textContent = letter;
+  }
+
+  function changeHeading3(){
+    var heading = document.getElementById("heading3");
+    let letter = getLetter(heading.textContent);
+    heading.textContent = letter;
+  }
+
+  function changeHeading4(){
+    var heading = document.getElementById("heading4");
+    let letter = getLetter(heading.textContent);
+    heading.textContent = letter;
+  }
+
+  function changeHeading5(){
+    var heading = document.getElementById("heading5");
+    let letter = getLetter(heading.textContent);
+    heading.textContent = letter;
+  }
+
+  function changeHeading6(){
+    var heading = document.getElementById("heading6");
+    let letter = getLetter(heading.textContent);
+    heading.textContent = letter;
+  }
+
+
+  // Call the changeHeading function every 3 seconds
+  setInterval(changeHeading1, 3000);
+  setInterval(changeHeading2, 3000);
+  setInterval(changeHeading3, 3000);
+  setInterval(changeHeading4, 3000);
+  setInterval(changeHeading5, 3000);
+  setInterval(changeHeading6, 3000);
+
+
+  function getLetter(letter){
+    if(letter==='A'){
+      return 'F';
+    }if(letter==='B'){
+      return 'A';
+    }if(letter==='C'){
+      return 'B';
+    }
+    if(letter==='D'){
+      return 'C';
+    }if(letter==='E'){
+      return 'D';
+    }
+    if(letter==='F'){
+      return 'E';
+    }
+
+  }
+
+
+
+
+</script>
+
+</body>
+</html>
