@@ -2997,6 +2997,85 @@ body>footer>header>h1{
         font-size: 6px;
     }
 
+    #img1 {
+        position: absolute;
+        top: 25%;
+        left: 57%;
+        width: 10%;
+        height: 7%;
+    }
+
+    #img2 {
+        position: absolute;
+        top: 40%;
+        left: 65%;
+        width: 10%;
+        height: 7%;
+    }
+
+    #img3 {
+        position: absolute;
+        top: 56%;
+        left: 75%;
+        width: 10%;
+        height: 7%;
+    }
+
+    #img4 {
+        position: absolute;
+        top: 71%;
+        left: 85%;
+        width: 10%;
+        height: 7%;
+    }
+
+
+
+/*section 7*/
+
+    main>section:nth-child(7)>h1 {
+        position: absolute;
+        left: 1%;
+        top: -3%;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    #name1 {
+        position: absolute;
+        top: 9%;
+        font-size: 1.1rem;
+        font-family: 'Joti One', cursive;
+        color: #07e0e0;
+        left: 1%;
+    }
+
+    .activity {
+        display: grid;
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 90vw;
+        height: 70vh;
+        top: 17vh;
+        bottom: 69%;
+        margin: auto;
+        padding-bottom: 12%;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(6,1fr);
+        transition: .5s ease;
+    }
+
+    #name2 {
+        position: absolute;
+        top: 16%;
+        font-size: 1.1rem;
+        font-family: 'Joti One', cursive;
+        color: #07e0e0;
+        left: 1%;
+    }
+
+
 
 
 
