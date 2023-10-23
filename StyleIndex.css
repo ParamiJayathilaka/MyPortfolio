@@ -2386,6 +2386,623 @@ body>footer>header>h1{
     /*    left: -18%;*/
     /*}*/
 
+    /*section 2*/
+    main>section:nth-child(2)>h1 {
+        position: absolute;
+        top: 5%;
+        left: 1%;
+        font-size: 24px;
+        color: #ffffff;
+        font-family: 'Lemon', cursive;
+    }
+
+    main>section:nth-child(2)>article>pre {
+        color: #04CFFC;
+        position: absolute;
+        top: 15%;
+        left: -50%;
+        font-size: 15px;
+    }
+
+    main>section:nth-child(2)>aside>img {
+        top: 15%;
+        position: absolute;
+        left: 6%;
+        height: 30%;
+        width: 43%;
+    }
+
+    #section2about {
+        width: 26%;
+        height: 53%;
+        position: absolute;
+        top: 50%;
+        left: 11%;
+        font-size: 7px;
+        color: black;
+    }
+
+    main>section:nth-child(2)>address {
+        position: absolute;
+        top: 48%;
+        left: 39%;
+        font-size: 8px;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+/*    section 3*/
+
+    main>section:nth-child(3)>h1>strong {
+        position: absolute;
+        top: 5%;
+        left: 1%;
+        color: #ffffff;
+        font-family: 'Lemon', cursive;
+        font-size: 2rem;
+    }
+
+    #uiux {
+        position: absolute;
+        width: 65%;
+        height: 10%;
+        background-color: #000E1E;
+        top: 14%;
+        left: 5%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 10px;
+    }
+
+    #uiux>img {
+        position: absolute;
+        left: -7%;
+        width: 57%;
+        height: 84%;
+        top: -1%;
+    }
+
+    #uiux>h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 10px;
+        top: 66%;
+        left: 8%;
+        color: white;
+    }
+
+    #uiux>pre {
+        position: absolute;
+        font-size: 5px;
+        top: 3%;
+        left: 18%;
+        color: white;
+    }
+
+    #www {
+        position: absolute;
+        width: 65%;
+        height: 10%;
+        background-color: #000E1E;
+        top: 27%;
+        left: 6%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 10px;
+    }
+
+    #www>img {
+        position: absolute;
+        left: 11%;
+        height: 64%;
+        width: 28%;
+    }
+
+    #www>h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 10px;
+        top: 64%;
+        left: 8%;
+        color: white;
+    }
+
+    #www>pre {
+        position: absolute;
+        font-size: 5px;
+        top: 25%;
+        left: 17%;
+        color: white;
+    }
+
+    #bugfix {
+        position: absolute;
+        width: 65%;
+        height: 10%;
+        background-color: #000E1E;
+        top: 39%;
+        left: 6%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 10px;
+    }
+
+    #bugfix>img {
+        position: absolute;
+        left: 6%;
+        height: 58%;
+        width: 28%;
+        top: 9%;
+    }
+
+    #bugfix>h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 10px;
+        top: 58%;
+        left: 11%;
+        color: white;
+    }
+
+    #bugfix>pre {
+        position: absolute;
+        font-size: 5px;
+        top: 8%;
+        left: 17%;
+        color: white;
+    }
+    main>section:nth-child(3)>h4 {
+        position: absolute;
+        font-size: 15px;
+        top: 56%;
+        left: 6%;
+        color: white;
+    }
+
+    #languagetools>img {
+        position: relative;
+        right: 58px;
+        transition: 3s;
+        margin-top: 144%;
+        left: 2%;
+        height: 17%;
+        width: 12%;
+    }
+
+/*    section 4*/
+
+    main>section:nth-child(4)>h1>strong {
+        color: #ffffff;
+        font-family: 'Lemon', cursive;
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        font-size: 1rem;
+    }
+
+    main>section:nth-child(4)>h3 {
+        font-family: 'Lustria', serif;
+        color: white;
+        position: absolute;
+        left: 3%;
+        top: 6%;
+        font-size: 0.7rem;
+    }
+
+    .project .calculator {
+        width: 34vw;
+        height: 24vh;
+        /* position: absolute; */
+        background-color: #051324;
+        top: -42%;
+        left: 3%;
+        /* border-radius: 30px; */
+        /* width: 25vw; */
+        /* height: 35vh; */
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem #1f242d;
+        overflow: hidden;
+        display: flex;
+        left: 24%;
+    }
+
+    .project .connet4games {
+        width: 34vw;
+        height: 24vh;
+        /* position: absolute; */
+        background-color: #051324;
+        top: -42%;
+        left: 3%;
+        /* border-radius: 30px; */
+        /* width: 25vw; */
+        /* height: 35vh; */
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem #1f242d;
+        overflow: hidden;
+        display: flex;
+        left: 22%;
+    }
+
+    .project .furniture {
+        width: 34vw;
+        height: 24vh;
+        /* position: absolute; */
+        background-color: #051324;
+        top: 100%;
+        left: 3%;
+        /* border-radius: 30px; */
+        /* width: 25vw; */
+        /* height: 35vh; */
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem #1f242d;
+        overflow: hidden;
+        display: flex;
+        left: -236%;
+    }
+
+    .project .hostal {
+        width: 34vw;
+        height: 24vh;
+        /* position: absolute; */
+        background-color: #051324;
+        top: -25%;
+        left: 3%;
+        /* border-radius: 30px; */
+        /* width: 25vw; */
+        /* height: 35vh; */
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem #1f242d;
+        overflow: hidden;
+        display: flex;
+        left: 149%;
+    }
+
+    .project .student {
+        width: 34vw;
+        height: 24vh;
+        /* position: absolute; */
+        background-color: #051324;
+        top: 109%;
+        left: 3%;
+        /* border-radius: 30px; */
+        /* width: 25vw; */
+        /* height: 35vh; */
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem #1f242d;
+        overflow: hidden;
+        display: flex;
+        left: -104%;
+    }
+
+    .project .chatApplication {
+        width: 34vw;
+        height: 24vh;
+        /* position: absolute; */
+        background-color: #051324;
+        top: 109%;
+        left: 3%;
+        /* border-radius: 30px; */
+        /* width: 25vw; */
+        /* height: 35vh; */
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem #1f242d;
+        overflow: hidden;
+        display: flex;
+        left: -109%;
+    }
+
+/*    section 5*/
+
+    main>section:nth-child(5)>h3>strong {
+        font-family: 'Lustria', serif;
+        color: white;
+        position: absolute;
+        left: 3%;
+        top: 5%;
+        font-size: 0.7rem;
+    }
+
+    #div1 {
+        position: absolute;
+        width: 30%;
+        height: 50%;
+        background-color: #233034;
+        top: 15%;
+        left: 2%;
+        color: white;
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 50px;
+    }
+
+    #div1>h1 {
+        color: #11E2FF;
+        position: absolute;
+        left: 9%;
+        top: 6%;
+        font-size: 1rem;
+    }
+
+    #div1>img {
+        position: absolute;
+        left: 2%;
+        top: 37%;
+        height: 46%;
+        width: 96%;
+    }
+
+    #div2 {
+        position: absolute;
+        width: 30%;
+        height: 50%;
+        background-color: #233034;
+        top: 15%;
+        left: 35%;
+        color: white;
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 50px;
+    }
+
+    #div2>h1 {
+        color: #11E2FF;
+        position: absolute;
+        left: 9%;
+        top: 5%;
+        font-size: 1rem;
+    }
+
+    #div2>img {
+        position: absolute;
+        left: 7%;
+        top: 36%;
+        height: 46%;
+        width: 90%;
+    }
+
+    #div3 {
+        position: absolute;
+        width: 30%;
+        height: 50%;
+        background-color: #233034;
+        top: 15%;
+        left: 67%;
+        color: white;
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 50px;
+    }
+
+    #div3>h1 {
+        color: #11E2FF;
+        position: absolute;
+        left: 7%;
+        top: 5%;
+        font-size: 1rem;
+    }
+
+    #div3>img {
+        position: absolute;
+        left: 3%;
+        top: 36%;
+        width: 87%;
+        height: 54%;
+    }
+
+    #viewmore3 {
+        position: absolute;
+        width: 52%;
+        height: 8%;
+        background-color: #6BB1F1;
+        top: 75%;
+        left: 41%;
+        color: white;
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 3s;
+        border-radius: 10px;
+    }
+
+    #viewmore3>a>h2 {
+        position: absolute;
+        top: -24%;
+        left: 23%;
+        color: black;
+        font-size: 1rem;
+    }
+
+/*    section 6*/
+
+    main>section:nth-child(6)>h3>strong {
+        font-family: 'Lustria', serif;
+        color: white;
+        position: absolute;
+        left: 3%;
+        top: 4%;
+        font-size: 1.7rem;
+    }
+
+    #achive1 {
+        position: absolute;
+        width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 20%;
+        left: 12%;
+        color: rgb(0, 238, 255);
+        transition-duration: 1s;
+        transition-property: all;
+        transition: 2s;
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+
+    #achive1>img {
+        position: absolute;
+        top: 15%;
+        left: -32%;
+        height: 64%;
+        width: 27%;
+    }
+
+    #achive1>pre {
+        position: relative;
+        top: 15%;
+        left: -41%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 35%;
+    }
+
+    #achive2 {
+        position: absolute;
+        width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 35%;
+        left: 20%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 2s;
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+
+    #achive2>img {
+        position: absolute;
+        top: 19%;
+        left: -34%;
+        height: 64%;
+        width: 27%;
+    }
+
+    #achive2>pre {
+        position: relative;
+        top: 13%;
+        left: -36%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 6px;
+    }
+
+    #achive3 {
+        position: absolute;
+        width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 50%;
+        left: 30%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 2s;
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+
+    #achive3>img {
+        position: absolute;
+        top: 7%;
+        left: -34%;
+        height: 64%;
+        width: 27%;
+    }
+
+    #achive3>pre {
+        position: relative;
+        top: 14%;
+        left: -35%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 6px;
+    }
+
+    #achive4 {
+        position: absolute;
+        width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 65%;
+        left: 40%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 2s;
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+
+    #achive4>img {
+        position: absolute;
+        top: 14%;
+        left: -43%;
+        height: 94%;
+        width: 37%;
+    }
+
+    #achive4>pre {
+        position: relative;
+        top: 13%;
+        left: -38%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 6px;
+    }
+
+    #achive5 {
+        position: absolute;
+        width: 40%;
+        height: 10%;
+        background-color: #0C111F;
+        top: 80%;
+        left: 50%;
+        color: rgb(0, 238, 255);
+        transition-duration: 3s;
+        transition-property: all;
+        transition: 2s;
+        border-radius: 30px;
+        border: 5px solid black;
+    }
+
+    #achive5>img {
+        position: absolute;
+        top: 23%;
+        left: -44%;
+        height: 94%;
+        width: 37%;
+    }
+
+    #achive5>pre {
+        position: relative;
+        top: 11%;
+        left: -43%;
+        font-family: 'Kalam', cursive;
+        color: white;
+        font-size: 6px;
+    }
+
+
+
+
+
+
+
 }
 
 
