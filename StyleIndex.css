@@ -4572,19 +4572,19 @@ body>footer>header{
     }
 
     main>section:first-child>aside {
-        width: 101%;
-        height: 40%;
+        width: 94%;
+        height: 29%;
         position: absolute;
-        top: 3%;
+        top: 21%;
         right: -5%;
     }
 
     main > section:nth-child(1) > aside > img {
         position: absolute;
-        top: 24%;
-        right: -2%;
-        width: 68%;
-        height: 231%;
+        top: 51%;
+        right: 13%;
+        width: 42%;
+        height: 173%;
     }
 
     main>section:nth-child(1)>aside>h4 {
@@ -5069,9 +5069,9 @@ body>footer>header{
 
     #uiux>pre {
         position: absolute;
-        font-size: 15px;
+        font-size: 11px;
         top: 40%;
-        left: -52%;
+        left: -28%;
         color: white;
     }
 
@@ -5092,17 +5092,17 @@ body>footer>header{
 
     #www>pre {
         position: absolute;
-        font-size: 15px;
+        font-size: 11px;
         top: 45%;
-        left: -56%;
+        left: -28%;
         color: white;
     }
 
     #bugfix>pre {
         position: absolute;
-        font-size: 15px;
+        font-size: 11px;
         top: 43%;
-        left: -47%;
+        left: -28%;
         color: white;
     }
 
@@ -5110,12 +5110,17 @@ body>footer>header{
         position: relative;
         right: 39px;
         transition: 3s;
-        margin-top: 50%;
+        margin-top: 49%;
         left: 0%;
         height: 19%;
     }
 
+
 }
+
+@media (min-width: 1024px) and (max-width:1440px ){}
+
+
 
 
 
