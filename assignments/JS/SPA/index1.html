@@ -14,7 +14,7 @@
       cursor: pointer;
     }
   </style>
-  <script src="Controllers/CustomerController.js"></script>
+
 
 
 </head>
@@ -144,23 +144,23 @@
       <h1 class="text-dark">Item Form</h1>
 
       <div class="form-group">
-        <label for="itemCode"  class="text-white">Item Code</label>
-        <input class="form-control text-bg-dark" id="itemCode" type="text">
+        <label for="inputItemCode"  class="text-white">Item Code</label>
+        <input class="form-control text-bg-dark" id="inputItemCode" type="text">
         <span class="control-error" id="lblCode"></span>
       </div>
       <div class="form-group">
-        <label for="itemName" class="text-white">Item Name</label>
-        <input class="form-control text-bg-dark" id="itemName" type="text">
+        <label for="inputItemName" class="text-white">Item Name</label>
+        <input class="form-control text-bg-dark" id="inputItemName" type="text">
         <span class="control-error" id="lblname"></span>
       </div>
       <div class="form-group">
-        <label for="itemQty" class="text-white">Item Qty</label>
-        <input class="form-control text-bg-dark" id="itemQty" type="text">
+        <label for="inputItemQty" class="text-white">Item Qty</label>
+        <input class="form-control text-bg-dark" id="inputItemQty" type="text">
         <span class="control-error" id="lblqty"></span>
       </div>
       <div class="form-group">
-        <label for="itemPrice" class="text-white">Unit Price</label>
-        <input class="form-control text-bg-dark" id="itemPrice" type="text">
+        <label for="inputItemPrice" class="text-white">Unit Price</label>
+        <input class="form-control text-bg-dark" id="inputItemPrice" type="text">
         <span class="control-error" id="lblprice"></span>
       </div>
       <div class="btn-group">
@@ -192,394 +192,161 @@
 </main>
 
 <!--order-->
-<main class="container-fluid" id="orderContent">
-  <div class="container-fluid mt-4">
-    <!--main tile-->
-    <div class="jumbotron pt-4">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header bg-primary font-weight-bolder">Invoice Details</div>
-            <div class="card-body">
-              <form>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label>Order ID :</label>
-                      <input class="form-control" id="txtOrderID" type="text">
-                      <span class="control-error"
-                            id="orderId-invalid-error"></span>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label>Date :</label>
-                      <input class="form-control" id="txtDate" type="date">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label>Customer :</label>
-                      <select class="form-control" id="selectCusID">
+<main class="container-fluid" id="orderContent" >
+  <div class="container-fluid mt-2" >
+    <div class="row border" >
+      <div class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis  border border-primary-subtle rounded-3"
+           style="border-radius: 10px; border: 2px solid #02e9ff; background-color: #000000">
+        <h4 style="text-align: center; color: #05d5e8; ">Invoice Details</h4>
+        <div class="row g-2" style="color: white">
+          <div class="col-6">
+            <label for="OrderId" class="form-label">Order Id :</label>
+            <input type="text" id="OrderId" class="form-control" placeholder="Order Id" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-6">
+            <label for="date" class="form-label">Order Date :</label>
+            <input type="date" id="date" class="form-control" placeholder="Order Date" aria-label="Order Date" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-6">
+            <label for="CustominputState" class="form-label">Customer :</label>
+            <select id="CustominputState" class="form-select" style="background-color: #334344; color: white">
 
-                      </select>
-                      <span class="control-error"
-                            id="cus-empty-error"></span>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label for="orderCustomerID">Customer ID</label>
-                      <input class="form-control" id="orderCustomerID">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label>Name :</label>
-                      <input class="form-control" id="orderCustomerName" type="text">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label>Salary :</label>
-                      <input class="form-control" id="orderCustomerSalary" type="text">
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label>Address :</label>
-                      <input class="form-control" id="orderCustomerAddress" type="text">
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
+            </select>
+          </div>
+          <div class="col-6">
+            <label for="custIdSetOrder" class="form-label" >Customer Id :</label>
+            <input type="text" id="custIdSetOrder" class="form-control" placeholder="Customer Id" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-6">
+            <label for="custNameSetOrder" class="form-label" >Customer Name :</label>
+            <input type="text" id="custNameSetOrder" class="form-control" placeholder="Customer Name" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-6">
+            <label for="custSalarySetOrder" class="form-label" >Customer Salary :</label>
+            <input type="text" id="custSalarySetOrder" class="form-control" placeholder="Salary" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-6">
+            <label for="custAddressSetOrder" class="form-label">Customer Address :</label>
+            <input type="text" id="custAddressSetOrder" class="form-control" placeholder="Address" aria-label="Last name" style="background-color: #334344; color: white">
           </div>
         </div>
-        <div class="col-lg-5 mt-lg-0 mt-3">
-          <div class="card">
-            <div class="card-header bg-primary  font-weight-bolder">Item Select</div>
-            <div class="card-body">
-              <form>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label>Item :</label>
-                      <select class="form-control" id="selectItemCode"></select>
-                      <span class="control-error"
-                            id="item-empty-error"></span>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label>Item Code :</label>
-                      <input class="form-control" id="txtItemCode" type="text">
-                    </div>
-                  </div>
-                  <div class="col-5">
-                    <div class="form-group">
-                      <label>Item Name :</label>
-                      <input class="form-control" id="txtItemDescription" type="text">
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="form-group">
-                      <label class="">Price :</label>
-                      <input class="form-control" id="txtItemPrice" type="text">
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="form-group">
-                      <label class="">QtyOnH :</label>
-                      <input class="form-control" id="txtQTYOnHand" type="text">
-                    </div>
-                  </div>
-                  <hr>
-                  <hr>
-                  <div class="col-12 mt-4">
-                    <div class="form-group">
-                      <label>Order Quantity :</label>
-                      <input class="form-control" id="txtQty" min="1" type="number">
-                      <span class="control-error" id="order-qty-empty-error"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group text-right">
-                  <button class="btn btn-danger col-12 col-sm-auto" id="btnAddToTable" type="button">
-                    Add Item
-                  </button>
-                </div>
-              </form>
+      </div>
+      <div
+              class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis  border border-primary-subtle rounded-3"
+              style="border-radius: 10px; border: 2px solid #00f7ff; background-color: #000000">
+        <!--item section-->
+        <h4 style="text-align: center; color: #05f7ff">Item Select</h4>
+        <div class="row g-2" style="color: white">
+          <div class="col-6">
+            <label for="IteminputState" class="form-label">Item :</label>
+            <select id="IteminputState" class="form-select" style="background-color: #334344; color: white">
+
+            </select>
+          </div>
+          <div class="col-6">
+            <label for="ItemIdSetOrder" class="form-label">Item Code :</label>
+            <input type="text" id="ItemIdSetOrder" class="form-control" placeholder="Item Code" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-4">
+            <label for="ItemNameSetOrder" class="form-label">Item Name :</label>
+            <input type="text" id="ItemNameSetOrder" class="form-control" placeholder="Item Name" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-4">
+            <label for="ItemPriceSetOrder" class="form-label">Price :</label>
+            <input type="text" id="ItemPriceSetOrder" class="form-control" placeholder="Price" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-4">
+            <label for="ItemQTYSetOrder" class="form-label">QtyOnHand :</label>
+            <input type="text" id="ItemQTYSetOrder" class="form-control" placeholder="QtyOnHand" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-12">
+            <label class="form-label">OrderQty :</label>
+            <input type="text" id="ChoiceQTYOrder" class="form-control" placeholder="OrderQty" aria-label="Last name" style="background-color: #334344; color: white">
+            <div style="display: flex">
+              <label id="qtymassage" class="form-label" style="font-size: 12px; color: red; display: none">Please enter amount lower than :</label>
+              <label id="h1hello" style="position:relative;font-size: 12px; color: red; left:1%; display: none"> </label>
             </div>
           </div>
+
         </div>
-        <div class="col-lg-3">
-          <section class="content-box-2 p-4 ">
-            <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-12">
-                    <span class="" id="total-text">Total : </span>
-                  </div>
-                  <div class="col-12">
-                    <span id="total">00.0</span> Rs/=
-                  </div>
-                </div>
+        <div class="d-flex justify-content-end">
+          <button id="addToCardOrder" type="button" class="btn btn-success mt-3  " style="background-color: #00e4fc; color:black ;">AddToCart</button>
+        </div>
 
-              </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-12">
-                    <span id="total-text1">SubTotal : </span>
-                  </div>
-                  <div class="col-12">
-                    <span id="subtotal">00.0</span> Rs/=
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-6 mt-2">
-                <div class="form-group">
-                  <label>Cash</label>
-                  <input class="form-control" id="txtCash" min="0" type="number">
-                  <span class="control-error"
-                        id="cash-empty-error"></span>
-                </div>
-              </div>
-              <div class="col-6 mt-2">
-                <div class="form-group">
-                  <label>Discount</label>
-                  <input class="form-control" id="txtDiscount" min="0" type="number">
-                </div>
-              </div>
-              <div class="col-8">
-                <div class="form-group">
-                  <label>Balance</label>
-                  <input class="form-control" id="txtBalance" type="text">
-                </div>
-              </div>
-              <div class="col-4 mt-4">
-                <button class="btn btn-success" id="btnSubmitOrder" type="button">Purchase</button>
-              </div>
+        <!--porch section-->
+      </div>
+      <div
+              class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis  border border-primary-subtle rounded-3"
+              style="border-radius: 10px; border: 2px solid #00f2fc; background-color: #050505">
+        <h2 style="color: #00c4ff">Total : RS <span id="lableTotPrice">0</span>/=</h2>
+        <h2 style=" color: #00b7ff">SubTotal : RS <span id="lableSubTotal">0</span>/=</h2>
+        <div class="row g-2" style="color: white">
+          <div class="col-6">
+            <label for="inputCash" class="form-label">Cash :</label>
+            <input type="text" id="inputCash" class="form-control" placeholder="Cash" aria-label="First name" style="background-color: #334344; color: white">
+            <div style="display: flex">
+              <label id="cashLOwMasse" class="form-label" style="font-size: 12px; color: #ff0000; display: none">Please enter amount greater than :</label>
+              <label id="cashShow" style="position:relative;font-size: 12px; color: #ff0000; left:1%; display: none"> </label>
             </div>
-          </section>
+          </div>
+          <div class="col-6">
+            <label for="discount" class="form-label">Discount :</label>
+            <input type="number" id="discount" class="form-control" placeholder="Discount" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="col-12">
+            <label for="BalanceInput" class="form-label">Balance :</label>
+            <input type="text" id="BalanceInput" class="form-control" placeholder="Balance" aria-label="Last name" style="background-color: #334344; color: white">
+          </div>
+          <div class="d-flex justify-content-center">
+            <button id="purchase" type="button" class="btn btn-success" style="width: 30%;  background-color: #00e4fc; color:black ;">Purchase</button>
+          </div>
         </div>
       </div>
-      <!--order table-->
-      <div class="col-md-12 mt-4" style="height:180px; overflow-y: scroll">
-        <table class="table table-bordered text-white">
-          <thead class="bg-primary">
-          <tr>
-            <th>Item Code</th>
-            <th>Item Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-          </tr>
-          </thead>
-          <tbody class="bg-light text-dark" id="orderTable">
-
-          </tbody>
-        </table>
-      </div>
-      <!---------->
     </div>
   </div>
+
+
+  <!--Table-->
+  <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
+    <table class="table table-bordered table-hover table-striped-columns ">
+      <thead>
+      <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+        <th class="bg-primary-subtle">Item Code</th>
+        <th class="bg-primary-subtle">Item Name</th>
+        <th class="bg-primary-subtle">Price</th>
+        <th class="bg-primary-subtle">Quantity</th>
+        <th class="bg-primary-subtle">Total</th>
+      </tr>
+      </thead>
+      <tbody id="TBodyOrder">
+
+      </tbody>
+    </table>
+  </div>
+
+
 </main>
 
 
-<script>
-  // select all contents
-  let dash = document.querySelector("#dashboardContent");
-  let customer = document.querySelector("#customerContent");
-  let item = document.querySelector("#itemContent");
-  let order = document.querySelector("#orderContent");
 
-  //select all the link and bind click events
-  let lnkHome = document.querySelector("#lnkHome");
-  let lnkCustomer = document.querySelector("#lnkCustomer");
-  let lnkItem = document.querySelector("#lnkItem");
-  let lnkOrder = document.querySelector("#lnkOrders");
-
-  //hide all the 4 content sections and display only dashboard
-  dash.style.display = 'block';
-  customer.style.display = 'none';
-  item.style.display = 'none';
-  order.style.display = 'none';
-
-
-  lnkHome.addEventListener("click", function () {
-    dash.style.display = 'block';
-    customer.style.display = 'none';
-    item.style.display = 'none';
-    order.style.display = 'none';
-  })
-
-
-  lnkCustomer.addEventListener("click", function () {
-    dash.style.display = 'none';
-    customer.style.display = 'block';
-    item.style.display = 'none';
-    order.style.display = 'none';
-  })
-
-
-  lnkItem.addEventListener("click", function () {
-    dash.style.display = 'none';
-    customer.style.display = 'none';
-    item.style.display = 'block';
-    order.style.display = 'none';
-  })
-
-
-  lnkOrder.addEventListener("click", function () {
-    dash.style.display = 'none';
-    customer.style.display = 'none';
-    item.style.display = 'none';
-    order.style.display = 'block';
-  })
-
-
-
-
-
-  //Customer Mange
-  // let btnSave = document.querySelector("#btnCustomer");
-  // let btnGetAll = document.querySelector("#btnGetAll");
-  // let tBody = document.querySelector("#tblCustomer");
-
-  //select 4 text fields
-  // let txtID = document.querySelector("#txtCustomerID");
-  // let txtName = document.querySelector("#txtCustomerName");
-  // let txtAddress = document.querySelector("#txtCustomerAddress");
-  // let txtSalary = document.querySelector("#txtCustomerSalary");
-
-
-  //save a customer
-  // btnSave.addEventListener("click", function () {
-  //     //create customer object and fill all the data
-  //     var customer = {
-  //         id: txtID.value,
-  //         name: txtName.value,
-  //         address: txtAddress.value,
-  //         salary: txtSalary.value
-  //     }
-  //     //add customer to object to the array
-  //     customers.push(customer);
-  //     console.log(customers);
-  // });
-
-
-  //load all customers from the array to the table
-  // btnGetAll.addEventListener("click", function () {
-  //     for (let i = 0; i < customers.length; i++) {
-  //
-  //         let tr = document.createElement("tr");
-  //         let td1 = document.createElement("td");
-  //         td1.textContent = customers[i].id;
-  //         let td2 = document.createElement("td");
-  //         td2.textContent = customers[i].name;
-  //         let td3 = document.createElement("td");
-  //         td3.textContent = customers[i].address;
-  //         let td4 = document.createElement("td");
-  //         td4.textContent = customers[i].salary;
-  //         tr.append(td1, td2, td3, td4);
-  //         tBody.append(tr);
-  //     }
-  //
-  // });
-
-  //temporary db
-  var customers = [
-    {id: "C001", name: "Dasun", address: "Galle", salary: 1000.22},
-    {id: "C002", name: "Iman", address: "Mathara", salary: 2000.22}
-  ];
-
-
-  //refactor save with jQuery
-  $("#btnCustomer").click(function () {
-
-    let cus_ID = $("#txtCustomerID").val();
-    let cus_Name = $("#txtCustomerName").val();
-    let cus_Address = $("#txtCustomerAddress").val();
-    let cus_Salary = $("#txtCustomerSalary").val();
-
-    var customer = {
-      id: cus_ID,
-      name: cus_Name,
-      address: cus_Address,
-      salary: cus_Salary
-    }
-
-    //add customer to object to the array
-    customers.push(customer);
-    getAllCustomers();
-    console.log(customers);
-  });
-
-
-  //refactor get_all with jQuery
-  $("#btnGetAll").click(function () {
-    getAllCustomers();
-  });
-
-  getAllCustomers();
-
-  function getAllCustomers() {
-    //remove all the child elements of tbody before adding the table rows
-    $("#tblCustomer").empty();
-
-    for (let i = 0; i < customers.length; i++) {
-      let row = `<tr>
-                            <td>${customers[i].id}</td>
-                            <td>${customers[i].name}</td>
-                            <td>${customers[i].address}</td>
-                            <td>${customers[i].salary}</td>
-                        </tr>`;
-      $("#tblCustomer").append(row);
-    }
-
-    bindEvents();
-
-  }
-
-  bindEvents();
-
-  function bindEvents(){
-    $('#tblCustomer>tr').click(function () {
-      // console.log(this);//tr -> this will return tr html element
-      // console.log($(this));//jquery ob //if we want to access jQuery method we have to convert it to a jquery object
-      // console.log($(this).text()); // now here it will return all the text of tr
-
-      let id = $(this).children(':nth-child(1)').text();
-      let name = $(this).children(':nth-child(2)').text();
-      let address = $(this).children(':nth-child(3)').text();
-      let salary = $(this).children(':nth-child(4)').text();
-
-      setTextFieldValues(id,name,address,salary);
-    });
-  }
-  //check this out.?
-
-
-  function setTextFieldValues(id, name, address, salary) {
-    $("#txtCustomerID").val(id);
-    $("#txtCustomerName").val(name);
-    $("#txtCustomerAddress").val(address);
-    $("#txtCustomerSalary").val(salary);
-  }
-
-
-
-</script>
-
-<script src="Controllers/Validation/CustomerValidation.js"></script>
-<script src="Controllers/CustomerController.js"></script>
+<script src="assests/boostrap/js/jquery-3.7.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="Controllers/dashBoard.js"></script>
 <script src="DB/DB.js"></script>
+
+<script src="Controllers/CustomerController.js"></script>
+<script src="Controllers/Validation/CustomerValidation.js"></script>
+<script src="Module/Customer.js"></script>
+
+<script src="Controllers/ItemController.js"></script>
+<script src="Controllers/Validation/ItemValidation.js"></script>
+<script src="Module/Item.js"></script>
+
+<script src="Controllers/OrderPurchaseController.js"></script>
+<script src="Controllers/Validation/OrderValidation.js"></script>
+<script src="Module/Order.js"></script>
+
+
 
 
 

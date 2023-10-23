@@ -1,24 +1,25 @@
-const ITEM_CODE_REGEX = /^(C00-)[0-9]{3}$/;
+const ITEM_CODE_REGEX = /^(I00-)[0-9]{3}$/;
 const ITEM_DESCRIPTION_REGEX = /^[A-Za-z ]{5,}$/;
-const ITEM_QTY_REGEX = /^[A-Za-z0-9 ]{8,}$/;
-const ITEM_UNITPRICE_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
+const ITEM_QTY_REGEX =  /^[0-9]{1,}$/;
+const ITEM_UNITPRICE_REGEX =  /^[0-9]{2,}([.][0-9]{2})?$/;
 
 let item_vArray = new Array();
-item_vArray.push({field: $("#txtItemCode"), regEx: ITEM_CODE_REGEX});
-item_vArray.push({field: $("#txtItemDescription"), regEx: ITEM_DESCRIPTION_REGEX});
-item_vArray.push({field: $("#txtItemPrice"), regEx: ITEM_QTY_REGEX});
-item_vArray.push({field: $("#txtItemQty"), regEx: ITEM_UNITPRICE_REGEX});
+item_vArray.push({field: $("#inputItemCode"), regEx: ITEM_CODE_REGEX});
+item_vArray.push({field: $("#inputItemName"), regEx: ITEM_DESCRIPTION_REGEX});
+item_vArray.push({field: $("#inputItemQty"), regEx: ITEM_QTY_REGEX});
+item_vArray.push({field: $("#inputItemPrice"), regEx: ITEM_UNITPRICE_REGEX});
+
 
 function clearItemInputFields() {
-    $("#txtItemCode,#txtItemDescription,#txtItemPrice,#txtItemQty").val("");
-    $("#txtItemCode,#txtItemDescription,#txtItemPrice,#txtItemQty").css("border", "1px solid #ced4da");
-    $("#txtItemCode").focus();
+    $("#inputItemCode,#inputItemName,#inputItemQty,#inputItemPrice").val("");
+    $("#inputItemCode,#inputItemName,#inputItemQty,#inputItemPrice").css("border", "1px solid #ced4da");
+    $("#inputItemCode").focus();
     setBtn();
 }
 
 setBtn();
 
-$("#txtItemCode,#txtItemDescription,#txtItemPrice,#txtItemQty").on("keydown keyup", function (e) {
+$("#inputItemCode,#inputItemName,#inputItemQty,#inputItemPrice").on("keydown keyup", function (e) {
 
     let indexNo = item_vArray.indexOf(item_vArray.find((c) => c.field.attr("code") == e.target.code));
 
@@ -92,7 +93,7 @@ function setBtn() {
         $("#btnItem").prop("disabled", true);
     }
 
-    let code = $("#txtItemCode").val();
+    let code = $("#inputItemCode").val();
     if (searchItem(code) == undefined) {
         $("#btnItemDelete").prop("disabled", true);
         $("#btnItemUpdate").prop("disabled", true);

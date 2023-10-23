@@ -2286,10 +2286,10 @@ body>footer>header{
 
 }
 
-#submit{
+#submit {
     position: absolute;
-    left: 84%;
-    top: 87%;
+    left: 79%;
+    top: 85%;
 }
 
 .contactimage{
@@ -2367,6 +2367,15 @@ body>footer>header{
 
 }
 
+.followme>h2 {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    font-size: 2.1rem;
+    color: #04f1dd;
+    font-family: 'Lemon', cursive;
+}
+
 .followme a{
     display: flex;
     justify-content: space-evenly;
@@ -2424,6 +2433,16 @@ body>footer>header{
     left: 67%;
 }
 
+#copyright {
+    position: absolute;
+    top: 93%;
+    left: 29%;
+    font-size: 1.1rem;
+    color: #060606;
+    font-family: 'Lemon', cursive;
+}
+
+
 /*.followme>nav>img:first-child{*/
 /*    position:absolute;*/
 /*    top: 30%;*/
@@ -2451,7 +2470,7 @@ body>footer>header{
 
 
 /*media Quaery*/
-@media all and (max-width: 320px) {
+@media (min-width :320px) and (max-width: 375px) {
 
     #welcome>hgroup>h2 {
         position: absolute;
