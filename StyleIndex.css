@@ -105,32 +105,33 @@ main>section:nth-child(1)>aside>h4{
     /* text-shadow: 1px 2px -3px 0 #00F6F6; */
 }
 
-.icon{
-    width: 50%;
-    height: 60%;
 
-}
 
 .icon{
     position: absolute;
     padding-left: 90%;
-    top: 30%;
-
+    top: 24%;
 }
 
+
 .icon a{
-    display:flex ;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 5%;
     width: 50px;
     height: 50px;
-    background:transparent;
+    background: #0c0c0c;
     border: 2px solid #00F6F6;
     border-radius: 50%;
+    margin: 1rem 1rem 1rem;
     font-size: 2rem;
     color: #00F6F6;
     transition: .5s ease;
     text-decoration: none;
+    flex-direction: row-reverse;
+    align-content: space-around;
+    align-items: center;
 
 }
 
@@ -141,35 +142,101 @@ main>section:nth-child(1)>aside>h4{
 
 }
 
-.icon>nav>img:first-child{
+.fb{
     position:absolute;
     top: 30%;
     right: 5%;
 }
 
-.icon>nav>img:nth-child(2){
+.linkedin{
     position:absolute;
-    top: 40%;
+    top: 30%;
     right: 5%;
 }
 
-.icon>nav>img:nth-child(3){
+.twitter{
     position:absolute;
-    top: 50%;
+    top: 30%;
     right: 5%;
 }
 
-.icon>nav>img:nth-child(4){
+.git{
     position:absolute;
-    top: 60%;
+    top: 30%;
     right: 5%;
 }
 
-.icon>nav>img:nth-child(5){
+.YouTube{
     position:absolute;
-    top: 70%;
+    top: 30%;
     right: 5%;
 }
+
+/*.icon{*/
+/*    width: 50%;*/
+/*    height: 60%;*/
+
+/*}*/
+
+/*.icon{*/
+/*    position: absolute;*/
+/*    padding-left: 90%;*/
+/*    top: 30%;*/
+
+/*}*/
+
+/*.icon a{*/
+/*    display:flex ;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    background:transparent;*/
+/*    border: 2px solid #00F6F6;*/
+/*    border-radius: 50%;*/
+/*    font-size: 2rem;*/
+/*    color: #00F6F6;*/
+/*    transition: .5s ease;*/
+/*    text-decoration: none;*/
+
+/*}*/
+
+/*.icon a:hover{*/
+/*    background: #00F6F6;*/
+/*    color: #040C13;*/
+/*    box-shadow: 0 0 1rem #00F6F6;*/
+
+/*}*/
+
+/*.icon>nav>img:first-child{*/
+/*    position:absolute;*/
+/*    top: 30%;*/
+/*    right: 5%;*/
+/*}*/
+
+/*.icon>nav>img:nth-child(2){*/
+/*    position:absolute;*/
+/*    top: 40%;*/
+/*    right: 5%;*/
+/*}*/
+
+/*.icon>nav>img:nth-child(3){*/
+/*    position:absolute;*/
+/*    top: 50%;*/
+/*    right: 5%;*/
+/*}*/
+
+/*.icon>nav>img:nth-child(4){*/
+/*    position:absolute;*/
+/*    top: 60%;*/
+/*    right: 5%;*/
+/*}*/
+
+/*.icon>nav>img:nth-child(5){*/
+/*    position:absolute;*/
+/*    top: 70%;*/
+/*    right: 5%;*/
+/*}*/
 
 #welcome>hgroup>h2{
     position: absolute;
@@ -2092,7 +2159,8 @@ body>footer>header{
     position: sticky;
     z-index: 2;
 }
-#contact>h1{
+
+#quection{
     position: absolute;
     top: 2%;
     left: 1%;
@@ -2100,11 +2168,33 @@ body>footer>header{
     color: #ffffff;
     font-family: 'Lemon', cursive;
 }
-#image1{
+
+
+
+#image1 {
     position: absolute;
     top: 15%;
     left: 5%;
 }
+
+#image2 {
+    position: absolute;
+    top: 29%;
+    left: 5%;
+}
+
+#image3 {
+    position: absolute;
+    top: 42%;
+    left: 5%;
+}
+
+#image4 {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+}
+
  #href1{
       position: absolute;
       top: 18%;
@@ -2113,17 +2203,43 @@ body>footer>header{
       font-size: large;
      text-decoration: none;
      }
-#details{
+
+#href2{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+#href3{
+    position: absolute;
+    top: 44%;
+    left: 10%;
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+#href4{
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+#details {
     width: 53%;
     height: 51%;
     position: absolute;
     background-color: #244c4c;
     border: 2px solid black;
     border-radius: 15px;
-    top: 20%;
-    left: 45%;
+    top: 15%;
+    left: 39%;
     font-size: 1.5rem;
-
 }
 #nameLabel {
     position: absolute;
@@ -2247,24 +2363,28 @@ body>footer>header{
 .followme{
     position: absolute;
     padding-left: 30%;
-    top: 30%;
+    top: 23%;
 
 }
 
 .followme a{
-    display:flex ;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
     left: 5%;
     width: 50px;
     height: 50px;
-    background:transparent;
+    background: #406567;
     border: 2px solid #00F6F6;
     border-radius: 50%;
+    margin: 1rem 1rem 1rem;
     font-size: 2rem;
     color: #00F6F6;
     transition: .5s ease;
     text-decoration: none;
+    flex-direction: row-reverse;
+    align-content: space-around;
+    align-items: center;
 
 }
 
@@ -2275,29 +2395,58 @@ body>footer>header{
 
 }
 
-.followme>nav>img:first-child{
+#fb{
     position:absolute;
-    top: 30%;
-    right: 5%;
+        top: 85%;
+        left: 35%;
 }
 
-.followme>nav>img:nth-child(2){
-    position:absolute;
-    top: 40%;
-    right: 5%;
+#linkedin {
+    position: absolute;
+    top: 85%;
+    left: 43%;
 }
 
-.followme>nav>img:nth-child(3){
-    position:absolute;
-    top: 50%;
-    right: 5%;
+#twitter {
+    position: absolute;
+    top: 85%;
+    left: 51%;
+}
+#git {
+    position: absolute;
+    top: 85%;
+    left: 59%;
 }
 
-.followme>nav>img:nth-child(4){
-    position:absolute;
-    top: 60%;
-    right: 5%;
+#YouTube {
+    position: absolute;
+    top: 85%;
+    left: 67%;
 }
+
+/*.followme>nav>img:first-child{*/
+/*    position:absolute;*/
+/*    top: 30%;*/
+/*    right: 5%;*/
+/*}*/
+
+/*.followme>nav>img:nth-child(2){*/
+/*    position:absolute;*/
+/*    top: 40%;*/
+/*    right: 5%;*/
+/*}*/
+
+/*.followme>nav>img:nth-child(3){*/
+/*    position:absolute;*/
+/*    top: 50%;*/
+/*    right: 5%;*/
+/*}*/
+
+/*.followme>nav>img:nth-child(4){*/
+/*    position:absolute;*/
+/*    top: 60%;*/
+/*    right: 5%;*/
+/*}*/
 
 
 
