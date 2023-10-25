@@ -8,6 +8,23 @@ function generateOrderID() {
     $("#OrderId").val(orderID);
 }
 
+let typeOrdIdOrderPlace = document.getElementById("OrderId");
+let OrderNotTypeId = document.getElementById("OrderNotTypeId");
+typeOrdIdOrderPlace.addEventListener("keyup", function () {
+    if ($("#OrderId").val() === orderIDstor) {
+        $("#OrderNotTypeId").css({
+            display: "none",
+        });
+        $("#lableTotPrice").text("0");
+        $("#lableSubTotal").text("0");
+    } else {
+        $("#OrderNotTypeId").css({
+            display: "block",
+        });
+        OrderNotTypeId.textContent="Next Order Id : "+orderIDstor;
+    }
+});
+
 //item section
 let ChoiceElement = document.getElementById("ChoiceQTYOrder");
 let labelElement = document.getElementById("h1hello");
@@ -200,6 +217,7 @@ function inputCashCheck() {
     }
 }
 
+//purches order
 $("#purchase").click(function () {
     let inputField = document.getElementById("inputCash");
     let inputValue = inputField.value.trim();
@@ -228,7 +246,8 @@ $("#purchase").click(function () {
         $("#BalanceInput").css({
             border:"0px solid white"
         });
-        setOrderValue(orderIDstor);
+        // setOrderValue(orderIDstor);
+        ItemQTYLower(orderIDstor);
     }
 });
 

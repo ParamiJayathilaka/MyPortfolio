@@ -134,8 +134,33 @@ discount.addEventListener("keyup", function (){
     $("#BalanceInput").val(balance);
 });
 
+function ItemQTYLower(orderIDstor) {
+    for (let i = 0; i < defaultArrayToSecondItem.length; i++) {
+        let defaultArrayItemCode = defaultArrayToSecondItem[i].itemCode;
+        let defaultArrayItemQTY = defaultArrayToSecondItem[i].itemQTYChoice;
+
+        for (let k = 0; k < itemDB.length; k++) {
+            let ItemCode = itemDB[k].code;
+            if (defaultArrayItemCode === ItemCode) {
+                let itemQtyOnHand = itemDB[k].qtyOnHand;
+                let lowQTYUpdate = itemQtyOnHand - defaultArrayItemQTY;
+
+                itemDB[k].qtyOnHand = lowQTYUpdate;
+
+                // console.log("Code: " + itemDB[k].code);
+                // console.log("Description: " + itemDB[k].description);
+                // console.log("Qty on Hand: " + lowQTYUpdate);
+                // console.log("Unit Price: " + itemDB[k].unitPrice);
+                // console.log("\n");
+            }
+        }
+    }
+    setOrderValue(orderIDstor);
+}
+
 // arry set value
-const secondRoundArry = [];
+// const secondRoundArry = [];
+
 function setOrderValue(orderIDstor) {
     // orderDB.length=0;
     // orderDB.orderDetails=0
@@ -157,14 +182,6 @@ function setOrderValue(orderIDstor) {
         let QTY = defaultArrayToSecondItem[i].itemQTYChoice;
         let total = defaultArrayToSecondItem[i].totalPrice;
 
-        let newItemtoOrder = Object.assign({}, itemToOrder);
-        newItemtoOrder.itemCode = id;
-        newItemtoOrder.itemName = name;
-        newItemtoOrder.itemPrice = price;
-        newItemtoOrder.itemQTYChoice =QTY;
-        newItemtoOrder.totalPrice = total;
-        secondRoundArry.push(newItemtoOrder);
-
         order.orderDetails.push({
                 oid: orderId,
                 code: id,
@@ -175,10 +192,7 @@ function setOrderValue(orderIDstor) {
     }
 
     orderDB.push(order);
-
     defaultArrayToSecondItem.length=0;
-
-
     // orderDB.forEach(function (order) {
     //     console.log("Order ID: " + order.oid);
     //     console.log("Date: " + order.date);
@@ -195,9 +209,10 @@ function setOrderValue(orderIDstor) {
     // for (let i = 0; i < secondRoundArry.length; i++) {
     //     console.log(secondRoundArry[i]);
     // }
-
     allemtyset();
 }
+
+
 
 const totalArry = [];
 let ChoiceElement6 = document.getElementById("OrderId");
@@ -241,4 +256,28 @@ ChoiceElement6.addEventListener("keyup", function () {
 
         }
     }
+});
+
+//    delete table value
+$(document).ready(function () {
+    $('#clickTable').on('click', 'tr', function () {
+        var userConfirmed = confirm("Do you want to Remove ?");
+
+        if (userConfirmed) {
+            alert("Success");
+            let Itemcode = $(this).children().eq(0).text();
+
+            for (let i = 0; i < defaultArrayToSecondItem.length; i++) {
+                if (defaultArrayToSecondItem[i].itemCode == Itemcode) {
+                    defaultArrayToSecondItem.splice(i, 1);
+                    $("#lableTotPrice").text("0");
+                    $("#lableSubTotal").text("0");
+                    getAllItemSetTableArray();
+                }
+            }
+        } else {
+
+        }
+
+    });
 });

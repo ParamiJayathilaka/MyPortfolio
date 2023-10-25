@@ -202,6 +202,7 @@
           <div class="col-6">
             <label for="OrderId" class="form-label">Order Id :</label>
             <input type="text" id="OrderId" class="form-control" placeholder="Order Id" aria-label="Last name" style="background-color: #334344; color: white">
+            <label for="OrderId" id="OrderNotTypeId" class="form-label" style="display: none;color: #07f6df"> :</label>
           </div>
           <div class="col-6">
             <label for="date" class="form-label">Order Date :</label>
@@ -308,7 +309,7 @@
 
   <!--Table-->
   <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
-    <table class="table table-bordered table-hover table-striped-columns ">
+    <table id="clickTable" class="table table-bordered table-hover table-striped-columns " >
       <thead>
       <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
         <th class="bg-primary-subtle">Item Code</th>
