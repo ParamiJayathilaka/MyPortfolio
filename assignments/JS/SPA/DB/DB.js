@@ -6,9 +6,9 @@ var customerDB = [
 ];
 
 var itemDB = [
-    {code:"I00-001",description:"Bluse(XL)",qtyOnHand: 100,unitPrice: 2500.00},
-    {code:"I00-002",description:"Shirt",qtyOnHand: 150,unitPrice: 1500.00},
-    {code:"I00-003",description:"Frock",qtyOnHand: 400,unitPrice: 2575.00}
+    {code:"I00-001",description:"Bluse(XL)",qtyOnHand: 70,unitPrice: 2500.00},
+    {code:"I00-002",description:"Shirt",qtyOnHand: 200,unitPrice: 1500.00},
+    {code:"I00-003",description:"Frock",qtyOnHand: 50,unitPrice: 2575.00}
 ];
 
 var orderDB = [

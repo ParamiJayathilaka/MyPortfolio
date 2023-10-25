@@ -57,6 +57,7 @@ body>header>div{
     top: 0;
     left: 0;
 
+
 }
 
 body>header>div>h4{
@@ -69,6 +70,11 @@ body>header>div>h4{
     color: #00F6F6;
     text-decoration: none;
 
+
+}
+
+#topic{
+    text-decoration: none;
 }
 
 /*section 1*/
