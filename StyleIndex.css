@@ -42,13 +42,46 @@ body>header{
 
 }
 
-#topic{
-    background:transparent;
-    text-decoration: none;
-    position: absolute;
-    right: 15px;
-    top: 5px;
+header>nav>menu>pre {
+    margin-right: 20px;
+    border-right: 20px;
+    font-size: 19px;
+    color: white;
 }
+
+header>nav>menu>pre>a {
+    text-decoration: none;
+    color: #00d7ff;
+    margin-left: 4px;
+    font-weight: bold;
+    font-family: 'Abhaya Libre', serif;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+/*header>nav>menu {*/
+/*    position: absolute;*/
+/*    top: 5px;*/
+/*    right: 40px;*/
+/*}*/
+/*#topic {*/
+/*    text-decoration: none;*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    margin-right: 20px;*/
+/*    border-right: 20px;*/
+/*    font-size: 19px;*/
+/*    color: white;*/
+/*}*/
+
+/*#topic>a{*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*    margin-left: 9px;*/
+/*    font-weight: bold;*/
+/*}*/
 
 body>header>div{
     width: 5%;
