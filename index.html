@@ -501,17 +501,22 @@
 <script src="boostrap/js/bootstrap.bundle.js"></script>
 <script src="new.js"></script>
 <script>
-    const text = document.querySelector(".h2");
-    const textLoad = () => {
-        setTimeout(() =>{
-            text.textContent = "Front-End Developer";
-        },0);
-        setTimeout(() =>{
-            text.textContent = "Graphic Designer";
-        },4000);
-    }
-    textLoad();
-    setInterval(textLoad,8000);
+    $(window).on('load',function (){
+        // $("#loader").css('display','none');
+        $("#loader").fadeOut(1000);
+        console.log("Window is fully loaded");
+    });
+
+
+    //if you want to run something just after the creation of DOM object this is the event for that
+    $(document).ready(function (){
+        console.log("Document is ready")
+    });
+
+    //alternative
+    $(function (){
+        console.log("Document is ready");
+    });
 </script>
 </body>
 </html>
