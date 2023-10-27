@@ -141,7 +141,7 @@ main > section:nth-child(1) > aside > img {
 main>section:nth-child(1)>aside>h4{
 
     font-family: 'Abhaya Libre', serif;
-    color: white;
+    color: #00a6ff;
     position:absolute;
     top:113%;
     right: 18%;

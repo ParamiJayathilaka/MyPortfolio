@@ -3,13 +3,14 @@ const ITEM_DESCRIPTION_REGEX = /^[A-Za-z ]{5,}$/;
 const ITEM_QTY_REGEX =  /^[0-9]{1,}$/;
 const ITEM_UNITPRICE_REGEX =  /^[0-9]{2,}([.][0-9]{2})?$/;
 
-let item_vArray = new Array();
+let item_vArray = new Array();//# ekka tina tika push krla regex ekt samanada kyl blnw
 item_vArray.push({field: $("#inputItemCode"), regEx: ITEM_CODE_REGEX});
 item_vArray.push({field: $("#inputItemName"), regEx: ITEM_DESCRIPTION_REGEX});
 item_vArray.push({field: $("#inputItemQty"), regEx: ITEM_QTY_REGEX});
 item_vArray.push({field: $("#inputItemPrice"), regEx: ITEM_UNITPRICE_REGEX});
 
 
+//clear ekt adla ewa awilla okom null krl border eke color eke wenas krnw
 function clearItemInputFields() {
     $("#inputItemCode,#inputItemName,#inputItemQty,#inputItemPrice").val("");
     $("#inputItemCode,#inputItemName,#inputItemQty,#inputItemPrice").css("border", "1px solid #ced4da");

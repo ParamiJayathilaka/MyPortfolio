@@ -58,7 +58,7 @@ $("#btnItemUpdate").click(function () {
     clearItemInputFields();
 });
 
-$("#btn-clear1").click(function () {
+$("#btn-clear").click(function () {
     clearItemInputFields();
 });
 
